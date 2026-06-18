@@ -1,0 +1,32 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Données vectorielles (ChromaDB / FAISS index)
+data/chroma_db/
+data/processed/
+{data/
+
+# Logs et erreurs
+*.log
+errors.txt
+logs.txt
+
+# Environnement
+.env
+.env.*
+
+# Claude Code
+.claude/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

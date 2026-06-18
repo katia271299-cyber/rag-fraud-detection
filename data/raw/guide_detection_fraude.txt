@@ -1,0 +1,52 @@
+GUIDE OPÉRATIONNEL — DÉTECTION ET TRAITEMENT DE LA FRAUDE
+Version 3.2 — Usage interne
+
+========================================================================
+PROCÉDURES D'INVESTIGATION
+========================================================================
+
+ÉTAPE 1 : QUALIFICATION DE L'ALERTE
+
+Dès réception d'une alerte système, l'analyste doit :
+a) Vérifier le score de fraude : si < 50, classer en surveillance passive
+b) Consulter l'historique transactionnel des 90 derniers jours
+c) Vérifier si le client figure sur une liste de surveillance (OFAC, UE, ONU)
+d) Contacter le client par téléphone si score > 80 et montant > 5 000 €
+
+Délai maximum de qualification : 4 heures ouvrées
+
+ÉTAPE 2 : BLOCAGE PRÉVENTIF
+
+Conditions de blocage immédiat (sans validation client) :
+- Score fraude > 95
+- Transaction > 100 000 € vers pays à risque GAFI
+- Pattern smurfing détecté sur 5 transactions ou plus
+- Client identifié sur une liste de sanctions
+
+ÉTAPE 3 : DÉCLARATION TRACFIN
+
+Obligation légale de déclaration si :
+- Fraude avérée > 5 000 €
+- Soupçon de blanchiment d'argent
+- Financement du terrorisme suspecté
+
+Délai légal : 15 jours ouvrés (recommandé : 48h)
+Formulaire : TRACFIN-DS (portail sécurisé)
+
+ÉTAPE 4 : CLÔTURE DU DOSSIER
+
+Chaque dossier doit être clos avec :
+- Résumé des faits (500 mots minimum)
+- Décision motivée (fraude avérée / non avérée / suspendue)
+- Montant récupéré ou passé en perte
+- Recommandations pour éviter la récurrence
+
+Conservation des dossiers : 10 ans (obligation légale)
+
+========================================================================
+CONTACT URGENCES
+========================================================================
+
+Cellule fraude 24h/24 : +33 1 XX XX XX XX
+Email sécurisé : fraude-urgence@[banque].fr
+TRACFIN : https://www.tracfin.gouv.fr

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "CONF-2023000",
+    "date": "2023-04-16 00:00",
+    "reglement": "MIF2",
+    "niveau": "CRITIQUE",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023001",
+    "date": "2023-06-16 00:00",
+    "reglement": "RGPD",
+    "niveau": "INFORMATIF",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Service Titres",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023002",
+    "date": "2023-11-02 00:00",
+    "reglement": "DSP2",
+    "niveau": "INFORMATIF",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023003",
+    "date": "2023-08-23 00:00",
+    "reglement": "DORA",
+    "niveau": "MAJEUR",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Service Titres",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023004",
+    "date": "2023-06-10 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "MAJEUR",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023005",
+    "date": "2023-12-22 00:00",
+    "reglement": "RGPD",
+    "niveau": "INFORMATIF",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023006",
+    "date": "2023-04-06 00:00",
+    "reglement": "DSP2",
+    "niveau": "MAJEUR",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023007",
+    "date": "2023-03-13 00:00",
+    "reglement": "RGPD",
+    "niveau": "MINEUR",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023008",
+    "date": "2023-09-06 00:00",
+    "reglement": "RGPD",
+    "niveau": "MAJEUR",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023009",
+    "date": "2023-08-01 00:00",
+    "reglement": "Bâle III",
+    "niveau": "INFORMATIF",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023010",
+    "date": "2023-04-23 00:00",
+    "reglement": "MIF2",
+    "niveau": "CRITIQUE",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023011",
+    "date": "2023-08-23 00:00",
+    "reglement": "DORA",
+    "niveau": "INFORMATIF",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023012",
+    "date": "2023-10-06 00:00",
+    "reglement": "MIF2",
+    "niveau": "CRITIQUE",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023013",
+    "date": "2023-02-22 00:00",
+    "reglement": "Bâle III",
+    "niveau": "MAJEUR",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023014",
+    "date": "2023-06-28 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "INFORMATIF",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023015",
+    "date": "2023-12-30 00:00",
+    "reglement": "DORA",
+    "niveau": "INFORMATIF",
+    "description": "Défaut de vérification KYC pour client à risque élevé",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Gel préventif du compte",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023016",
+    "date": "2023-01-31 00:00",
+    "reglement": "DORA",
+    "niveau": "MINEUR",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Service Titres",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023017",
+    "date": "2023-12-27 00:00",
+    "reglement": "MIF2",
+    "niveau": "MINEUR",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Service Titres",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023018",
+    "date": "2023-07-30 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "MINEUR",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Gel préventif du compte",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023019",
+    "date": "2023-03-16 00:00",
+    "reglement": "Bâle III",
+    "niveau": "MINEUR",
+    "description": "Défaut de vérification KYC pour client à risque élevé",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023020",
+    "date": "2023-10-23 00:00",
+    "reglement": "Bâle III",
+    "niveau": "MINEUR",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023021",
+    "date": "2023-02-08 00:00",
+    "reglement": "Bâle III",
+    "niveau": "CRITIQUE",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Service Titres",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023022",
+    "date": "2023-09-07 00:00",
+    "reglement": "MIF2",
+    "niveau": "CRITIQUE",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023023",
+    "date": "2023-02-02 00:00",
+    "reglement": "DORA",
+    "niveau": "INFORMATIF",
+    "description": "Défaut de vérification KYC pour client à risque élevé",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023024",
+    "date": "2023-05-18 00:00",
+    "reglement": "MIF2",
+    "niveau": "MINEUR",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023025",
+    "date": "2023-12-16 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "CRITIQUE",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023026",
+    "date": "2023-03-22 00:00",
+    "reglement": "DSP2",
+    "niveau": "INFORMATIF",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Gel préventif du compte",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023027",
+    "date": "2023-11-29 00:00",
+    "reglement": "MIF2",
+    "niveau": "MAJEUR",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023028",
+    "date": "2023-02-12 00:00",
+    "reglement": "MIF2",
+    "niveau": "MAJEUR",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023029",
+    "date": "2023-08-08 00:00",
+    "reglement": "Bâle III",
+    "niveau": "CRITIQUE",
+    "description": "Authentification forte non appliquée pour virement > 30 000 €",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023030",
+    "date": "2023-09-02 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "MAJEUR",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023031",
+    "date": "2023-01-05 00:00",
+    "reglement": "Bâle III",
+    "niveau": "MINEUR",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023032",
+    "date": "2023-02-06 00:00",
+    "reglement": "RGPD",
+    "niveau": "INFORMATIF",
+    "description": "Dépassement du seuil de déclaration TRACFIN sans signalement",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023033",
+    "date": "2023-07-08 00:00",
+    "reglement": "MIF2",
+    "niveau": "MAJEUR",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Gel préventif du compte",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023034",
+    "date": "2023-09-29 00:00",
+    "reglement": "DORA",
+    "niveau": "CRITIQUE",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023035",
+    "date": "2023-04-20 00:00",
+    "reglement": "Bâle III",
+    "niveau": "MAJEUR",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Gel préventif du compte",
+    "cloture": true
+  },
+  {
+    "id": "CONF-2023036",
+    "date": "2023-02-21 00:00",
+    "reglement": "RGPD",
+    "niveau": "CRITIQUE",
+    "description": "Utilisation de données personnelles hors consentement",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Révision de la procédure KYC",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023037",
+    "date": "2023-06-11 00:00",
+    "reglement": "RGPD",
+    "niveau": "MAJEUR",
+    "description": "Absence de gel des avoirs pour client listé UE",
+    "entite_concernee": "Agence Paris 8e",
+    "action_requise": "Gel préventif du compte",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023038",
+    "date": "2023-12-20 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "MINEUR",
+    "description": "Défaut de vérification KYC pour client à risque élevé",
+    "entite_concernee": "Direction Crédit",
+    "action_requise": "Audit interne dans les 30 jours",
+    "cloture": false
+  },
+  {
+    "id": "CONF-2023039",
+    "date": "2023-11-27 00:00",
+    "reglement": "LCB-FT",
+    "niveau": "MAJEUR",
+    "description": "Transaction suspecte non déclarée dans les délais réglementaires",
+    "entite_concernee": "Banque Privée",
+    "action_requise": "Déclaration immédiate à TRACFIN",
+    "cloture": true
+  }
+]
