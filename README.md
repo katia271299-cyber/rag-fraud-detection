@@ -70,7 +70,7 @@ ollama (pour le LLM local)
 ### 2. Installation
 
 ```bash
-git clone https://github.com/katia271299-cyber/rag-finance-langchain
+git clone https://github.com/katia271299-cyber/rag-fraud-detection
 cd rag-finance
 
 python -m venv .venv
@@ -187,4 +187,5 @@ Ce projet dÃ©montre :
 | Interface | Streamlit |
 | PDF parsing | PyMuPDF |
 | Tests | Pytest |
+
 
