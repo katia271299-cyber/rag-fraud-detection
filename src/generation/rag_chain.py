@@ -136,7 +136,8 @@ class RAGChain:
 
     def _build_prompt(self, question: str, context: str) -> str:
         """Construit le prompt final avec le contexte injecté."""
-        return f"""Voici des extraits de documents pertinents pour répondre à la question :
+        return f"""Voici des extraits de documents recuperes automatiquement (leur pertinence
+par rapport a la question n'est pas garantie) :
 
 === CONTEXTE ===
 {context}
@@ -145,17 +146,23 @@ class RAGChain:
 {question}
 
 === INSTRUCTIONS ===
-Réponds en te basant uniquement sur le contexte fourni ci-dessus.
-Cite les sources entre crochets (ex: [Source 1], [Source 2]).
-Si le contexte ne contient pas l'information, indique-le clairement.
+Si la question porte sur la fraude, la conformite ou le contenu des documents,
+reponds en te basant uniquement sur le contexte pertinent ci-dessus et cite les
+sources entre crochets (ex: [Source 1], [Source 2]).
+Si la question est hors-sujet (personnelle, salutation, etc.) ou si le contexte
+ne contient pas l'information demandee, dis-le clairement au lieu de citer un
+contexte non pertinent.
 """
 
     @staticmethod
     def _default_system_prompt() -> str:
         return (
             "Tu es un assistant expert en analyse financière et détection de fraude. "
-            "Tu réponds uniquement en te basant sur les documents fournis en contexte. "
-            "Si l'information n'est pas dans le contexte, dis-le clairement. "
-            "Cite toujours les sources utilisées. "
+            "Pour les questions sur la fraude, la conformité ou les documents, tu "
+            "réponds uniquement en te basant sur le contexte fourni et tu cites tes "
+            "sources. Pour toute autre question (personnelle, hors-sujet), réponds-y "
+            "directement et brièvement sans te référer aux documents, même s'ils te "
+            "sont fournis en contexte. Si l'information n'est pas dans le contexte, "
+            "dis-le clairement plutôt que d'improviser. "
             "Réponds en français, de manière précise et structurée."
         )
