@@ -1,0 +1,33 @@
+CAS-2028 — Fraude par fraude a la carte bancaire
+Segment client : Particulier
+Detection : signalement manuel par un conseiller
+Date de detection : 2024-02-26 00:00
+Montant concerne : 2,632.19 EUR
+Pays de destination des fonds : France
+
+CONTEXTE
+Le client (CLI-870099) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par signalement manuel par un conseiller dans un delai de 8 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Virement vers un compte beneficiaire cree il y a moins de 30 jours
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+- Utilisation d'un nouveau dispositif d'authentification
+- Connexion depuis un pays non habituellement frequente
+
+ISSUE
+Compte cloture a titre conservatoire, plainte deposee par la banque.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via signalement manuel par un conseiller aurait permis de reduire l'exposition financiere sur ce
+type de typologie (fraude a la carte bancaire).

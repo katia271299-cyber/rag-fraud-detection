@@ -1,0 +1,31 @@
+CAS-2011 — Fraude par smurfing / fractionnement de virements
+Segment client : Banque privee
+Detection : signalement du client lui-meme
+Date de detection : 2022-08-03 00:00
+Montant concerne : 1,218.88 EUR
+Pays de destination des fonds : Espagne
+
+CONTEXTE
+Le client (CLI-700524) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par signalement du client lui-meme dans un delai de 20 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Transaction superieure a 3 fois la moyenne historique du compte
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+
+ISSUE
+Fraude confirmee, perte partielle malgre l'intervention.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via signalement du client lui-meme aurait permis de reduire l'exposition financiere sur ce
+type de typologie (smurfing / fractionnement de virements).

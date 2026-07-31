@@ -1,52 +1,52 @@
-GUIDE OPÉRATIONNEL — DÉTECTION ET TRAITEMENT DE LA FRAUDE
+GUIDE OPERATIONNEL — DETECTION ET TRAITEMENT DE LA FRAUDE
 Version 3.2 — Usage interne
 
 ========================================================================
-PROCÉDURES D'INVESTIGATION
+PROCEDURES D'INVESTIGATION
 ========================================================================
 
-ÉTAPE 1 : QUALIFICATION DE L'ALERTE
+ETAPE 1 : QUALIFICATION DE L'ALERTE
 
-Dès réception d'une alerte système, l'analyste doit :
-a) Vérifier le score de fraude : si < 50, classer en surveillance passive
+Des reception d'une alerte systeme, l'analyste doit :
+a) Verifier le score de fraude : si < 50, classer en surveillance passive
 b) Consulter l'historique transactionnel des 90 derniers jours
-c) Vérifier si le client figure sur une liste de surveillance (OFAC, UE, ONU)
-d) Contacter le client par téléphone si score > 80 et montant > 5 000 €
+c) Verifier si le client figure sur une liste de surveillance (OFAC, UE, ONU)
+d) Contacter le client par telephone si score > 80 et montant > 5 000 EUR
 
-Délai maximum de qualification : 4 heures ouvrées
+Delai maximum de qualification : 4 heures ouvrees
 
-ÉTAPE 2 : BLOCAGE PRÉVENTIF
+ETAPE 2 : BLOCAGE PREVENTIF
 
-Conditions de blocage immédiat (sans validation client) :
+Conditions de blocage immediat (sans validation client) :
 - Score fraude > 95
-- Transaction > 100 000 € vers pays à risque GAFI
-- Pattern smurfing détecté sur 5 transactions ou plus
-- Client identifié sur une liste de sanctions
+- Transaction > 100 000 EUR vers pays a risque GAFI
+- Pattern smurfing detecte sur 5 transactions ou plus
+- Client identifie sur une liste de sanctions
 
-ÉTAPE 3 : DÉCLARATION TRACFIN
+ETAPE 3 : DECLARATION TRACFIN
 
-Obligation légale de déclaration si :
-- Fraude avérée > 5 000 €
-- Soupçon de blanchiment d'argent
-- Financement du terrorisme suspecté
+Obligation legale de declaration si :
+- Fraude averee > 5 000 EUR
+- Soupcon de blanchiment d'argent
+- Financement du terrorisme suspecte
 
-Délai légal : 15 jours ouvrés (recommandé : 48h)
-Formulaire : TRACFIN-DS (portail sécurisé)
+Delai legal : 15 jours ouvres (recommande : 48h)
+Formulaire : TRACFIN-DS (portail securise)
 
-ÉTAPE 4 : CLÔTURE DU DOSSIER
+ETAPE 4 : CLOTURE DU DOSSIER
 
-Chaque dossier doit être clos avec :
-- Résumé des faits (500 mots minimum)
-- Décision motivée (fraude avérée / non avérée / suspendue)
-- Montant récupéré ou passé en perte
-- Recommandations pour éviter la récurrence
+Chaque dossier doit etre clos avec :
+- Resume des faits (500 mots minimum)
+- Decision motivee (fraude averee / non averee / suspendue)
+- Montant recupere ou passe en perte
+- Recommandations pour eviter la recurrence
 
-Conservation des dossiers : 10 ans (obligation légale)
+Conservation des dossiers : 10 ans (obligation legale)
 
 ========================================================================
 CONTACT URGENCES
 ========================================================================
 
 Cellule fraude 24h/24 : +33 1 XX XX XX XX
-Email sécurisé : fraude-urgence@[banque].fr
+Email securise : fraude-urgence@[banque].fr
 TRACFIN : https://www.tracfin.gouv.fr

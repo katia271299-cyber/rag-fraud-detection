@@ -1,0 +1,31 @@
+CAS-2025 — Fraude par fraude a la carte bancaire
+Segment client : Banque privee
+Detection : alerte automatique du modele XGBoost Transactions
+Date de detection : 2022-04-08 00:00
+Montant concerne : 72,938.77 EUR
+Pays de destination des fonds : Ukraine
+
+CONTEXTE
+Le client (CLI-990396) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par alerte automatique du modele XGBoost Transactions dans un delai de 20 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Connexion depuis un pays non habituellement frequente
+- Geolocalisation incoherente avec l'adresse de facturation
+
+ISSUE
+Fraude confirmee, montant integralement recupere apres blocage preventif.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via alerte automatique du modele XGBoost Transactions aurait permis de reduire l'exposition financiere sur ce
+type de typologie (fraude a la carte bancaire).

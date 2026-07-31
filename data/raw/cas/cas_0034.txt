@@ -1,0 +1,31 @@
+CAS-2034 — Fraude par usurpation d'identite
+Segment client : Banque privee
+Detection : signalement du GNN Relations (reseau de fraude)
+Date de detection : 2022-11-06 00:00
+Montant concerne : 27,760.33 EUR
+Pays de destination des fonds : Nigeria
+
+CONTEXTE
+Le client (CLI-271994) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par signalement du GNN Relations (reseau de fraude) dans un delai de 11 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Connexion depuis un pays non habituellement frequente
+- Transaction superieure a 3 fois la moyenne historique du compte
+
+ISSUE
+Fraude non averee apres investigation approfondie, dossier classe.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via signalement du GNN Relations (reseau de fraude) aurait permis de reduire l'exposition financiere sur ce
+type de typologie (usurpation d'identite).

@@ -1,118 +1,118 @@
-RAPPORT ANNUEL — DÉTECTION DE FRAUDE ET GESTION DES RISQUES
-Exercice 2023 — Direction de la Conformité et du Contrôle Interne
+RAPPORT ANNUEL — DETECTION DE FRAUDE ET GESTION DES RISQUES
+Exercice 2023 — Direction de la Conformite et du Controle Interne
 
 ========================================================================
-SYNTHÈSE EXÉCUTIVE
+SYNTHESE EXECUTIVE
 ========================================================================
 
-Au cours de l'exercice 2023, le département de détection de fraude a traité
-un total de 14 872 alertes, dont 1 203 ont donné lieu à une investigation
-approfondie. Sur ce périmètre, 287 cas de fraude avérée ont été confirmés,
-représentant un préjudice total estimé à 4,7 millions d'euros.
+Au cours de l'exercice 2023, le departement de detection de fraude a traite
+un total de 14 872 alertes, dont 1 203 ont donne lieu a une investigation
+approfondie. Sur ce perimetre, 287 cas de fraude averee ont ete confirmes,
+representant un prejudice total estime a 4,7 millions d'euros.
 
-Le taux de fraude confirmée rapporté au volume total de transactions s'établit
-à 0,003%, en légère hausse par rapport à 2022 (0,0024%) mais en deçà des
-moyennes sectorielles européennes (0,006%).
+Le taux de fraude confirmee rapporte au volume total de transactions s'etablit
+a 0,003%, en legere hausse par rapport a 2022 (0,0024%) mais en deca des
+moyennes sectorielles europeennes (0,006%).
 
 ========================================================================
-CHAPITRE 1 — TYPOLOGIES DE FRAUDE IDENTIFIÉES
+CHAPITRE 1 — TYPOLOGIES DE FRAUDE IDENTIFIEES
 ========================================================================
 
-1.1 FRAUDE PAR USURPATION D'IDENTITÉ (38% des cas)
+1.1 FRAUDE PAR USURPATION D'IDENTITE (38% des cas)
 
-La fraude par usurpation d'identité représente la menace principale.
-Les schémas les plus fréquents observés en 2023 incluent :
+La fraude par usurpation d'identite represente la menace principale.
+Les schemas les plus frequents observes en 2023 incluent :
 
-- Ouverture frauduleuse de comptes avec des pièces d'identité contrefaites (22%)
-- Prise de contrôle de compte (Account Takeover) via phishing (16%)
-- Fraude documentaire lors des demandes de crédit (12%)
+- Ouverture frauduleuse de comptes avec des pieces d'identite contrefaites (22%)
+- Prise de controle de compte (Account Takeover) via phishing (16%)
+- Fraude documentaire lors des demandes de credit (12%)
 
-Montant moyen par dossier : 8 400 €
-Délai moyen de détection : 12 jours
+Montant moyen par dossier : 8 400 EUR
+Delai moyen de detection : 12 jours
 
 1.2 FRAUDE AUX VIREMENTS (29% des cas)
 
-Les fraudes aux virements ont augmenté de 34% par rapport à 2022, portées par
+Les fraudes aux virements ont augmente de 34% par rapport a 2022, portees par
 l'essor des arnaques au faux conseiller bancaire.
 
-Patterns détectés :
-- Virement vers compte mule avec fractionnemement (smurfing)
+Patterns detectes :
+- Virement vers compte mule avec fractionnement (smurfing)
 - Virement international atypique hors zones habituelles du client
-- Modification soudaine du bénéficiaire habituel
+- Modification soudaine du beneficiaire habituel
 
-Montant moyen : 23 500 €
-Délai de détection : 6 jours (amélioration grâce à l'IA temps réel)
+Montant moyen : 23 500 EUR
+Delai de detection : 6 jours (amelioration grace a l'IA temps reel)
 
 1.3 FRAUDE INTERNE (18% des cas)
 
-La fraude interne reste un risque significatif, principalement portée par :
-- Détournement de commissions (43% des fraudes internes)
-- Modification non autorisée de données clients (31%)
-- Accès illicite à des comptes premium (26%)
+La fraude interne reste un risque significatif, principalement portee par :
+- Detournement de commissions (43% des fraudes internes)
+- Modification non autorisee de donnees clients (31%)
+- Acces illicite a des comptes premium (26%)
 
-Secteurs les plus touchés : Gestion patrimoniale, Crédit entreprise
+Secteurs les plus touches : Gestion patrimoniale, Credit entreprise
 
-1.4 FRAUDE AUX CHÈQUES ET FAUX BONS DE CAISSE (15% des cas)
+1.4 FRAUDE AUX CHEQUES ET FAUX BONS DE CAISSE (15% des cas)
 
-En recul structurel du fait de la dématérialisation, mais encore présente
-dans les segments clientèle sénior.
+En recul structurel du fait de la dematerialisation, mais encore presente
+dans les segments clientele senior.
 
 ========================================================================
 CHAPITRE 2 — INDICATEURS D'ALERTE (RED FLAGS)
 ========================================================================
 
-Les algorithmes de détection s'appuient sur les signaux suivants :
+Les algorithmes de detection s'appuient sur les signaux suivants :
 
 SIGNAUX FORTS (score > 80) :
-- Transaction supérieure à 3 fois la moyenne historique du compte
-- Connexion depuis un pays non habituellement fréquenté
-- Plusieurs tentatives échouées suivies d'un succès
+- Transaction superieure a 3 fois la moyenne historique du compte
+- Connexion depuis un pays non habituellement frequente
+- Plusieurs tentatives echouees suivies d'un succes
 - Modification d'adresse + virement dans les 24h
-- Virement vers compte créé il y a moins de 30 jours
+- Virement vers compte cree il y a moins de 30 jours
 
-SIGNAUX MODÉRÉS (score 50-80) :
-- Transaction à une heure inhabituelle (entre 01h et 05h)
-- Virement fractionné en plusieurs opérations similaires
+SIGNAUX MODERES (score 50-80) :
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+- Virement fractionne en plusieurs operations similaires
 - Utilisation d'un nouveau dispositif d'authentification
 - Transaction dans un secteur inhabituel (ex: casino pour client sans historique)
 
 SIGNAUX FAIBLES (score 20-50) :
-- Augmentation soudaine de la fréquence de transactions
-- Géolocalisation incohérente avec l'adresse de facturation
-- Utilisation d'un VPN ou IP masquée
+- Augmentation soudaine de la frequence de transactions
+- Geolocalisation incoherente avec l'adresse de facturation
+- Utilisation d'un VPN ou IP masquee
 
 ========================================================================
-CHAPITRE 3 — PERFORMANCE DES MODÈLES DE DÉTECTION
+CHAPITRE 3 — PERFORMANCE DES MODELES DE DETECTION
 ========================================================================
 
-Trois modèles sont en production en 2023 :
+Trois modeles sont en production en 2023 :
 
-MODÈLE A — XGBoost Transactions (déployé Q1 2022)
-- Précision : 94,2%
+MODELE A — XGBoost Transactions (deploye Q1 2022)
+- Precision : 94,2%
 - Rappel : 87,6%
 - F1-score : 90,8%
 - Faux positifs/jour : 142
 
-MODÈLE B — LSTM Comportemental (déployé Q3 2023)
-- Précision : 96,1%
+MODELE B — LSTM Comportemental (deploye Q3 2023)
+- Precision : 96,1%
 - Rappel : 91,3%
 - F1-score : 93,6%
-- Faux positifs/jour : 89 (-37% vs Modèle A)
+- Faux positifs/jour : 89 (-37% vs Modele A)
 
-MODÈLE C — Graph Neural Network Relations (pilote Q4 2023)
+MODELE C — Graph Neural Network Relations (pilote Q4 2023)
 - En phase de validation sur 5% du flux
-- Détection de réseaux de fraude organisée prometteuse
-- Résultats préliminaires : +18% de détection des schémas coordonnés
+- Detection de reseaux de fraude organisee prometteuse
+- Resultats preliminaires : +18% de detection des schemas coordonnes
 
 ========================================================================
 CHAPITRE 4 — RECOMMANDATIONS 2024
 ========================================================================
 
-1. Déploiement complet du Modèle B sur 100% du flux transactionnel
-2. Intégration du GNN en production pour la détection de réseaux
-3. Renforcement de l'authentification forte pour les virements > 10 000 €
-4. Formation des équipes de back-office sur les nouvelles typologies de fraude
-5. Partenariat avec 3 autres établissements pour partage des listes noires
+1. Deploiement complet du Modele B sur 100% du flux transactionnel
+2. Integration du GNN en production pour la detection de reseaux
+3. Renforcement de l'authentification forte pour les virements > 10 000 EUR
+4. Formation des equipes de back-office sur les nouvelles typologies de fraude
+5. Partenariat avec 3 autres etablissements pour partage des listes noires
 
-Directeur de la Conformité : Jean-Pierre MARTIN
+Directeur de la Conformite : Jean-Pierre MARTIN
 Date : 15 janvier 2024

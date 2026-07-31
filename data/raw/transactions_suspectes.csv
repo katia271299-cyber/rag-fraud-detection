@@ -1,151 +1,1001 @@
 id_alerte,date_transaction,client_id,type_transaction,montant_eur,pays_destination,iban_beneficiaire,score_fraude,statut,motif_alerte,analyste,fraude_confirmee
-ALT-2023-10000,2023-02-22 00:00,CLI-809570,Virement instantané,3377.42,Allemagne,FR85 7912 1520 1488 2535 323,59,EN_INVESTIGATION,Montant anormalement élevé,,False
-ALT-2023-10001,2023-05-23 00:00,CLI-948749,Virement SEPA,3722.09,Espagne,FR99 7924 6574 5552 3547 320,93,ALERTE_FAIBLE,Pays de destination inhabituel,M. Dubois,False
-ALT-2023-10002,2023-08-24 00:00,CLI-662275,Virement SEPA,43137.25,Nigeria,FR20 5803 6925 4150 2139 146,87,ALERTE_MOYENNE,Bénéficiaire jamais utilisé,M. Dubois,False
-ALT-2023-10003,2023-03-25 00:00,CLI-488162,Paiement carte,22105.68,Italie,FR95 5374 2169 3803 9751 846,60,ALERTE_MOYENNE,Compte bénéficiaire récent (<30j),N. Traoré,False
-ALT-2023-10004,2023-01-29 00:00,CLI-340174,Virement SEPA,33799.99,Roumanie,FR61 5386 2084 4456 6155 317,86,BLOQUÉE,Géolocalisation incohérente,N. Traoré,False
-ALT-2023-10005,2023-10-27 00:00,CLI-549245,Virement instantané,1691.96,Nigeria,FR56 4593 3266 9348 9085 193,93,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,False
-ALT-2023-10006,2023-08-28 00:00,CLI-654816,Paiement carte,4064.36,Ukraine,FR11 2876 9797 5371 6573 214,63,BLOQUÉE,Heure de transaction suspecte,N. Traoré,True
-ALT-2023-10007,2023-04-02 00:00,CLI-632342,Virement SEPA,4792.17,Portugal,FR91 9317 4258 3504 7126 880,55,EN_INVESTIGATION,Modification d'adresse récente,M. Dubois,False
-ALT-2023-10008,2023-06-07 00:00,CLI-351083,Virement SEPA,213341.35,Italie,FR82 2290 2403 8962 2133 878,79,ALERTE_MOYENNE,Heure de transaction suspecte,N. Traoré,False
-ALT-2023-10009,2023-10-04 00:00,CLI-891952,Virement international,1692.75,Portugal,FR61 7118 8177 9479 8397 223,60,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,True
-ALT-2023-10010,2023-11-20 00:00,CLI-161733,Virement international,3147.39,Allemagne,FR14 6413 2160 9423 4899 385,87,BLOQUÉE,Fractionnement détecté (smurfing),,False
-ALT-2023-10011,2023-08-31 00:00,CLI-946721,Retrait DAB,3755.09,Italie,FR22 2588 8062 6804 7939 520,74,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,False
-ALT-2023-10012,2023-10-02 00:00,CLI-570405,Virement international,3776.96,Nigeria,FR33 5563 8579 5092 2235 553,96,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,True
-ALT-2023-10013,2023-09-06 00:00,CLI-604740,Virement international,4860.48,Nigeria,FR17 3697 7209 1035 7396 371,95,BLOQUÉE,Bénéficiaire jamais utilisé,N. Traoré,False
-ALT-2023-10014,2023-10-05 00:00,CLI-163918,Paiement carte,1196.59,France,FR16 8811 9238 9701 3579 158,77,ALERTE_HAUTE,Heure de transaction suspecte,M. Dubois,True
-ALT-2023-10015,2023-05-07 00:00,CLI-707040,Virement instantané,15584.18,France,FR89 2343 7868 9565 6183 367,58,ALERTE_FAIBLE,Fractionnement détecté (smurfing),A. Kowalski,False
-ALT-2023-10016,2023-02-07 00:00,CLI-109767,Retrait DAB,255751.06,Allemagne,FR19 9808 4492 9288 5345 235,67,ALERTE_HAUTE,Fractionnement détecté (smurfing),A. Kowalski,False
-ALT-2023-10017,2023-12-01 00:00,CLI-654634,Virement SEPA,42518.52,Ukraine,FR48 2697 3200 5333 2891 209,92,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,False
-ALT-2023-10018,2023-05-16 00:00,CLI-629959,Retrait DAB,37292.55,Portugal,FR16 2512 7939 5533 1722 103,66,ALERTE_MOYENNE,Bénéficiaire jamais utilisé,S. Chen,False
-ALT-2023-10019,2023-12-20 00:00,CLI-256294,Virement instantané,2982.56,France,FR57 3426 8041 3088 1685 415,68,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,False
-ALT-2023-10020,2023-11-14 00:00,CLI-885884,Virement international,20915.54,Italie,FR30 3900 7755 1406 3938 854,66,BLOQUÉE,Fractionnement détecté (smurfing),A. Kowalski,False
-ALT-2023-10021,2023-04-24 00:00,CLI-309267,Retrait DAB,9864.3,Roumanie,FR49 4728 4652 1387 4164 508,66,ALERTE_FAIBLE,Pays de destination inhabituel,A. Kowalski,False
-ALT-2023-10022,2023-01-15 00:00,CLI-220944,Paiement carte,3386.67,Espagne,FR84 5349 1626 2776 8119 453,91,ALERTE_FAIBLE,Géolocalisation incohérente,,True
-ALT-2023-10023,2023-01-01 00:00,CLI-645175,Virement instantané,30946.46,Italie,FR56 8066 2146 6409 6143 779,99,ALERTE_HAUTE,Bénéficiaire jamais utilisé,,False
-ALT-2023-10024,2023-04-09 00:00,CLI-540869,Retrait DAB,3501.02,Espagne,FR88 5930 7653 9977 1006 411,63,ALERTE_MOYENNE,Géolocalisation incohérente,,False
-ALT-2023-10025,2023-03-28 00:00,CLI-790855,Virement SEPA,2592.45,Portugal,FR75 6491 2530 4848 6085 330,96,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,True
-ALT-2023-10026,2023-08-01 00:00,CLI-760356,Virement instantané,1601.79,Italie,FR99 7291 9099 7547 4997 251,86,ALERTE_HAUTE,Pays de destination inhabituel,N. Traoré,False
-ALT-2023-10027,2023-05-08 00:00,CLI-989545,Virement SEPA,1291.49,Chine,FR27 8612 9702 6198 8251 727,97,EN_INVESTIGATION,Géolocalisation incohérente,,False
-ALT-2023-10028,2023-05-07 00:00,CLI-980660,Paiement carte,4537.44,Ukraine,FR72 4919 5499 8206 2269 830,63,ALERTE_MOYENNE,Bénéficiaire jamais utilisé,A. Kowalski,False
-ALT-2023-10029,2023-03-20 00:00,CLI-840734,Virement international,4518.62,Allemagne,FR63 7678 6421 9890 8633 525,48,ALERTE_MOYENNE,Géolocalisation incohérente,N. Traoré,True
-ALT-2023-10030,2023-06-30 00:00,CLI-413118,Retrait DAB,4355.29,Nigeria,FR78 9947 4613 8999 4595 379,72,BLOQUÉE,Montant anormalement élevé,N. Traoré,False
-ALT-2023-10031,2023-03-07 00:00,CLI-752483,Virement instantané,40916.4,France,FR60 1444 2375 8022 3223 987,74,ALERTE_MOYENNE,Montant anormalement élevé,A. Kowalski,False
-ALT-2023-10032,2023-05-23 00:00,CLI-888539,Retrait DAB,25461.47,Portugal,FR20 8705 1317 9837 1853 458,59,ALERTE_HAUTE,Montant anormalement élevé,M. Dubois,False
-ALT-2023-10033,2023-12-09 00:00,CLI-219946,Virement instantané,1397.12,Italie,FR69 5198 7043 3749 2876 896,97,ALERTE_MOYENNE,Bénéficiaire jamais utilisé,M. Dubois,True
-ALT-2023-10034,2023-04-12 00:00,CLI-179688,Virement instantané,4679.99,Italie,FR23 5941 2983 1672 6688 645,72,ALERTE_FAIBLE,Pays de destination inhabituel,,False
-ALT-2023-10035,2023-07-05 00:00,CLI-766459,Retrait DAB,556.93,Espagne,FR65 3885 9548 5425 9817 893,75,BLOQUÉE,Géolocalisation incohérente,,False
-ALT-2023-10036,2023-08-19 00:00,CLI-355709,Retrait DAB,1950.37,Nigeria,FR53 1470 9098 6325 3979 599,58,ALERTE_FAIBLE,Bénéficiaire jamais utilisé,A. Kowalski,False
-ALT-2023-10037,2023-04-08 00:00,CLI-189771,Virement international,4461.44,Nigeria,FR72 4937 8800 9041 8342 911,46,ALERTE_HAUTE,Bénéficiaire jamais utilisé,S. Chen,False
-ALT-2023-10038,2023-09-29 00:00,CLI-460455,Retrait DAB,3613.04,Ukraine,FR52 6764 8434 5438 6023 357,59,ALERTE_HAUTE,Fractionnement détecté (smurfing),A. Kowalski,True
-ALT-2023-10039,2023-09-05 00:00,CLI-389930,Virement instantané,3842.96,Ukraine,FR86 5636 2647 4180 5853 332,68,ALERTE_MOYENNE,Bénéficiaire jamais utilisé,M. Dubois,False
-ALT-2023-10040,2023-03-06 00:00,CLI-768854,Retrait DAB,48843.27,Allemagne,FR11 5658 8690 8843 8216 448,56,ALERTE_HAUTE,Bénéficiaire jamais utilisé,N. Traoré,True
-ALT-2023-10041,2023-01-28 00:00,CLI-259097,Virement international,23031.83,Portugal,FR20 5066 2940 7818 4697 894,78,BLOQUÉE,Compte bénéficiaire récent (<30j),N. Traoré,False
-ALT-2023-10042,2023-11-09 00:00,CLI-876039,Virement SEPA,49551.41,Italie,FR90 4457 5335 2330 3573 345,56,EN_INVESTIGATION,Pays de destination inhabituel,S. Chen,True
-ALT-2023-10043,2023-05-28 00:00,CLI-841296,Paiement carte,2338.33,Chine,FR19 4824 5334 4241 7965 217,79,ALERTE_MOYENNE,Heure de transaction suspecte,A. Kowalski,False
-ALT-2023-10044,2023-10-19 00:00,CLI-402630,Retrait DAB,12466.53,Allemagne,FR69 5982 7594 5460 9199 652,76,BLOQUÉE,Pays de destination inhabituel,,True
-ALT-2023-10045,2023-04-28 00:00,CLI-807053,Virement instantané,4502.4,France,FR96 5415 1659 3870 8708 631,86,BLOQUÉE,Bénéficiaire jamais utilisé,S. Chen,False
-ALT-2023-10046,2023-06-20 00:00,CLI-436653,Virement SEPA,3356.53,Espagne,FR52 7744 9117 5722 7561 933,93,EN_INVESTIGATION,Montant anormalement élevé,N. Traoré,True
-ALT-2023-10047,2023-09-21 00:00,CLI-964998,Virement SEPA,1915.33,Ukraine,FR69 7770 1888 4073 9494 470,84,BLOQUÉE,Compte bénéficiaire récent (<30j),M. Dubois,False
-ALT-2023-10048,2023-09-06 00:00,CLI-227324,Virement SEPA,10895.6,Italie,FR30 6091 1224 7684 2527 330,98,ALERTE_HAUTE,Compte bénéficiaire récent (<30j),M. Dubois,False
-ALT-2023-10049,2023-09-05 00:00,CLI-595158,Virement international,2742.69,Chine,FR80 3369 7284 4122 9327 864,53,ALERTE_HAUTE,Bénéficiaire jamais utilisé,N. Traoré,False
-ALT-2023-10050,2023-06-02 00:00,CLI-978157,Virement instantané,4704.12,Chine,FR29 8316 9824 8935 6654 440,80,EN_INVESTIGATION,Géolocalisation incohérente,N. Traoré,False
-ALT-2023-10051,2023-07-30 00:00,CLI-145767,Paiement carte,4413.21,Chine,FR58 7325 3492 9115 1606 229,77,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,False
-ALT-2023-10052,2023-12-02 00:00,CLI-261859,Virement SEPA,948.7,Chine,FR43 6546 7512 2315 6383 972,88,EN_INVESTIGATION,Géolocalisation incohérente,A. Kowalski,False
-ALT-2023-10053,2023-05-28 00:00,CLI-338536,Virement SEPA,6615.46,Nigeria,FR22 2646 8269 3725 5906 129,47,ALERTE_FAIBLE,Montant anormalement élevé,A. Kowalski,False
-ALT-2023-10054,2023-04-03 00:00,CLI-278240,Virement international,2186.78,Allemagne,FR88 7267 4945 9153 3344 337,74,ALERTE_FAIBLE,Compte bénéficiaire récent (<30j),A. Kowalski,True
-ALT-2023-10055,2023-02-07 00:00,CLI-563187,Paiement carte,4545.09,Portugal,FR91 7951 5097 8484 5949 303,69,BLOQUÉE,Pays de destination inhabituel,S. Chen,False
-ALT-2023-10056,2023-12-04 00:00,CLI-515032,Paiement carte,3073.65,France,FR82 1803 9138 5689 4770 721,96,ALERTE_FAIBLE,Fractionnement détecté (smurfing),S. Chen,False
-ALT-2023-10057,2023-11-18 00:00,CLI-201883,Virement SEPA,37441.78,Portugal,FR66 1546 6977 3153 2476 402,65,BLOQUÉE,Heure de transaction suspecte,S. Chen,False
-ALT-2023-10058,2023-05-20 00:00,CLI-970813,Virement international,4039.31,Portugal,FR71 5835 6549 2886 8673 177,54,ALERTE_MOYENNE,Géolocalisation incohérente,,False
-ALT-2023-10059,2023-07-08 00:00,CLI-805511,Paiement carte,906.36,Nigeria,FR91 7086 2775 4830 8724 125,84,EN_INVESTIGATION,Vitesse de transactions anormale,,False
-ALT-2023-10060,2023-11-29 00:00,CLI-528129,Virement SEPA,33593.18,Espagne,FR15 1609 5986 9071 2902 199,60,EN_INVESTIGATION,Heure de transaction suspecte,N. Traoré,False
-ALT-2023-10061,2023-10-28 00:00,CLI-878325,Virement international,2169.55,Nigeria,FR93 2622 9017 7686 5583 133,89,ALERTE_FAIBLE,Fractionnement détecté (smurfing),N. Traoré,False
-ALT-2023-10062,2023-10-06 00:00,CLI-776149,Paiement carte,43495.26,France,FR60 5520 4109 3001 8450 193,87,ALERTE_MOYENNE,Montant anormalement élevé,M. Dubois,False
-ALT-2023-10063,2023-10-11 00:00,CLI-317220,Virement instantané,1596.06,Italie,FR39 6383 3417 1046 5542 979,54,ALERTE_MOYENNE,Modification d'adresse récente,A. Kowalski,False
-ALT-2023-10064,2023-05-02 00:00,CLI-717457,Paiement carte,994.67,France,FR32 5347 1858 3076 7897 638,52,ALERTE_HAUTE,Compte bénéficiaire récent (<30j),N. Traoré,False
-ALT-2023-10065,2023-01-23 00:00,CLI-862569,Virement instantané,276727.41,Portugal,FR68 1510 1996 8847 7580 536,88,ALERTE_HAUTE,Compte bénéficiaire récent (<30j),N. Traoré,True
-ALT-2023-10066,2023-11-16 00:00,CLI-763829,Virement instantané,4546.7,Ukraine,FR51 7240 9692 5831 8433 617,83,BLOQUÉE,Pays de destination inhabituel,M. Dubois,False
-ALT-2023-10067,2023-07-24 00:00,CLI-536196,Virement SEPA,44964.1,Roumanie,FR64 6120 5176 7132 3500 803,75,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,True
-ALT-2023-10068,2023-01-31 00:00,CLI-714953,Virement instantané,2443.44,Ukraine,FR52 3002 7730 6793 7929 988,91,ALERTE_HAUTE,Bénéficiaire jamais utilisé,,False
-ALT-2023-10069,2023-04-25 00:00,CLI-988432,Virement SEPA,31006.33,Roumanie,FR81 7022 2882 5564 4705 926,72,EN_INVESTIGATION,Modification d'adresse récente,M. Dubois,False
-ALT-2023-10070,2023-06-29 00:00,CLI-106402,Virement international,393084.28,Espagne,FR82 7566 2140 3324 1502 193,92,EN_INVESTIGATION,Fractionnement détecté (smurfing),N. Traoré,False
-ALT-2023-10071,2023-10-18 00:00,CLI-725185,Virement SEPA,2541.41,France,FR29 3579 1815 2336 5458 553,87,BLOQUÉE,Compte bénéficiaire récent (<30j),,False
-ALT-2023-10072,2023-02-26 00:00,CLI-397005,Virement instantané,2363.83,Chine,FR77 6053 1744 4612 7475 713,48,ALERTE_HAUTE,Fractionnement détecté (smurfing),A. Kowalski,False
-ALT-2023-10073,2023-09-12 00:00,CLI-883301,Retrait DAB,3953.07,Espagne,FR26 7229 9725 4770 9196 672,98,ALERTE_FAIBLE,Pays de destination inhabituel,N. Traoré,True
-ALT-2023-10074,2023-08-08 00:00,CLI-701253,Retrait DAB,2462.99,Nigeria,FR47 2887 7636 1341 6321 275,96,EN_INVESTIGATION,Compte bénéficiaire récent (<30j),A. Kowalski,True
-ALT-2023-10075,2023-02-10 00:00,CLI-514991,Paiement carte,2465.2,Roumanie,FR38 6456 3754 2251 9363 748,52,EN_INVESTIGATION,Modification d'adresse récente,S. Chen,False
-ALT-2023-10076,2023-02-22 00:00,CLI-253557,Paiement carte,2079.95,Italie,FR32 3504 2234 3902 9095 575,93,EN_INVESTIGATION,Compte bénéficiaire récent (<30j),,False
-ALT-2023-10077,2023-08-15 00:00,CLI-762055,Paiement carte,4389.11,Portugal,FR85 1920 6766 9312 2215 417,74,BLOQUÉE,Montant anormalement élevé,M. Dubois,False
-ALT-2023-10078,2023-11-11 00:00,CLI-722937,Virement instantané,8452.9,Nigeria,FR69 1672 8368 4084 6267 719,75,EN_INVESTIGATION,Heure de transaction suspecte,M. Dubois,False
-ALT-2023-10079,2023-09-16 00:00,CLI-777513,Virement international,45460.71,France,FR41 8172 8199 9586 9564 724,55,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
-ALT-2023-10080,2023-11-28 00:00,CLI-450905,Virement SEPA,20226.52,Roumanie,FR22 7333 5655 5128 3463 441,50,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,False
-ALT-2023-10081,2023-02-13 00:00,CLI-424620,Virement instantané,4854.63,Nigeria,FR92 6381 3093 9624 2531 761,87,BLOQUÉE,Modification d'adresse récente,A. Kowalski,True
-ALT-2023-10082,2023-09-06 00:00,CLI-301332,Virement international,146386.7,Espagne,FR29 2264 5846 2657 9317 889,79,EN_INVESTIGATION,Montant anormalement élevé,A. Kowalski,False
-ALT-2023-10083,2023-11-16 00:00,CLI-948343,Virement international,11941.37,Chine,FR15 7731 6968 4891 8277 725,63,BLOQUÉE,Fractionnement détecté (smurfing),,False
-ALT-2023-10084,2023-07-08 00:00,CLI-811256,Virement instantané,41388.07,Chine,FR69 5616 7256 9239 9641 528,55,ALERTE_MOYENNE,Heure de transaction suspecte,A. Kowalski,True
-ALT-2023-10085,2023-09-22 00:00,CLI-992512,Virement SEPA,3385.31,Portugal,FR20 3626 5469 8361 9410 250,98,BLOQUÉE,Pays de destination inhabituel,S. Chen,False
-ALT-2023-10086,2023-07-11 00:00,CLI-347231,Retrait DAB,4480.83,Allemagne,FR57 4678 1461 6221 2623 959,90,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,True
-ALT-2023-10087,2023-12-28 00:00,CLI-591897,Retrait DAB,1790.96,France,FR20 1311 5193 4533 3449 661,91,EN_INVESTIGATION,Modification d'adresse récente,N. Traoré,True
-ALT-2023-10088,2023-11-24 00:00,CLI-932463,Virement instantané,3992.78,Chine,FR18 2816 9189 9782 1269 747,77,EN_INVESTIGATION,Fractionnement détecté (smurfing),S. Chen,False
-ALT-2023-10089,2023-12-07 00:00,CLI-800674,Virement SEPA,2431.58,Ukraine,FR56 2108 9618 9914 9312 905,77,EN_INVESTIGATION,Montant anormalement élevé,N. Traoré,False
-ALT-2023-10090,2023-07-02 00:00,CLI-926823,Virement SEPA,22409.66,Roumanie,FR40 2698 6447 3185 1726 460,79,ALERTE_FAIBLE,Heure de transaction suspecte,N. Traoré,False
-ALT-2023-10091,2023-08-23 00:00,CLI-138780,Paiement carte,41517.4,Italie,FR15 4268 1686 6170 6080 627,70,EN_INVESTIGATION,Compte bénéficiaire récent (<30j),A. Kowalski,True
-ALT-2023-10092,2023-12-02 00:00,CLI-448048,Paiement carte,13599.65,Allemagne,FR57 8159 7553 8204 7334 447,56,BLOQUÉE,Compte bénéficiaire récent (<30j),A. Kowalski,False
-ALT-2023-10093,2023-04-03 00:00,CLI-671971,Paiement carte,37718.66,Roumanie,FR23 2311 6372 5843 6021 556,83,BLOQUÉE,Heure de transaction suspecte,N. Traoré,False
-ALT-2023-10094,2023-08-11 00:00,CLI-387892,Virement SEPA,37706.65,Allemagne,FR95 7655 6952 9406 3621 131,54,EN_INVESTIGATION,Compte bénéficiaire récent (<30j),M. Dubois,False
-ALT-2023-10095,2023-10-18 00:00,CLI-133958,Virement instantané,802.55,Espagne,FR96 8371 7077 7095 8273 881,49,EN_INVESTIGATION,Heure de transaction suspecte,,False
-ALT-2023-10096,2023-04-06 00:00,CLI-623285,Virement instantané,2291.15,Nigeria,FR81 2929 5288 5264 8311 319,84,ALERTE_FAIBLE,Compte bénéficiaire récent (<30j),S. Chen,True
-ALT-2023-10097,2023-02-14 00:00,CLI-949884,Paiement carte,8332.34,Roumanie,FR18 9882 5757 5914 3580 828,90,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
-ALT-2023-10098,2023-01-14 00:00,CLI-478427,Virement instantané,14044.12,Roumanie,FR69 3126 2412 2077 6067 507,90,BLOQUÉE,Modification d'adresse récente,N. Traoré,False
-ALT-2023-10099,2023-08-19 00:00,CLI-588461,Virement instantané,8318.78,Roumanie,FR26 3981 3114 8088 9238 989,48,ALERTE_HAUTE,Modification d'adresse récente,S. Chen,False
-ALT-2023-10100,2023-09-23 00:00,CLI-397846,Virement SEPA,1240.96,Portugal,FR35 5496 3050 5961 9740 195,77,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,False
-ALT-2023-10101,2023-01-24 00:00,CLI-772612,Virement instantané,4291.39,Portugal,FR93 4453 7825 1496 9159 742,79,ALERTE_FAIBLE,Bénéficiaire jamais utilisé,N. Traoré,False
-ALT-2023-10102,2023-01-31 00:00,CLI-265759,Retrait DAB,4121.1,Nigeria,FR71 8609 4342 6573 3353 420,90,ALERTE_FAIBLE,Vitesse de transactions anormale,N. Traoré,False
-ALT-2023-10103,2023-03-04 00:00,CLI-380464,Retrait DAB,3922.99,Italie,FR28 2586 1829 5754 7293 984,84,BLOQUÉE,Fractionnement détecté (smurfing),S. Chen,False
-ALT-2023-10104,2023-09-21 00:00,CLI-589491,Retrait DAB,4701.88,Portugal,FR73 1379 2475 7442 9281 568,60,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,True
-ALT-2023-10105,2023-05-27 00:00,CLI-662761,Virement SEPA,31888.34,Allemagne,FR65 3194 5333 6992 7606 474,47,BLOQUÉE,Montant anormalement élevé,,False
-ALT-2023-10106,2023-10-09 00:00,CLI-393308,Virement instantané,2131.36,Allemagne,FR26 2584 7453 7114 6555 671,68,ALERTE_MOYENNE,Fractionnement détecté (smurfing),,False
-ALT-2023-10107,2023-08-31 00:00,CLI-644559,Retrait DAB,2750.35,Espagne,FR87 9446 3290 6373 6218 266,70,EN_INVESTIGATION,Bénéficiaire jamais utilisé,,False
-ALT-2023-10108,2023-09-01 00:00,CLI-955374,Virement SEPA,2782.92,Roumanie,FR52 2795 7824 6040 1436 711,75,ALERTE_FAIBLE,Fractionnement détecté (smurfing),M. Dubois,False
-ALT-2023-10109,2023-03-17 00:00,CLI-961574,Virement international,33306.14,France,FR83 2800 4125 1310 8225 421,71,ALERTE_MOYENNE,Géolocalisation incohérente,S. Chen,False
-ALT-2023-10110,2023-02-01 00:00,CLI-840058,Virement international,32516.51,Ukraine,FR36 6325 8837 9609 7173 421,56,BLOQUÉE,Modification d'adresse récente,A. Kowalski,False
-ALT-2023-10111,2023-05-16 00:00,CLI-739711,Retrait DAB,44044.45,Italie,FR41 5571 5890 4684 5876 889,63,ALERTE_MOYENNE,Compte bénéficiaire récent (<30j),A. Kowalski,False
-ALT-2023-10112,2023-03-04 00:00,CLI-701334,Virement instantané,2069.61,Nigeria,FR60 6654 3399 5758 1689 394,90,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traoré,False
-ALT-2023-10113,2023-10-15 00:00,CLI-829988,Paiement carte,3863.02,Espagne,FR23 4920 4972 1831 9700 331,85,ALERTE_MOYENNE,Montant anormalement élevé,M. Dubois,False
-ALT-2023-10114,2023-10-09 00:00,CLI-265613,Retrait DAB,1986.32,Chine,FR71 4267 5706 6262 5676 761,48,ALERTE_HAUTE,Fractionnement détecté (smurfing),,True
-ALT-2023-10115,2023-01-19 00:00,CLI-976822,Retrait DAB,4609.53,Chine,FR33 5742 1613 1151 5888 681,83,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
-ALT-2023-10116,2023-09-16 00:00,CLI-590755,Paiement carte,272260.59,Italie,FR24 6417 3662 8518 5215 835,56,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
-ALT-2023-10117,2023-09-21 00:00,CLI-443856,Virement SEPA,43526.59,Nigeria,FR95 2562 4027 3303 8822 431,60,ALERTE_HAUTE,Bénéficiaire jamais utilisé,N. Traoré,False
-ALT-2023-10118,2023-10-21 00:00,CLI-111991,Paiement carte,2510.31,Roumanie,FR98 4871 2017 2936 8625 414,55,BLOQUÉE,Modification d'adresse récente,A. Kowalski,True
-ALT-2023-10119,2023-03-10 00:00,CLI-601410,Virement international,3374.2,Chine,FR87 7121 7813 9998 8714 875,79,ALERTE_MOYENNE,Fractionnement détecté (smurfing),,True
-ALT-2023-10120,2023-02-27 00:00,CLI-164758,Virement instantané,212803.19,Ukraine,FR35 9792 3455 3695 6375 974,78,BLOQUÉE,Pays de destination inhabituel,S. Chen,False
-ALT-2023-10121,2023-09-20 00:00,CLI-535604,Retrait DAB,909.24,France,FR81 8575 6049 1356 7487 360,97,ALERTE_HAUTE,Fractionnement détecté (smurfing),,True
-ALT-2023-10122,2023-02-05 00:00,CLI-595002,Virement SEPA,78691.96,Portugal,FR62 3948 3218 7887 7135 491,73,BLOQUÉE,Géolocalisation incohérente,M. Dubois,False
-ALT-2023-10123,2023-09-28 00:00,CLI-233533,Virement international,3440.9,France,FR12 5888 8585 9920 7948 644,69,ALERTE_MOYENNE,Fractionnement détecté (smurfing),N. Traoré,False
-ALT-2023-10124,2023-01-17 00:00,CLI-948799,Retrait DAB,13481.62,France,FR40 4376 2102 2653 1550 557,83,ALERTE_HAUTE,Fractionnement détecté (smurfing),M. Dubois,False
-ALT-2023-10125,2023-03-13 00:00,CLI-628373,Paiement carte,29289.19,Italie,FR83 6224 6253 4881 5944 997,54,EN_INVESTIGATION,Fractionnement détecté (smurfing),N. Traoré,False
-ALT-2023-10126,2023-03-31 00:00,CLI-756401,Retrait DAB,30052.32,Ukraine,FR73 1768 6642 7244 9592 426,89,BLOQUÉE,Géolocalisation incohérente,S. Chen,False
-ALT-2023-10127,2023-06-03 00:00,CLI-999197,Virement international,38948.72,Chine,FR17 7761 7824 9683 3196 497,60,ALERTE_FAIBLE,Fractionnement détecté (smurfing),A. Kowalski,True
-ALT-2023-10128,2023-04-08 00:00,CLI-154040,Paiement carte,43121.0,Nigeria,FR96 1647 2192 4082 4555 590,58,ALERTE_FAIBLE,Bénéficiaire jamais utilisé,M. Dubois,False
-ALT-2023-10129,2023-09-03 00:00,CLI-354377,Virement instantané,102792.29,Italie,FR60 4921 6269 5637 7236 577,79,ALERTE_FAIBLE,Bénéficiaire jamais utilisé,A. Kowalski,False
-ALT-2023-10130,2023-08-29 00:00,CLI-898625,Paiement carte,94373.7,Italie,FR57 6126 7781 1749 4625 859,54,ALERTE_HAUTE,Bénéficiaire jamais utilisé,,False
-ALT-2023-10131,2023-05-06 00:00,CLI-623555,Virement instantané,1828.37,Roumanie,FR42 9005 9037 8550 3756 850,95,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
-ALT-2023-10132,2023-09-26 00:00,CLI-135466,Virement SEPA,495645.59,France,FR10 7756 3252 4791 2113 824,54,ALERTE_HAUTE,Fractionnement détecté (smurfing),,False
-ALT-2023-10133,2023-09-05 00:00,CLI-791309,Retrait DAB,32802.59,France,FR10 9719 7739 1194 1274 642,91,ALERTE_FAIBLE,Modification d'adresse récente,A. Kowalski,True
-ALT-2023-10134,2023-04-02 00:00,CLI-212214,Virement SEPA,243757.94,Ukraine,FR29 4948 4144 9625 5135 934,67,ALERTE_FAIBLE,Géolocalisation incohérente,M. Dubois,False
-ALT-2023-10135,2023-06-03 00:00,CLI-817269,Virement SEPA,25654.9,France,FR21 7640 7213 7179 8798 157,85,ALERTE_HAUTE,Heure de transaction suspecte,M. Dubois,False
-ALT-2023-10136,2023-02-18 00:00,CLI-653815,Virement SEPA,199071.78,Italie,FR37 8790 5441 1762 2218 800,62,EN_INVESTIGATION,Montant anormalement élevé,S. Chen,False
-ALT-2023-10137,2023-07-23 00:00,CLI-180674,Paiement carte,14322.12,Espagne,FR82 4939 7375 9856 6435 493,93,ALERTE_MOYENNE,Pays de destination inhabituel,,False
-ALT-2023-10138,2023-11-11 00:00,CLI-724540,Retrait DAB,741.63,Roumanie,FR13 5478 8381 9038 4737 464,80,BLOQUÉE,Géolocalisation incohérente,S. Chen,False
-ALT-2023-10139,2023-02-12 00:00,CLI-380989,Virement international,32837.72,Nigeria,FR91 3527 7383 6188 6909 209,50,ALERTE_HAUTE,Bénéficiaire jamais utilisé,N. Traoré,False
-ALT-2023-10140,2023-10-13 00:00,CLI-681687,Virement instantané,3926.06,Nigeria,FR23 1430 2468 6798 2524 711,83,ALERTE_FAIBLE,Géolocalisation incohérente,M. Dubois,False
-ALT-2023-10141,2023-05-05 00:00,CLI-699743,Virement instantané,2362.15,Espagne,FR97 7237 3777 3274 5405 408,62,BLOQUÉE,Heure de transaction suspecte,M. Dubois,False
-ALT-2023-10142,2023-05-09 00:00,CLI-358568,Retrait DAB,2456.04,Italie,FR68 2752 3219 5991 1110 505,66,EN_INVESTIGATION,Géolocalisation incohérente,A. Kowalski,False
-ALT-2023-10143,2023-03-11 00:00,CLI-415029,Paiement carte,436778.81,Italie,FR71 6147 3910 7524 6228 398,92,BLOQUÉE,Fractionnement détecté (smurfing),A. Kowalski,False
-ALT-2023-10144,2023-04-13 00:00,CLI-720995,Virement instantané,214256.99,Espagne,FR97 1440 8563 4434 8183 916,63,ALERTE_HAUTE,Géolocalisation incohérente,N. Traoré,False
-ALT-2023-10145,2023-07-13 00:00,CLI-177558,Retrait DAB,15890.95,Chine,FR84 7566 9755 9300 7853 656,47,ALERTE_FAIBLE,Modification d'adresse récente,,True
-ALT-2023-10146,2023-11-10 00:00,CLI-146448,Virement instantané,992.16,Nigeria,FR52 8052 2735 1172 2615 364,59,EN_INVESTIGATION,Modification d'adresse récente,,False
-ALT-2023-10147,2023-09-14 00:00,CLI-258067,Paiement carte,2506.0,France,FR71 2712 5840 7815 2406 218,98,ALERTE_MOYENNE,Vitesse de transactions anormale,A. Kowalski,False
-ALT-2023-10148,2023-08-13 00:00,CLI-857065,Retrait DAB,2549.0,Roumanie,FR18 5919 1732 2885 1370 969,66,ALERTE_HAUTE,Heure de transaction suspecte,S. Chen,False
-ALT-2023-10149,2023-07-27 00:00,CLI-760351,Virement international,2983.6,Espagne,FR91 8080 7481 1478 4232 560,82,BLOQUÉE,Géolocalisation incohérente,M. Dubois,False
+ALT-2024-10000,2024-02-22 00:00,CLI-809570,Virement instantane,1000.99,Allemagne,FR85 7912 1520 1488 2535 323,59,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2024-10001,2024-01-04 00:00,CLI-895667,Virement international,3424.48,Nigeria,FR53 5552 3547 4527 6514 204,50,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2024-10002,2024-07-12 00:00,CLI-182627,Virement instantane,1690.34,Portugal,FR90 6925 4150 2139 1750 777,59,ALERTE_FAIBLE,Pays de destination inhabituel,S. Chen,True
+ALT-2023-10003,2023-04-18 00:00,CLI-802729,Paiement carte,1750.88,Allemagne,FR87 3803 9751 5010 3677 573,69,ALERTE_FAIBLE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10004,2022-04-19 00:00,CLI-694731,Paiement carte,1530.72,Italie,FR93 9179 7482 8517 3340 371,53,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2024-10005,2024-03-11 00:00,CLI-634277,Retrait DAB,3130.64,Allemagne,FR16 2796 3504 3621 7916 710,49,BLOQUEE,Geolocalisation incoherente,,False
+ALT-2024-10006,2024-02-28 00:00,CLI-814825,Virement instantane,29895.17,Portugal,FR92 6573 2827 5808 8123 261,74,ALERTE_HAUTE,Beneficiaire jamais utilise,,False
+ALT-2024-10007,2024-11-07 00:00,CLI-308573,Virement international,44173.34,Roumanie,FR30 9837 9689 1009 6310 600,46,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10008,2022-02-05 00:00,CLI-897549,Virement instantane,30531.06,Espagne,FR26 8787 3705 5342 9645 993,83,BLOQUEE,Fractionnement detecte (smurfing),,False
+ALT-2024-10009,2024-09-21 00:00,CLI-573417,Virement SEPA,1902.72,Italie,FR38 2049 6539 1344 4770 702,59,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10010,2022-12-09 00:00,CLI-608993,Virement international,4574.39,Ukraine,FR26 8744 4981 8749 7669 294,51,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10011,2023-02-20 00:00,CLI-163556,Retrait DAB,353014.05,Roumanie,FR23 5073 4139 4116 9786 559,53,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10012,2022-02-20 00:00,CLI-153045,Virement instantane,8392.32,France,FR21 4872 3724 7658 8956 592,58,BLOQUEE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10013,2022-08-05 00:00,CLI-830429,Virement instantane,4933.89,Chine,FR29 4111 5861 4566 1958 693,92,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,True
+ALT-2022-10014,2022-09-18 00:00,CLI-184002,Virement international,3128.8,Allemagne,FR86 2113 4853 7615 2964 683,60,EN_INVESTIGATION,Montant anormalement eleve,,True
+ALT-2023-10015,2023-12-09 00:00,CLI-850981,Paiement carte,3458.18,Italie,FR43 7484 3144 5915 8491 423,93,ALERTE_HAUTE,Montant anormalement eleve,N. Traore,True
+ALT-2022-10016,2022-02-05 00:00,CLI-356150,Paiement carte,2919.35,Portugal,FR30 8179 9900 5956 9666 108,87,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10017,2023-11-06 00:00,CLI-320861,Paiement carte,1019.43,Italie,FR97 5325 9280 9004 5114 966,48,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10018,2022-08-15 00:00,CLI-678478,Retrait DAB,2001.0,Ukraine,FR11 2832 2232 3442 9938 136,98,ALERTE_FAIBLE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10019,2022-01-21 00:00,CLI-475190,Virement international,469889.6,Italie,FR95 2684 6794 7658 3532 342,55,ALERTE_MOYENNE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10020,2024-05-07 00:00,CLI-379766,Virement international,40207.39,Allemagne,FR58 1634 8711 4644 4269 936,74,ALERTE_FAIBLE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10021,2022-05-23 00:00,CLI-468203,Virement instantane,3470.15,Nigeria,FR96 9785 6425 1452 2889 998,61,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2024-10022,2024-09-18 00:00,CLI-221263,Retrait DAB,37784.53,Italie,FR42 1727 8144 1027 9518 925,79,ALERTE_MOYENNE,Vitesse de transactions anormale,N. Traore,True
+ALT-2024-10023,2024-06-02 00:00,CLI-631756,Paiement carte,4643.47,Nigeria,FR51 7592 5844 3085 4143 530,87,BLOQUEE,Heure de transaction suspecte,,False
+ALT-2023-10024,2023-10-24 00:00,CLI-736130,Paiement carte,2965.72,Chine,FR66 8244 4501 9375 8752 912,95,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10025,2022-04-12 00:00,CLI-254511,Virement SEPA,4182.91,France,FR41 8784 2193 8461 7790 744,81,ALERTE_MOYENNE,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10026,2022-02-24 00:00,CLI-916232,Retrait DAB,35943.01,Italie,FR32 9486 8611 1822 5082 968,52,BLOQUEE,Heure de transaction suspecte,N. Traore,False
+ALT-2023-10027,2023-10-08 00:00,CLI-567574,Virement international,37367.33,Chine,FR67 5246 5050 5543 9540 596,85,ALERTE_MOYENNE,Beneficiaire jamais utilise,N. Traore,True
+ALT-2024-10028,2024-03-11 00:00,CLI-258157,Virement international,1785.78,Nigeria,FR98 3503 4505 2052 7797 517,66,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2022-10029,2022-01-11 00:00,CLI-998348,Virement instantane,396408.1,Nigeria,FR71 1096 6763 5892 7389 973,98,BLOQUEE,Modification d'adresse recente,,False
+ALT-2023-10030,2023-12-14 00:00,CLI-936912,Retrait DAB,1487.4,Espagne,FR69 3091 9751 1441 7455 706,81,ALERTE_HAUTE,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10031,2023-06-22 00:00,CLI-898207,Retrait DAB,1317.78,Portugal,FR63 5133 2341 8705 1317 867,79,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,True
+ALT-2024-10032,2024-11-14 00:00,CLI-259784,Virement international,6396.35,Espagne,FR70 2874 4571 8619 5198 885,68,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10033,2022-07-12 00:00,CLI-515922,Virement international,309108.53,Allemagne,FR85 4978 2669 5941 2983 915,81,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2024-10034,2024-09-07 00:00,CLI-210665,Retrait DAB,27768.24,Roumanie,FR91 8532 3506 8135 3885 851,78,ALERTE_FAIBLE,Modification d'adresse recente,N. Traore,False
+ALT-2023-10035,2023-02-14 00:00,CLI-392477,Retrait DAB,4215.81,Italie,FR69 7209 6511 1470 9098 971,65,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10036,2023-01-06 00:00,CLI-641722,Virement international,2031.52,Allemagne,FR40 7658 9004 4937 8800 761,90,BLOQUEE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2023-10037,2023-08-31 00:00,CLI-680358,Virement instantane,1497.18,Roumanie,FR64 6419 6764 8434 5438 413,61,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10038,2022-09-05 00:00,CLI-389930,Virement instantane,3842.96,Ukraine,FR86 5636 2647 4180 5853 332,68,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10039,2023-11-23 00:00,CLI-889359,Retrait DAB,181461.49,Allemagne,FR11 5658 8690 8843 8216 448,56,ALERTE_HAUTE,Beneficiaire jamais utilise,N. Traore,True
+ALT-2022-10040,2022-03-18 00:00,CLI-950544,Virement instantane,2303.18,Portugal,FR20 5066 2940 7818 4697 894,78,BLOQUEE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2024-10041,2024-02-20 00:00,CLI-899787,Virement international,18742.11,Italie,FR43 2330 3573 4929 3847 665,49,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10042,2024-12-25 00:00,CLI-576086,Virement SEPA,18106.67,Italie,FR43 4241 7965 2880 9922 330,86,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,True
+ALT-2022-10043,2022-05-28 00:00,CLI-560485,Virement SEPA,1246.65,Chine,FR98 5982 7594 5460 9199 652,76,BLOQUEE,Pays de destination inhabituel,,True
+ALT-2023-10044,2023-12-12 00:00,CLI-976566,Virement instantane,3805.4,France,FR96 5415 1659 3870 8708 631,86,BLOQUEE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10045,2024-06-13 00:00,CLI-802685,Virement SEPA,4164.1,Espagne,FR52 7744 9117 5722 7561 933,93,EN_INVESTIGATION,Montant anormalement eleve,N. Traore,True
+ALT-2023-10046,2023-01-01 00:00,CLI-789606,Virement instantane,10216.47,Chine,FR62 1888 4073 9494 6927 737,93,BLOQUEE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10047,2023-03-04 00:00,CLI-130271,Virement instantane,46745.27,Italie,FR30 6091 1224 7684 2527 330,98,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10048,2023-09-05 00:00,CLI-595158,Virement international,4696.94,Chine,FR80 3369 7284 4122 9327 864,53,ALERTE_HAUTE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10049,2024-10-23 00:00,CLI-791998,Retrait DAB,5115.44,Espagne,FR67 9824 8935 6654 6446 665,93,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10050,2022-07-30 00:00,CLI-145767,Paiement carte,15746.25,Chine,FR58 7325 3492 9115 1606 229,77,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10051,2022-12-02 00:00,CLI-261859,Virement SEPA,2866.78,Chine,FR43 6546 7512 2315 6383 972,88,EN_INVESTIGATION,Geolocalisation incoherente,A. Kowalski,False
+ALT-2024-10052,2024-04-26 00:00,CLI-883041,Virement SEPA,334022.46,Nigeria,FR22 2646 8269 3725 5906 129,47,ALERTE_FAIBLE,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10053,2023-04-03 00:00,CLI-278240,Virement international,15988.88,Allemagne,FR88 7267 4945 9153 3344 337,74,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2023-10054,2023-06-26 00:00,CLI-716113,Paiement carte,4555.44,Nigeria,FR98 5097 8484 5949 4263 493,99,BLOQUEE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10055,2024-12-03 00:00,CLI-515032,Paiement carte,2115.32,France,FR82 1803 9138 5689 4770 721,96,ALERTE_FAIBLE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2024-10056,2024-02-19 00:00,CLI-757937,Virement SEPA,3900.1,Portugal,FR66 1546 6977 3153 2476 402,65,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10057,2024-03-25 00:00,CLI-369452,Retrait DAB,4444.07,Portugal,FR53 2886 8673 2233 3306 872,59,BLOQUEE,Modification d'adresse recente,A. Kowalski,True
+ALT-2023-10058,2023-12-11 00:00,CLI-374896,Virement instantane,29145.75,Nigeria,FR91 7086 2775 4830 8724 125,84,EN_INVESTIGATION,Vitesse de transactions anormale,,False
+ALT-2024-10059,2024-07-28 00:00,CLI-222343,Virement international,784.48,France,FR14 5986 9071 2902 2592 340,79,ALERTE_MOYENNE,Geolocalisation incoherente,N. Traore,False
+ALT-2024-10060,2024-03-20 00:00,CLI-535037,Virement SEPA,4772.21,Chine,FR88 7686 5583 1536 7070 322,73,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2024-10061,2024-05-21 00:00,CLI-299028,Virement SEPA,2153.01,Chine,FR21 4475 1349 1828 6464 349,53,EN_INVESTIGATION,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2024-10062,2024-11-01 00:00,CLI-102973,Paiement carte,1471.78,Espagne,FR26 9850 5106 3858 2801 776,46,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2024-10063,2024-09-26 00:00,CLI-219169,Virement SEPA,12841.08,Chine,FR67 6931 9408 2786 8405 615,59,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2023-10064,2023-08-07 00:00,CLI-819425,Virement SEPA,6401.78,Chine,FR66 2204 2323 6277 3430 167,53,ALERTE_FAIBLE,Modification d'adresse recente,A. Kowalski,False
+ALT-2024-10065,2024-12-25 00:00,CLI-219971,Virement instantane,2887.51,Italie,FR65 8398 4743 7779 6553 947,74,BLOQUEE,Geolocalisation incoherente,M. Dubois,False
+ALT-2023-10066,2023-08-31 00:00,CLI-170394,Virement SEPA,16470.04,Allemagne,FR21 8075 2582 7105 3131 669,48,EN_INVESTIGATION,Modification d'adresse recente,,False
+ALT-2024-10067,2024-01-27 00:00,CLI-401601,Virement instantane,20911.91,Portugal,FR55 2697 9313 4485 3535 772,75,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10068,2022-11-15 00:00,CLI-743378,Virement instantane,30834.5,France,FR87 5381 1474 3955 5477 819,93,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2022-10069,2022-11-21 00:00,CLI-132146,Virement SEPA,4414.38,Ukraine,FR37 7163 7878 8432 6585 261,68,ALERTE_FAIBLE,Vitesse de transactions anormale,,True
+ALT-2022-10070,2022-08-15 00:00,CLI-794093,Retrait DAB,1200.11,Chine,FR87 8242 7785 5475 4531 873,77,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traore,True
+ALT-2023-10071,2023-04-23 00:00,CLI-514463,Virement instantane,3551.98,France,FR10 4349 5938 4460 3248 882,61,ALERTE_FAIBLE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2023-10072,2023-09-14 00:00,CLI-685864,Paiement carte,12906.27,Allemagne,FR60 1693 8147 1307 8532 179,65,EN_INVESTIGATION,Geolocalisation incoherente,,False
+ALT-2024-10073,2024-03-28 00:00,CLI-940247,Virement instantane,232264.54,Chine,FR98 6928 2443 8155 2734 349,72,EN_INVESTIGATION,Geolocalisation incoherente,,True
+ALT-2023-10074,2023-02-09 00:00,CLI-635280,Virement SEPA,38561.22,Ukraine,FR75 4176 6724 6752 3419 341,51,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10075,2024-11-17 00:00,CLI-618119,Retrait DAB,83908.97,Chine,FR97 6295 6179 3473 8205 169,75,BLOQUEE,Beneficiaire jamais utilise,A. Kowalski,True
+ALT-2023-10076,2023-05-27 00:00,CLI-180458,Virement SEPA,2783.02,Ukraine,FR59 8581 1672 8368 4084 429,83,BLOQUEE,Modification d'adresse recente,S. Chen,True
+ALT-2023-10077,2023-09-16 00:00,CLI-777513,Virement international,45460.71,France,FR41 8172 8199 9586 9564 724,55,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10078,2023-06-21 00:00,CLI-169113,Paiement carte,35550.4,Allemagne,FR81 7333 5655 5128 3463 441,50,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,False
+ALT-2024-10079,2024-06-07 00:00,CLI-686072,Retrait DAB,317768.55,Roumanie,FR26 9624 2531 7937 9331 470,46,ALERTE_FAIBLE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10080,2023-02-09 00:00,CLI-410160,Virement SEPA,4764.51,Ukraine,FR79 9626 1618 6517 3147 711,69,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10081,2024-08-15 00:00,CLI-740255,Paiement carte,2469.53,Chine,FR39 9749 4918 6070 8684 955,57,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2023-10082,2023-11-06 00:00,CLI-245121,Paiement carte,2763.08,France,FR92 8873 7081 2680 9452 971,52,ALERTE_FAIBLE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10083,2023-04-24 00:00,CLI-956375,Retrait DAB,246862.65,Roumanie,FR13 7797 1872 7495 9224 482,60,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10084,2022-03-16 00:00,CLI-244283,Virement SEPA,1934.08,Portugal,FR70 3273 8685 8349 1086 181,46,ALERTE_FAIBLE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2022-10085,2022-11-24 00:00,CLI-932463,Virement instantane,3992.78,Chine,FR18 2816 9189 9782 1269 747,77,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2023-10086,2023-12-09 00:00,CLI-189772,Virement instantane,507.04,Roumanie,FR18 9618 9914 9312 9316 667,46,BLOQUEE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10087,2023-12-03 00:00,CLI-758775,Virement SEPA,1641.43,Roumanie,FR27 1726 6772 9945 6546 933,86,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10088,2022-01-23 00:00,CLI-929538,Virement international,783.95,France,FR50 6080 9444 7524 9897 584,61,ALERTE_HAUTE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10089,2022-07-24 00:00,CLI-879414,Retrait DAB,4396.09,Nigeria,FR53 4060 9129 9151 7018 916,78,ALERTE_FAIBLE,Pays de destination inhabituel,N. Traore,True
+ALT-2023-10090,2023-02-10 00:00,CLI-443848,Paiement carte,3211.04,Portugal,FR67 7981 3730 8272 6759 557,47,ALERTE_FAIBLE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10091,2022-03-23 00:00,CLI-132653,Virement international,23279.46,Chine,FR14 3068 2101 4866 7001 470,69,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2024-10092,2024-03-11 00:00,CLI-655178,Paiement carte,2524.65,Nigeria,FR50 5566 5089 2858 1424 853,56,BLOQUEE,Modification d'adresse recente,N. Traore,True
+ALT-2023-10093,2023-12-22 00:00,CLI-615060,Virement international,36681.7,Allemagne,FR27 2213 8406 3828 8292 189,96,ALERTE_FAIBLE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2023-10094,2023-07-05 00:00,CLI-633469,Virement international,37031.41,Allemagne,FR35 3275 4878 9094 1430 469,80,EN_INVESTIGATION,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10095,2024-09-02 00:00,CLI-651231,Retrait DAB,7958.66,Nigeria,FR83 2208 3053 6194 2215 560,74,EN_INVESTIGATION,Vitesse de transactions anormale,S. Chen,False
+ALT-2022-10096,2022-03-20 00:00,CLI-418897,Virement international,2446.78,Espagne,FR51 4694 6669 9501 5653 966,50,ALERTE_FAIBLE,Fractionnement detecte (smurfing),,False
+ALT-2022-10097,2022-10-31 00:00,CLI-708851,Virement international,32649.27,Espagne,FR94 6531 1674 1464 2330 146,86,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10098,2024-06-03 00:00,CLI-606404,Virement international,3375.46,Nigeria,FR48 8430 2195 1981 3589 550,71,BLOQUEE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10099,2024-06-25 00:00,CLI-518084,Virement international,193692.38,Roumanie,FR75 2739 6228 4960 8642 225,62,BLOQUEE,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2022-10100,2022-03-23 00:00,CLI-952993,Paiement carte,1805.95,Roumanie,FR34 3610 9163 9433 8648 610,64,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10101,2024-05-24 00:00,CLI-618934,Virement instantane,2557.54,Chine,FR46 9793 1133 2761 8060 237,61,ALERTE_FAIBLE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2023-10102,2023-07-17 00:00,CLI-628750,Retrait DAB,730.21,Ukraine,FR45 2946 3108 2584 7453 482,95,ALERTE_FAIBLE,Modification d'adresse recente,A. Kowalski,False
+ALT-2022-10103,2022-06-20 00:00,CLI-943019,Retrait DAB,3211.08,Ukraine,FR68 3440 9446 3290 6373 727,65,ALERTE_MOYENNE,Geolocalisation incoherente,,False
+ALT-2024-10104,2024-06-02 00:00,CLI-597960,Virement SEPA,42273.02,Roumanie,FR52 2795 7824 6040 1436 711,75,ALERTE_FAIBLE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2022-10105,2022-12-15 00:00,CLI-353961,Virement SEPA,2859.05,Allemagne,FR34 1310 8225 6139 7861 255,71,ALERTE_MOYENNE,Geolocalisation incoherente,,False
+ALT-2024-10106,2024-12-05 00:00,CLI-601608,Virement instantane,3773.31,Nigeria,FR50 3837 8531 9734 6608 659,67,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10107,2023-05-28 00:00,CLI-839142,Virement international,3011.39,Chine,FR50 8861 6714 5480 5715 224,81,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10108,2022-08-15 00:00,CLI-787836,Paiement carte,1807.04,Chine,FR37 4310 9824 5442 5450 240,51,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2024-10109,2024-06-18 00:00,CLI-852204,Retrait DAB,4573.33,Allemagne,FR97 3252 1084 3587 7666 768,75,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10110,2023-10-01 00:00,CLI-874568,Virement SEPA,3406.54,Espagne,FR63 3880 1595 7504 9116 290,92,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10111,2024-11-24 00:00,CLI-669691,Virement instantane,3212.52,Chine,FR27 9261 8668 5470 4159 928,52,ALERTE_FAIBLE,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10112,2024-04-08 00:00,CLI-284019,Virement instantane,1337.9,Nigeria,FR64 9442 6372 2421 7567 785,51,ALERTE_MOYENNE,Heure de transaction suspecte,N. Traore,False
+ALT-2022-10113,2022-06-18 00:00,CLI-416613,Virement instantane,530.74,France,FR43 6890 4871 2017 2936 576,64,ALERTE_MOYENNE,Geolocalisation incoherente,,False
+ALT-2024-10114,2024-04-22 00:00,CLI-240057,Retrait DAB,46225.87,Espagne,FR68 7121 7813 9998 8714 875,79,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,True
+ALT-2024-10115,2024-02-01 00:00,CLI-969032,Virement instantane,2510.37,Ukraine,FR35 9792 3455 3695 6375 974,78,BLOQUEE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10116,2022-08-01 00:00,CLI-578987,Virement instantane,4545.0,France,FR81 8575 6049 1356 7487 360,97,ALERTE_HAUTE,Fractionnement detecte (smurfing),,True
+ALT-2022-10117,2022-02-05 00:00,CLI-595002,Virement SEPA,2406.64,Portugal,FR62 3948 3218 7887 7135 491,73,BLOQUEE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10118,2024-03-06 00:00,CLI-863214,Virement international,4371.29,France,FR12 5888 8585 9920 7948 644,69,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2022-10119,2022-12-05 00:00,CLI-539605,Virement instantane,1740.42,France,FR40 4376 2102 2653 1550 557,83,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2023-10120,2023-09-15 00:00,CLI-403314,Virement international,1554.53,Roumanie,FR83 6253 4881 5944 3347 776,78,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10121,2022-12-14 00:00,CLI-547952,Virement instantane,3005.23,Chine,FR16 6642 7244 9592 6222 813,71,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10122,2022-12-29 00:00,CLI-251363,Retrait DAB,3894.87,France,FR81 7761 7824 9683 3196 497,60,ALERTE_FAIBLE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2023-10123,2023-05-18 00:00,CLI-495489,Virement instantane,4312.1,France,FR19 4082 4555 8854 4422 990,66,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10124,2024-11-05 00:00,CLI-837954,Virement international,1027.92,Nigeria,FR40 6269 5637 7236 8639 646,86,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10125,2024-06-12 00:00,CLI-312994,Paiement carte,25970.18,Roumanie,FR62 1749 4625 3390 1265 367,80,EN_INVESTIGATION,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10126,2022-12-02 00:00,CLI-818113,Paiement carte,1984.39,Portugal,FR72 9037 8550 3756 6770 273,53,EN_INVESTIGATION,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2024-10127,2024-01-04 00:00,CLI-532424,Virement international,43101.38,Italie,FR18 3474 1149 4583 9285 566,68,ALERTE_HAUTE,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2022-10128,2022-10-02 00:00,CLI-400614,Virement SEPA,23510.23,Ukraine,FR99 8054 3937 2753 2578 636,54,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2023-10129,2023-10-17 00:00,CLI-355021,Virement international,1702.96,Portugal,FR97 2320 1519 2531 7640 488,69,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2024-10130,2024-10-16 00:00,CLI-999636,Virement SEPA,27493.63,Ukraine,FR15 4764 4463 8790 5441 147,49,ALERTE_FAIBLE,Modification d'adresse recente,,True
+ALT-2022-10131,2022-12-31 00:00,CLI-960778,Retrait DAB,4679.45,Allemagne,FR48 3661 4939 7375 9856 439,69,ALERTE_MOYENNE,Pays de destination inhabituel,,False
+ALT-2022-10132,2022-11-11 00:00,CLI-724540,Retrait DAB,15446.48,Roumanie,FR13 5478 8381 9038 4737 464,80,BLOQUEE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10133,2022-05-18 00:00,CLI-261712,Retrait DAB,3974.75,Espagne,FR59 6188 6909 2745 2499 105,64,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2022-10134,2022-02-22 00:00,CLI-127537,Virement SEPA,892.84,Roumanie,FR80 2524 6315 7311 1202 398,71,BLOQUEE,Pays de destination inhabituel,,False
+ALT-2024-10135,2024-05-17 00:00,CLI-617077,Virement international,2844.97,Allemagne,FR31 8121 5521 7899 5911 595,95,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2024-10136,2024-06-04 00:00,CLI-107096,Retrait DAB,3312.65,Roumanie,FR89 7224 6399 8212 6484 540,97,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,False
+ALT-2024-10137,2024-06-12 00:00,CLI-405605,Retrait DAB,191382.48,Italie,FR51 7161 5592 7437 6980 216,81,ALERTE_MOYENNE,Modification d'adresse recente,S. Chen,True
+ALT-2024-10138,2024-12-20 00:00,CLI-172518,Retrait DAB,2577.3,Chine,FR27 5961 4965 5139 3525 832,72,BLOQUEE,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10139,2024-10-05 00:00,CLI-138551,Paiement carte,27797.57,Ukraine,FR86 2392 2791 5067 6816 270,86,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2023-10140,2023-09-19 00:00,CLI-883132,Virement instantane,4845.73,Ukraine,FR84 4621 8303 7129 7408 574,94,EN_INVESTIGATION,Modification d'adresse recente,S. Chen,False
+ALT-2022-10141,2022-03-14 00:00,CLI-465249,Paiement carte,2672.47,Roumanie,FR68 4389 9537 8912 6706 587,51,BLOQUEE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2023-10142,2023-02-25 00:00,CLI-810032,Virement international,701.07,Italie,FR76 3858 3623 6422 7985 573,59,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10143,2023-07-19 00:00,CLI-104666,Virement international,631.37,Italie,FR45 2025 2667 9796 4063 474,65,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10144,2024-11-08 00:00,CLI-511612,Virement instantane,4381.86,Allemagne,FR54 6766 8501 3826 5873 729,82,ALERTE_HAUTE,Heure de transaction suspecte,A. Kowalski,True
+ALT-2022-10145,2022-08-03 00:00,CLI-725397,Virement international,1874.21,Nigeria,FR64 4043 8973 9804 3838 668,55,BLOQUEE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10146,2023-09-06 00:00,CLI-243167,Virement international,439485.0,Nigeria,FR81 9281 9109 7703 9056 525,90,BLOQUEE,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2024-10147,2024-10-02 00:00,CLI-402692,Virement international,638.87,Chine,FR82 9115 9369 2854 2871 374,94,EN_INVESTIGATION,Vitesse de transactions anormale,,True
+ALT-2024-10148,2024-11-30 00:00,CLI-887842,Virement international,14834.39,Portugal,FR14 8368 5305 6711 2425 549,52,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2024-10149,2024-04-15 00:00,CLI-944565,Virement SEPA,24267.52,Roumanie,FR78 5605 9827 3758 6302 820,63,ALERTE_FAIBLE,Beneficiaire jamais utilise,,True
+ALT-2022-10150,2022-12-02 00:00,CLI-233051,Virement international,463445.92,Italie,FR28 6277 5055 7434 9019 245,81,ALERTE_FAIBLE,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10151,2022-05-23 00:00,CLI-828449,Paiement carte,3351.32,Chine,FR72 6362 1040 2526 8511 750,87,ALERTE_FAIBLE,Pays de destination inhabituel,,False
+ALT-2022-10152,2022-05-26 00:00,CLI-454161,Virement instantane,4856.58,Espagne,FR82 8951 6631 1793 1752 201,85,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2023-10153,2023-03-09 00:00,CLI-781571,Paiement carte,242509.69,Espagne,FR45 2529 6905 5102 2350 480,87,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10154,2024-01-01 00:00,CLI-323788,Retrait DAB,15536.47,Allemagne,FR26 4705 9510 8291 1152 108,89,ALERTE_FAIBLE,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10155,2023-06-10 00:00,CLI-485416,Paiement carte,818.73,Espagne,FR58 3181 3340 2120 9691 676,45,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10156,2024-08-14 00:00,CLI-327797,Virement SEPA,38672.1,Allemagne,FR27 3017 7291 6759 8035 422,95,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2022-10157,2022-12-20 00:00,CLI-128127,Paiement carte,32000.35,Italie,FR76 9348 4090 7418 5842 761,48,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2022-10158,2022-07-04 00:00,CLI-431845,Virement international,287728.93,Nigeria,FR82 7895 6986 9951 3830 881,75,ALERTE_HAUTE,Montant anormalement eleve,,True
+ALT-2022-10159,2022-09-17 00:00,CLI-400404,Virement instantane,6792.21,Nigeria,FR64 7590 2350 9791 9808 730,54,ALERTE_FAIBLE,Pays de destination inhabituel,A. Kowalski,True
+ALT-2024-10160,2024-10-27 00:00,CLI-765105,Virement SEPA,4644.16,Portugal,FR99 8167 4909 1948 5005 188,72,ALERTE_HAUTE,Compte beneficiaire recent (<30j),,True
+ALT-2023-10161,2023-03-12 00:00,CLI-835575,Virement SEPA,3497.36,Espagne,FR73 6680 9568 9474 5247 270,68,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2023-10162,2023-10-23 00:00,CLI-758015,Virement SEPA,17239.13,Chine,FR68 9368 6900 1908 9185 979,81,ALERTE_MOYENNE,Vitesse de transactions anormale,S. Chen,False
+ALT-2022-10163,2022-01-02 00:00,CLI-146177,Virement SEPA,35335.42,Italie,FR15 8729 6963 7274 3458 283,99,ALERTE_HAUTE,Modification d'adresse recente,N. Traore,False
+ALT-2023-10164,2023-10-20 00:00,CLI-490917,Virement SEPA,46213.46,Ukraine,FR96 1862 3938 4656 9450 147,70,ALERTE_HAUTE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2023-10165,2023-06-05 00:00,CLI-875501,Virement instantane,888.73,Italie,FR69 7033 9083 4201 9954 878,95,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10166,2022-06-21 00:00,CLI-101533,Retrait DAB,20589.07,Portugal,FR23 4361 9680 4902 7878 603,48,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2022-10167,2022-02-13 00:00,CLI-708982,Virement SEPA,4537.79,Ukraine,FR27 7461 2226 2020 8126 778,53,ALERTE_MOYENNE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2023-10168,2023-02-08 00:00,CLI-312559,Virement international,3653.27,Allemagne,FR29 2731 3693 8365 8635 421,71,ALERTE_HAUTE,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10169,2023-12-18 00:00,CLI-418992,Virement instantane,1887.38,France,FR37 6370 3430 2494 5066 464,70,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10170,2022-05-08 00:00,CLI-199326,Retrait DAB,23197.65,Allemagne,FR27 2989 1195 2010 4641 233,57,BLOQUEE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10171,2022-03-07 00:00,CLI-196446,Paiement carte,598.1,Allemagne,FR15 8552 1829 3752 8096 941,91,BLOQUEE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10172,2024-08-16 00:00,CLI-255851,Virement SEPA,2419.99,Italie,FR92 5835 9173 7750 8848 162,50,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10173,2022-10-06 00:00,CLI-933456,Virement SEPA,162116.49,Nigeria,FR55 8859 9921 8940 6636 679,77,ALERTE_FAIBLE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10174,2022-01-30 00:00,CLI-947935,Retrait DAB,14855.91,Ukraine,FR55 4813 3615 2640 5060 772,60,ALERTE_FAIBLE,Modification d'adresse recente,M. Dubois,False
+ALT-2024-10175,2024-03-29 00:00,CLI-284654,Virement international,40882.58,Roumanie,FR99 6878 1462 6761 3328 676,57,BLOQUEE,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10176,2023-09-02 00:00,CLI-100716,Paiement carte,670.84,Italie,FR26 6582 3907 6301 1975 122,54,EN_INVESTIGATION,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10177,2022-06-04 00:00,CLI-438273,Virement international,2181.16,Espagne,FR65 8982 6198 3854 6846 328,87,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10178,2024-10-20 00:00,CLI-510623,Virement instantane,377973.93,France,FR33 6213 4619 2705 9129 244,66,ALERTE_HAUTE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10179,2022-06-21 00:00,CLI-568325,Virement SEPA,48338.58,Portugal,FR36 5088 2110 6742 5205 905,51,ALERTE_HAUTE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10180,2024-06-28 00:00,CLI-672547,Retrait DAB,12485.23,Allemagne,FR71 4695 3664 8393 2207 918,99,ALERTE_HAUTE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10181,2023-02-08 00:00,CLI-673619,Virement SEPA,4782.48,Roumanie,FR86 8909 1507 8066 3703 721,72,ALERTE_MOYENNE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10182,2022-10-04 00:00,CLI-378150,Paiement carte,299350.59,Portugal,FR40 2571 1813 7437 9043 257,48,ALERTE_FAIBLE,Montant anormalement eleve,N. Traore,True
+ALT-2023-10183,2023-04-16 00:00,CLI-279130,Paiement carte,4207.54,Allemagne,FR70 2892 6052 7512 8715 600,87,ALERTE_FAIBLE,Pays de destination inhabituel,,False
+ALT-2022-10184,2022-08-14 00:00,CLI-587648,Paiement carte,2169.59,Italie,FR44 2009 3476 2584 2404 784,67,EN_INVESTIGATION,Geolocalisation incoherente,,False
+ALT-2024-10185,2024-12-17 00:00,CLI-597889,Virement instantane,285162.02,Italie,FR70 5896 2293 7468 1568 614,81,EN_INVESTIGATION,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10186,2022-01-22 00:00,CLI-543940,Virement SEPA,4770.78,Nigeria,FR35 3422 5225 6238 2097 189,69,EN_INVESTIGATION,Geolocalisation incoherente,,False
+ALT-2023-10187,2023-10-28 00:00,CLI-647945,Retrait DAB,46272.29,Allemagne,FR63 3451 3428 2641 2730 676,94,ALERTE_HAUTE,Beneficiaire jamais utilise,,False
+ALT-2023-10188,2023-03-30 00:00,CLI-388792,Retrait DAB,1688.61,Espagne,FR89 7581 1635 7484 6431 807,60,ALERTE_HAUTE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10189,2022-12-23 00:00,CLI-818119,Virement SEPA,40714.34,Italie,FR27 5923 8259 6257 5414 846,71,EN_INVESTIGATION,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10190,2022-07-11 00:00,CLI-960899,Virement SEPA,4610.45,Ukraine,FR30 2075 6097 9303 7609 238,94,EN_INVESTIGATION,Montant anormalement eleve,S. Chen,False
+ALT-2022-10191,2022-12-27 00:00,CLI-308781,Paiement carte,255401.9,Roumanie,FR69 9275 7503 3029 1500 347,68,BLOQUEE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10192,2024-12-18 00:00,CLI-194782,Paiement carte,2981.0,France,FR59 1813 3669 4511 4626 762,59,ALERTE_MOYENNE,Beneficiaire jamais utilise,N. Traore,True
+ALT-2024-10193,2024-01-05 00:00,CLI-334639,Paiement carte,46018.19,Portugal,FR92 5511 7943 7168 6713 570,61,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2024-10194,2024-07-10 00:00,CLI-688730,Virement instantane,28018.12,Portugal,FR48 2771 8892 2045 6509 383,85,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10195,2022-11-04 00:00,CLI-523727,Paiement carte,39446.35,Espagne,FR13 9148 5843 5250 7857 514,69,ALERTE_HAUTE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10196,2024-09-16 00:00,CLI-414777,Virement international,40320.37,Ukraine,FR33 5813 2599 8713 3096 858,61,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,True
+ALT-2022-10197,2022-06-19 00:00,CLI-489737,Paiement carte,38489.45,Portugal,FR69 2929 8709 1879 2166 583,57,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10198,2023-07-29 00:00,CLI-697062,Retrait DAB,743.28,Espagne,FR50 3954 2324 8988 6449 746,56,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,False
+ALT-2023-10199,2023-02-15 00:00,CLI-235691,Virement instantane,1442.22,Nigeria,FR91 8035 7609 8029 8821 492,45,ALERTE_HAUTE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10200,2022-01-03 00:00,CLI-757128,Virement international,4514.03,Italie,FR98 6641 6113 3112 2682 492,77,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,True
+ALT-2022-10201,2022-06-22 00:00,CLI-554730,Virement international,1841.91,Roumanie,FR72 6885 4087 3701 7609 119,59,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,True
+ALT-2024-10202,2024-07-11 00:00,CLI-771425,Paiement carte,10542.29,Ukraine,FR89 1796 1785 2771 1323 149,89,ALERTE_HAUTE,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10203,2022-11-19 00:00,CLI-109756,Paiement carte,26347.84,Nigeria,FR94 2654 9524 5423 3247 528,98,ALERTE_HAUTE,Modification d'adresse recente,,True
+ALT-2023-10204,2023-05-15 00:00,CLI-971889,Virement instantane,1013.06,Italie,FR55 7713 5839 3627 1645 661,76,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10205,2022-09-10 00:00,CLI-256389,Virement SEPA,557.37,Ukraine,FR19 2659 5192 4787 8483 403,61,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10206,2022-03-01 00:00,CLI-199613,Virement SEPA,4335.12,France,FR27 3793 6384 6857 8171 736,62,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10207,2022-09-02 00:00,CLI-938754,Retrait DAB,2303.5,Espagne,FR24 3171 1960 3611 2699 526,82,BLOQUEE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10208,2023-03-08 00:00,CLI-606545,Retrait DAB,43815.91,Allemagne,FR62 8220 1753 2037 5286 770,65,ALERTE_HAUTE,Modification d'adresse recente,,False
+ALT-2024-10209,2024-08-09 00:00,CLI-793856,Virement international,28359.49,Chine,FR54 7305 3435 1894 1190 758,55,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10210,2022-09-17 00:00,CLI-333524,Virement instantane,3881.44,Nigeria,FR61 4850 2291 8521 8277 920,81,BLOQUEE,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10211,2023-07-31 00:00,CLI-137572,Virement instantane,1034.18,Ukraine,FR10 2489 5990 9328 4389 770,87,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2022-10212,2022-12-03 00:00,CLI-480941,Retrait DAB,4299.43,Allemagne,FR22 4633 1035 6592 6818 949,85,ALERTE_FAIBLE,Modification d'adresse recente,,False
+ALT-2024-10213,2024-07-28 00:00,CLI-212157,Paiement carte,45359.47,Italie,FR34 2978 7437 4532 8488 944,95,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10214,2022-08-19 00:00,CLI-579605,Virement instantane,42685.98,Ukraine,FR27 9172 1071 9689 1795 666,72,EN_INVESTIGATION,Compte beneficiaire recent (<30j),,False
+ALT-2024-10215,2024-11-03 00:00,CLI-735605,Paiement carte,3103.49,Ukraine,FR59 7859 5067 5482 7518 451,63,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10216,2024-06-09 00:00,CLI-846454,Virement instantane,38679.21,Italie,FR35 4435 5760 6657 3173 827,86,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2024-10217,2024-12-07 00:00,CLI-844618,Retrait DAB,1019.32,Ukraine,FR46 7920 1209 9564 2744 125,69,ALERTE_MOYENNE,Montant anormalement eleve,M. Dubois,False
+ALT-2023-10218,2023-02-01 00:00,CLI-824141,Paiement carte,3875.83,Italie,FR79 1529 6876 8415 2679 730,88,EN_INVESTIGATION,Fractionnement detecte (smurfing),,False
+ALT-2022-10219,2022-01-25 00:00,CLI-500118,Retrait DAB,40857.51,Nigeria,FR97 6122 1881 1212 5117 307,84,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10220,2024-04-05 00:00,CLI-282237,Virement instantane,18238.0,Allemagne,FR58 1665 8020 5572 5329 233,55,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10221,2023-01-27 00:00,CLI-911242,Virement instantane,3693.6,Portugal,FR72 6866 2194 6207 9608 325,56,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2023-10222,2023-12-06 00:00,CLI-448005,Paiement carte,23153.77,Roumanie,FR47 4579 9691 8780 1144 217,87,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2022-10223,2022-07-17 00:00,CLI-369054,Virement instantane,462169.59,Portugal,FR13 9468 7143 9426 9335 556,76,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10224,2024-09-30 00:00,CLI-107686,Virement SEPA,9318.04,Italie,FR95 4492 7950 2702 4368 650,98,BLOQUEE,Pays de destination inhabituel,S. Chen,True
+ALT-2023-10225,2023-05-09 00:00,CLI-685193,Virement SEPA,3725.91,Italie,FR43 7678 7357 8391 7626 543,65,ALERTE_HAUTE,Geolocalisation incoherente,M. Dubois,True
+ALT-2024-10226,2024-02-07 00:00,CLI-475075,Virement instantane,3741.29,Allemagne,FR47 5937 2417 5612 8170 490,70,ALERTE_HAUTE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2022-10227,2022-11-21 00:00,CLI-251074,Paiement carte,3860.39,Roumanie,FR11 3316 3019 1684 1082 686,83,BLOQUEE,Modification d'adresse recente,,True
+ALT-2023-10228,2023-11-27 00:00,CLI-992819,Virement instantane,1445.24,Espagne,FR30 4014 4617 5140 4183 217,56,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2024-10229,2024-10-24 00:00,CLI-610856,Paiement carte,2973.49,Roumanie,FR26 4842 2639 5671 2143 298,65,BLOQUEE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2024-10230,2024-08-07 00:00,CLI-276831,Virement SEPA,3128.76,Roumanie,FR41 4629 8145 5533 6889 237,88,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2023-10231,2023-02-11 00:00,CLI-982683,Paiement carte,26913.71,Espagne,FR78 4218 5312 2252 2235 119,99,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2024-10232,2024-10-03 00:00,CLI-595036,Virement international,6649.53,Roumanie,FR60 4658 5767 3193 8613 613,77,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2024-10233,2024-09-20 00:00,CLI-247189,Retrait DAB,48380.01,Espagne,FR32 3395 8921 6878 1662 324,93,BLOQUEE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2023-10234,2023-07-18 00:00,CLI-592489,Retrait DAB,35086.35,France,FR15 6309 2691 9542 5480 954,92,ALERTE_FAIBLE,Modification d'adresse recente,,False
+ALT-2023-10235,2023-09-22 00:00,CLI-363807,Retrait DAB,21438.36,Italie,FR76 7649 6781 6653 8976 911,75,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2023-10236,2023-04-06 00:00,CLI-265001,Paiement carte,1245.23,Allemagne,FR94 4773 7793 6410 2856 593,88,BLOQUEE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10237,2024-03-23 00:00,CLI-241268,Virement instantane,4250.14,France,FR83 3406 1916 3725 5231 284,78,BLOQUEE,Montant anormalement eleve,A. Kowalski,True
+ALT-2022-10238,2022-07-30 00:00,CLI-730025,Virement international,2521.42,Espagne,FR89 9369 5333 3747 6614 564,83,EN_INVESTIGATION,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10239,2023-12-17 00:00,CLI-540186,Virement international,285220.1,Allemagne,FR32 8796 1639 9706 9246 870,52,ALERTE_HAUTE,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2024-10240,2024-09-28 00:00,CLI-549793,Virement international,3421.54,Chine,FR58 6742 2600 7971 3193 360,75,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2023-10241,2023-03-02 00:00,CLI-645009,Virement SEPA,1350.59,Nigeria,FR93 4365 6175 7698 6935 209,54,BLOQUEE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10242,2024-07-30 00:00,CLI-678923,Virement instantane,17400.22,Chine,FR32 7065 8925 5157 6024 691,67,BLOQUEE,Heure de transaction suspecte,M. Dubois,False
+ALT-2023-10243,2023-06-23 00:00,CLI-939756,Virement instantane,4023.99,France,FR30 7375 1086 2492 3381 582,83,BLOQUEE,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10244,2022-07-25 00:00,CLI-743789,Virement instantane,376022.62,Portugal,FR86 1941 3871 9099 8192 110,57,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,True
+ALT-2024-10245,2024-07-03 00:00,CLI-350878,Virement SEPA,36430.24,Espagne,FR21 5520 7544 6785 7474 515,82,ALERTE_MOYENNE,Modification d'adresse recente,M. Dubois,True
+ALT-2022-10246,2022-06-27 00:00,CLI-955129,Paiement carte,2973.17,Italie,FR87 4187 8450 7618 1076 367,56,BLOQUEE,Modification d'adresse recente,M. Dubois,True
+ALT-2024-10247,2024-10-02 00:00,CLI-952646,Virement instantane,411324.01,Portugal,FR98 8254 7178 8923 4985 875,66,BLOQUEE,Compte beneficiaire recent (<30j),,True
+ALT-2023-10248,2023-12-13 00:00,CLI-835236,Virement international,335147.81,Roumanie,FR62 6785 9462 9776 1159 817,98,ALERTE_FAIBLE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2023-10249,2023-09-01 00:00,CLI-429119,Paiement carte,84212.97,Italie,FR83 5408 3994 4115 9175 854,57,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10250,2022-02-24 00:00,CLI-225701,Virement SEPA,1412.45,Chine,FR88 1108 9871 1692 8901 480,84,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),,False
+ALT-2023-10251,2023-10-23 00:00,CLI-234475,Virement SEPA,1322.92,Ukraine,FR64 8836 9859 1533 9232 455,70,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10252,2023-06-16 00:00,CLI-479167,Virement instantane,3601.45,Portugal,FR33 9987 5306 4885 5413 582,84,ALERTE_FAIBLE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10253,2023-05-24 00:00,CLI-572623,Virement international,36532.07,Espagne,FR83 4744 2636 5422 4863 668,72,BLOQUEE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2023-10254,2023-11-19 00:00,CLI-642121,Virement instantane,274819.02,Roumanie,FR72 5915 5111 1781 7527 201,89,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2023-10255,2023-07-04 00:00,CLI-687569,Virement instantane,4275.37,Portugal,FR54 1324 7746 2986 6752 988,88,EN_INVESTIGATION,Fractionnement detecte (smurfing),,False
+ALT-2023-10256,2023-02-10 00:00,CLI-499581,Virement instantane,35293.68,Portugal,FR69 3373 3745 6527 7911 746,84,EN_INVESTIGATION,Geolocalisation incoherente,M. Dubois,True
+ALT-2022-10257,2022-11-06 00:00,CLI-775958,Retrait DAB,19106.69,Portugal,FR66 6950 9535 8377 7782 271,56,ALERTE_HAUTE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10258,2024-02-02 00:00,CLI-596171,Virement instantane,3653.14,France,FR13 7504 9584 2363 2702 368,84,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,False
+ALT-2022-10259,2022-03-29 00:00,CLI-129959,Virement SEPA,1613.28,Roumanie,FR51 8801 8654 9856 5463 661,73,ALERTE_MOYENNE,Modification d'adresse recente,S. Chen,False
+ALT-2024-10260,2024-09-30 00:00,CLI-424703,Paiement carte,44478.22,Chine,FR79 4721 2467 8239 6044 474,71,ALERTE_FAIBLE,Heure de transaction suspecte,A. Kowalski,True
+ALT-2022-10261,2022-10-01 00:00,CLI-108721,Retrait DAB,2854.92,Chine,FR48 1149 8052 5799 4788 915,45,EN_INVESTIGATION,Vitesse de transactions anormale,S. Chen,False
+ALT-2024-10262,2024-07-12 00:00,CLI-331307,Paiement carte,16245.33,Allemagne,FR64 4924 9464 5454 5664 764,92,EN_INVESTIGATION,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10263,2022-05-20 00:00,CLI-834498,Virement instantane,18031.79,Chine,FR34 6253 1317 3492 1813 647,46,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10264,2022-09-10 00:00,CLI-327738,Paiement carte,3718.38,Nigeria,FR49 9165 7084 8597 1519 438,50,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10265,2022-07-15 00:00,CLI-968485,Virement SEPA,2944.36,Allemagne,FR41 7304 8257 5049 1549 303,74,ALERTE_HAUTE,Modification d'adresse recente,S. Chen,False
+ALT-2023-10266,2023-01-22 00:00,CLI-880900,Virement instantane,19044.92,Ukraine,FR25 5150 8884 5895 4255 469,48,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10267,2023-05-05 00:00,CLI-109363,Virement SEPA,567.8,Chine,FR98 3539 7084 2466 5075 261,76,ALERTE_HAUTE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2023-10268,2023-04-30 00:00,CLI-432125,Virement instantane,3400.59,Roumanie,FR66 4161 1349 7189 6868 841,53,ALERTE_FAIBLE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10269,2024-06-27 00:00,CLI-439403,Retrait DAB,1826.22,Portugal,FR86 3627 2128 9702 3539 560,63,ALERTE_FAIBLE,Modification d'adresse recente,A. Kowalski,False
+ALT-2022-10270,2022-11-14 00:00,CLI-998450,Paiement carte,27768.1,Italie,FR51 2037 9830 7348 4110 636,88,BLOQUEE,Modification d'adresse recente,S. Chen,False
+ALT-2023-10271,2023-01-23 00:00,CLI-975763,Virement international,19491.08,Espagne,FR14 4310 2753 8952 4139 201,47,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10272,2022-04-17 00:00,CLI-787603,Retrait DAB,81893.28,Allemagne,FR69 1994 6913 7814 7046 913,90,ALERTE_HAUTE,Beneficiaire jamais utilise,,True
+ALT-2024-10273,2024-02-19 00:00,CLI-206142,Virement international,475071.57,Ukraine,FR59 4104 4164 9621 5075 683,85,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2024-10274,2024-12-06 00:00,CLI-547820,Virement SEPA,974.81,Espagne,FR33 7579 9268 6529 3591 646,83,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10275,2023-05-04 00:00,CLI-690500,Virement instantane,2355.54,Italie,FR58 5162 6898 8412 8331 506,45,ALERTE_HAUTE,Beneficiaire jamais utilise,,True
+ALT-2024-10276,2024-04-19 00:00,CLI-997287,Paiement carte,52955.97,France,FR98 5521 9376 3534 2544 138,74,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10277,2023-10-20 00:00,CLI-519218,Virement instantane,4503.31,Italie,FR19 6319 8905 3832 8999 945,89,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2022-10278,2022-06-21 00:00,CLI-464831,Retrait DAB,3788.55,Nigeria,FR25 4714 1187 7266 1886 412,78,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2023-10279,2023-07-21 00:00,CLI-567262,Virement instantane,14935.87,Ukraine,FR21 4638 8076 5747 7460 251,53,ALERTE_FAIBLE,Pays de destination inhabituel,N. Traore,True
+ALT-2024-10280,2024-03-07 00:00,CLI-899049,Virement international,8828.55,Chine,FR81 4245 8993 7476 4212 674,84,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2023-10281,2023-12-10 00:00,CLI-533672,Retrait DAB,3995.47,Roumanie,FR54 4120 6254 6644 1396 888,64,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2024-10282,2024-07-10 00:00,CLI-263568,Virement SEPA,1156.18,Allemagne,FR16 4982 3419 5713 1225 451,89,ALERTE_HAUTE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10283,2022-05-13 00:00,CLI-675458,Retrait DAB,1993.45,Espagne,FR98 1301 7170 9631 1712 361,55,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10284,2022-12-06 00:00,CLI-993473,Paiement carte,47532.94,Allemagne,FR12 5792 7332 4787 7237 620,90,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traore,True
+ALT-2022-10285,2022-01-21 00:00,CLI-359409,Virement instantane,48505.61,Portugal,FR52 9027 7445 3572 1301 455,88,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2024-10286,2024-01-16 00:00,CLI-681896,Paiement carte,1741.45,Italie,FR29 6599 7436 3248 2438 847,69,EN_INVESTIGATION,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10287,2024-10-04 00:00,CLI-238173,Virement international,1187.37,Espagne,FR84 9869 4314 3262 6062 805,90,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10288,2024-03-01 00:00,CLI-293079,Paiement carte,4698.63,Espagne,FR13 6221 7783 7737 5970 553,92,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,True
+ALT-2022-10289,2022-10-18 00:00,CLI-742108,Virement international,1331.36,Italie,FR39 1427 6886 2302 8808 237,77,EN_INVESTIGATION,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2023-10290,2023-01-08 00:00,CLI-382967,Retrait DAB,2711.51,Italie,FR95 4323 4351 2083 3901 549,84,BLOQUEE,Vitesse de transactions anormale,N. Traore,False
+ALT-2023-10291,2023-06-10 00:00,CLI-513296,Virement instantane,2321.9,Ukraine,FR77 1630 9530 2791 8399 567,97,ALERTE_HAUTE,Fractionnement detecte (smurfing),,False
+ALT-2024-10292,2024-04-07 00:00,CLI-405323,Retrait DAB,394321.94,Nigeria,FR48 5684 8558 3727 7921 401,84,ALERTE_HAUTE,Modification d'adresse recente,S. Chen,False
+ALT-2024-10293,2024-12-22 00:00,CLI-672949,Virement international,37519.11,Nigeria,FR62 6299 8387 1408 3930 564,82,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10294,2023-03-05 00:00,CLI-195620,Virement SEPA,45822.31,Chine,FR91 6946 2397 9582 7292 844,95,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2022-10295,2022-03-18 00:00,CLI-269999,Virement international,46051.38,Espagne,FR16 7874 6047 6071 8311 395,85,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10296,2022-10-06 00:00,CLI-946677,Virement SEPA,16389.99,Chine,FR40 4553 8794 8434 7719 552,50,EN_INVESTIGATION,Montant anormalement eleve,S. Chen,False
+ALT-2024-10297,2024-01-29 00:00,CLI-785010,Paiement carte,3328.86,France,FR28 1531 5889 6424 2436 150,51,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10298,2024-08-21 00:00,CLI-885734,Virement instantane,3474.16,Roumanie,FR14 2525 5903 6289 7038 488,97,ALERTE_HAUTE,Geolocalisation incoherente,,True
+ALT-2023-10299,2023-07-31 00:00,CLI-650131,Virement international,2618.68,Italie,FR88 1953 2790 9666 2436 595,91,EN_INVESTIGATION,Beneficiaire jamais utilise,N. Traore,False
+ALT-2023-10300,2023-10-16 00:00,CLI-620509,Virement instantane,2864.26,Chine,FR73 3947 4812 5759 4171 101,52,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10301,2024-11-22 00:00,CLI-322652,Virement SEPA,4995.44,Italie,FR98 5614 5168 2111 6042 407,77,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,True
+ALT-2024-10302,2024-03-30 00:00,CLI-303440,Paiement carte,306014.69,Roumanie,FR96 8849 8774 1582 3224 593,54,BLOQUEE,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10303,2023-12-14 00:00,CLI-430828,Virement instantane,4675.05,Ukraine,FR12 4412 6434 6793 2084 252,62,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10304,2024-06-06 00:00,CLI-839525,Paiement carte,13432.05,France,FR44 7780 2422 9143 4893 480,73,ALERTE_FAIBLE,Fractionnement detecte (smurfing),,False
+ALT-2022-10305,2022-08-16 00:00,CLI-630573,Virement SEPA,400005.68,Chine,FR74 3524 4116 6572 8921 850,78,ALERTE_FAIBLE,Vitesse de transactions anormale,S. Chen,True
+ALT-2024-10306,2024-09-24 00:00,CLI-221462,Virement SEPA,3545.23,Portugal,FR15 2426 6460 8649 1755 205,78,ALERTE_FAIBLE,Montant anormalement eleve,,False
+ALT-2024-10307,2024-06-12 00:00,CLI-910326,Retrait DAB,4514.61,Allemagne,FR44 3446 3580 5483 2875 115,84,EN_INVESTIGATION,Modification d'adresse recente,M. Dubois,False
+ALT-2024-10308,2024-05-25 00:00,CLI-701969,Virement international,19331.82,Espagne,FR19 6101 6549 9856 8268 151,53,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2023-10309,2023-10-31 00:00,CLI-760047,Retrait DAB,742.1,Roumanie,FR49 6444 4246 9740 2286 873,93,BLOQUEE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10310,2022-04-29 00:00,CLI-334665,Virement international,2550.13,Portugal,FR56 7423 4004 6412 6320 564,76,ALERTE_HAUTE,Pays de destination inhabituel,N. Traore,True
+ALT-2023-10311,2023-10-22 00:00,CLI-233582,Virement instantane,2653.93,Allemagne,FR61 2752 6339 2162 5949 645,74,BLOQUEE,Geolocalisation incoherente,S. Chen,False
+ALT-2024-10312,2024-12-21 00:00,CLI-719677,Retrait DAB,1215.59,Nigeria,FR82 6606 9921 4869 3835 778,87,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10313,2023-02-05 00:00,CLI-727320,Virement SEPA,129278.3,Nigeria,FR51 9098 2007 2483 4565 936,53,EN_INVESTIGATION,Montant anormalement eleve,S. Chen,False
+ALT-2023-10314,2023-12-15 00:00,CLI-431976,Paiement carte,2890.65,Portugal,FR65 6640 2462 1133 9362 513,99,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2024-10315,2024-02-26 00:00,CLI-395917,Virement SEPA,302013.62,Italie,FR65 7459 6212 7271 7652 490,72,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2022-10316,2022-03-20 00:00,CLI-402483,Virement international,22306.78,Espagne,FR11 2175 1257 3359 8974 773,72,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10317,2023-08-21 00:00,CLI-634160,Retrait DAB,36292.57,Ukraine,FR67 7303 6821 4698 4044 534,83,ALERTE_HAUTE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10318,2023-09-05 00:00,CLI-839122,Paiement carte,4669.54,Allemagne,FR84 8889 2311 3327 9624 979,93,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),,True
+ALT-2024-10319,2024-12-08 00:00,CLI-181874,Virement instantane,8980.09,Portugal,FR88 1864 6628 9765 1176 580,74,EN_INVESTIGATION,Compte beneficiaire recent (<30j),,False
+ALT-2023-10320,2023-12-22 00:00,CLI-726667,Paiement carte,2088.12,Portugal,FR17 8752 3770 1845 5780 928,92,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10321,2022-11-12 00:00,CLI-394620,Paiement carte,1070.7,Portugal,FR11 2827 3860 3476 8317 478,96,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10322,2022-03-16 00:00,CLI-724473,Virement international,4097.17,Chine,FR62 7277 4898 8211 3740 315,81,ALERTE_FAIBLE,Montant anormalement eleve,A. Kowalski,True
+ALT-2022-10323,2022-09-30 00:00,CLI-345011,Retrait DAB,22943.52,Nigeria,FR70 5302 3378 9690 8122 112,63,BLOQUEE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10324,2022-11-30 00:00,CLI-385831,Paiement carte,4629.7,Portugal,FR44 2610 5183 7408 8554 891,88,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2024-10325,2024-02-04 00:00,CLI-112542,Retrait DAB,13096.25,Allemagne,FR77 2702 8306 6759 4594 842,63,ALERTE_FAIBLE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2024-10326,2024-11-02 00:00,CLI-769078,Virement SEPA,47232.75,Allemagne,FR21 3128 7159 4027 2816 812,56,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,True
+ALT-2024-10327,2024-12-07 00:00,CLI-907278,Paiement carte,49786.13,Portugal,FR30 2212 5543 2022 7271 497,66,ALERTE_HAUTE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2023-10328,2023-11-27 00:00,CLI-615959,Virement SEPA,812.29,Espagne,FR79 8065 4578 2740 8234 832,61,ALERTE_HAUTE,Montant anormalement eleve,M. Dubois,True
+ALT-2024-10329,2024-11-30 00:00,CLI-771440,Virement SEPA,3773.95,France,FR95 7397 5365 3483 6403 500,81,ALERTE_HAUTE,Modification d'adresse recente,N. Traore,False
+ALT-2023-10330,2023-04-26 00:00,CLI-103468,Retrait DAB,2317.61,Chine,FR25 9770 6880 6463 5961 510,48,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2022-10331,2022-10-11 00:00,CLI-141241,Retrait DAB,4285.32,Italie,FR48 7391 2749 6886 8970 186,85,BLOQUEE,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2022-10332,2022-10-04 00:00,CLI-774661,Paiement carte,614.14,Chine,FR78 8361 1268 1606 6558 157,66,ALERTE_HAUTE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10333,2024-03-17 00:00,CLI-877048,Virement instantane,25626.67,Italie,FR19 1604 3319 9010 1312 582,84,ALERTE_HAUTE,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2022-10334,2022-11-09 00:00,CLI-278980,Virement instantane,3346.98,Allemagne,FR23 2870 9145 4613 2033 923,57,BLOQUEE,Vitesse de transactions anormale,N. Traore,False
+ALT-2022-10335,2022-04-20 00:00,CLI-901351,Virement SEPA,30918.52,Espagne,FR52 2035 2978 5487 3314 875,71,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2023-10336,2023-11-20 00:00,CLI-742191,Retrait DAB,31189.36,Espagne,FR12 8978 2322 1104 1118 283,50,EN_INVESTIGATION,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10337,2024-05-02 00:00,CLI-283027,Virement instantane,1071.02,France,FR86 3949 9190 2442 5934 456,71,ALERTE_HAUTE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10338,2022-10-04 00:00,CLI-632195,Virement international,48955.62,Chine,FR90 4409 5528 1869 4173 215,95,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10339,2022-08-11 00:00,CLI-363592,Paiement carte,3515.64,Chine,FR15 2710 1859 9804 3881 261,95,ALERTE_HAUTE,Compte beneficiaire recent (<30j),,True
+ALT-2022-10340,2022-04-12 00:00,CLI-883377,Paiement carte,4527.86,Italie,FR24 6343 4731 2606 4884 855,71,ALERTE_MOYENNE,Geolocalisation incoherente,S. Chen,True
+ALT-2023-10341,2023-11-09 00:00,CLI-577092,Virement international,3132.92,Nigeria,FR57 3234 8499 4181 6875 376,57,ALERTE_FAIBLE,Heure de transaction suspecte,M. Dubois,True
+ALT-2023-10342,2023-06-25 00:00,CLI-330533,Paiement carte,1114.26,Espagne,FR91 3784 4763 2416 7745 977,78,BLOQUEE,Fractionnement detecte (smurfing),,False
+ALT-2023-10343,2023-06-17 00:00,CLI-555342,Virement instantane,1756.27,Italie,FR85 3440 1083 7844 1724 141,75,EN_INVESTIGATION,Montant anormalement eleve,N. Traore,False
+ALT-2023-10344,2023-02-12 00:00,CLI-685616,Virement SEPA,4143.72,Nigeria,FR37 3174 6872 5846 4916 763,50,ALERTE_HAUTE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2024-10345,2024-08-25 00:00,CLI-909327,Virement international,312647.05,Nigeria,FR33 7068 8607 1022 2158 494,89,ALERTE_FAIBLE,Modification d'adresse recente,M. Dubois,False
+ALT-2023-10346,2023-04-17 00:00,CLI-925954,Virement SEPA,3888.0,Roumanie,FR17 9433 6963 1844 2818 492,68,BLOQUEE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10347,2022-03-12 00:00,CLI-451199,Virement international,36719.31,Ukraine,FR24 8839 4437 4693 6250 461,62,EN_INVESTIGATION,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10348,2022-08-29 00:00,CLI-844305,Virement instantane,25358.48,Ukraine,FR47 8405 7031 2075 4085 568,50,ALERTE_HAUTE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10349,2022-04-15 00:00,CLI-645980,Virement SEPA,992.14,Portugal,FR63 9870 3163 8764 6680 530,73,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,True
+ALT-2022-10350,2022-07-30 00:00,CLI-706815,Paiement carte,15454.76,Roumanie,FR72 9686 9986 8295 8503 411,81,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10351,2022-06-30 00:00,CLI-398196,Retrait DAB,2679.09,Espagne,FR89 3634 9770 5673 3986 279,98,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,True
+ALT-2022-10352,2022-04-16 00:00,CLI-689810,Virement SEPA,4971.98,Roumanie,FR54 3423 7109 8347 9845 266,79,ALERTE_FAIBLE,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10353,2023-10-07 00:00,CLI-632056,Paiement carte,3958.33,Portugal,FR70 5748 3409 8243 6549 805,52,BLOQUEE,Montant anormalement eleve,S. Chen,True
+ALT-2023-10354,2023-06-17 00:00,CLI-157706,Virement instantane,611.58,Italie,FR84 9625 4639 5553 4206 123,50,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2022-10355,2022-12-08 00:00,CLI-478603,Retrait DAB,2707.09,Espagne,FR64 7056 7326 7108 1199 391,67,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,True
+ALT-2022-10356,2022-05-28 00:00,CLI-271746,Retrait DAB,24989.92,Nigeria,FR27 2410 3353 4404 5968 586,78,ALERTE_FAIBLE,Pays de destination inhabituel,,False
+ALT-2022-10357,2022-08-25 00:00,CLI-844747,Virement instantane,529.78,Espagne,FR35 4047 7254 5742 9037 143,97,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10358,2022-11-22 00:00,CLI-595495,Virement SEPA,168204.66,Portugal,FR63 3938 9059 5009 1466 222,93,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10359,2024-12-21 00:00,CLI-958029,Virement SEPA,24623.08,Roumanie,FR75 1287 5252 3668 1958 249,65,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10360,2022-05-29 00:00,CLI-405831,Virement instantane,1727.02,Allemagne,FR75 4175 4002 2548 3738 656,65,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10361,2022-05-25 00:00,CLI-491133,Retrait DAB,2904.89,Nigeria,FR53 3671 2678 4569 3532 615,59,ALERTE_MOYENNE,Modification d'adresse recente,,True
+ALT-2023-10362,2023-09-03 00:00,CLI-465124,Paiement carte,418480.13,Roumanie,FR27 8240 9570 6604 3821 826,64,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10363,2024-02-10 00:00,CLI-545440,Virement SEPA,1140.62,Allemagne,FR12 8934 8065 1696 4217 210,47,EN_INVESTIGATION,Montant anormalement eleve,N. Traore,True
+ALT-2023-10364,2023-03-05 00:00,CLI-731024,Virement international,694.77,Italie,FR33 6759 1479 2487 3384 966,92,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2024-10365,2024-10-23 00:00,CLI-900319,Virement SEPA,4013.61,Ukraine,FR37 4138 5617 3814 9800 104,91,ALERTE_HAUTE,Fractionnement detecte (smurfing),,False
+ALT-2023-10366,2023-07-01 00:00,CLI-498055,Retrait DAB,3641.6,Italie,FR75 4728 7677 2848 6149 226,74,ALERTE_HAUTE,Modification d'adresse recente,S. Chen,False
+ALT-2023-10367,2023-03-01 00:00,CLI-503472,Paiement carte,3671.29,Chine,FR86 6111 8273 4700 7672 397,99,BLOQUEE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2024-10368,2024-07-21 00:00,CLI-559337,Virement instantane,5575.36,Allemagne,FR25 3348 7468 7563 2666 859,55,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,False
+ALT-2022-10369,2022-09-13 00:00,CLI-392047,Virement instantane,49579.76,Portugal,FR92 7557 6834 8795 7626 596,77,ALERTE_FAIBLE,Heure de transaction suspecte,N. Traore,True
+ALT-2022-10370,2022-02-20 00:00,CLI-873637,Virement SEPA,1628.1,Allemagne,FR73 1438 3934 7269 6356 256,64,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10371,2023-06-25 00:00,CLI-948802,Virement instantane,1408.69,Ukraine,FR12 1517 8051 2951 7285 560,65,BLOQUEE,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2022-10372,2022-03-26 00:00,CLI-615353,Retrait DAB,34673.5,Espagne,FR49 7374 8986 2792 9037 775,80,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2024-10373,2024-12-12 00:00,CLI-469899,Paiement carte,750.82,Roumanie,FR17 1461 1739 3100 7003 457,96,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10374,2022-05-06 00:00,CLI-359642,Virement international,2426.67,Portugal,FR85 2391 2073 5995 2875 445,55,ALERTE_HAUTE,Modification d'adresse recente,A. Kowalski,True
+ALT-2023-10375,2023-01-11 00:00,CLI-829765,Retrait DAB,3459.96,France,FR50 7188 7394 6282 2601 927,76,ALERTE_HAUTE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10376,2024-08-11 00:00,CLI-311559,Retrait DAB,4151.56,Allemagne,FR78 4507 5708 5344 1778 404,81,BLOQUEE,Fractionnement detecte (smurfing),,True
+ALT-2024-10377,2024-09-28 00:00,CLI-598355,Retrait DAB,4298.84,Italie,FR54 2256 5945 9268 5913 543,87,EN_INVESTIGATION,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10378,2023-01-10 00:00,CLI-758342,Virement instantane,1630.69,Espagne,FR83 9178 4489 8656 5389 753,79,EN_INVESTIGATION,Geolocalisation incoherente,,True
+ALT-2024-10379,2024-06-02 00:00,CLI-985126,Retrait DAB,25811.9,Nigeria,FR50 2055 4335 7757 5373 943,63,ALERTE_MOYENNE,Beneficiaire jamais utilise,,False
+ALT-2023-10380,2023-06-08 00:00,CLI-586706,Retrait DAB,11748.3,Ukraine,FR65 7914 1606 4309 3610 379,53,ALERTE_HAUTE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10381,2024-02-12 00:00,CLI-429153,Virement instantane,4336.34,Portugal,FR18 7668 6954 2479 7502 959,91,ALERTE_MOYENNE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2024-10382,2024-09-11 00:00,CLI-194632,Virement international,3488.98,Allemagne,FR50 6395 7388 4865 7928 323,54,ALERTE_HAUTE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10383,2023-12-25 00:00,CLI-218448,Paiement carte,2337.69,Ukraine,FR64 8780 5036 5550 3374 471,75,ALERTE_FAIBLE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2024-10384,2024-05-02 00:00,CLI-365271,Virement instantane,47338.17,Nigeria,FR49 6945 2999 9763 4872 978,73,BLOQUEE,Montant anormalement eleve,N. Traore,False
+ALT-2023-10385,2023-03-24 00:00,CLI-560163,Paiement carte,906.13,Nigeria,FR14 5489 2312 9055 8718 854,71,ALERTE_FAIBLE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10386,2024-10-07 00:00,CLI-873624,Paiement carte,7986.53,Chine,FR98 1448 1853 4010 8264 910,86,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10387,2024-11-28 00:00,CLI-900234,Virement international,1874.96,Nigeria,FR50 8397 8837 3187 5270 277,88,EN_INVESTIGATION,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10388,2022-10-20 00:00,CLI-335391,Virement SEPA,444375.51,France,FR81 4747 2457 8576 4248 368,89,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10389,2024-03-01 00:00,CLI-114800,Virement instantane,215564.07,Nigeria,FR68 9096 2941 4677 4328 295,97,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10390,2022-12-13 00:00,CLI-298561,Retrait DAB,14297.27,Espagne,FR62 3391 1471 5754 5289 341,84,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10391,2022-12-18 00:00,CLI-322526,Retrait DAB,10994.22,Nigeria,FR86 5198 2196 2561 1962 153,66,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2022-10392,2022-07-09 00:00,CLI-238661,Virement instantane,1641.46,France,FR84 3938 5264 3783 9253 604,66,BLOQUEE,Heure de transaction suspecte,M. Dubois,False
+ALT-2024-10393,2024-03-06 00:00,CLI-623460,Paiement carte,2886.91,Roumanie,FR65 5635 5312 5321 9470 420,72,ALERTE_MOYENNE,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10394,2024-03-17 00:00,CLI-157217,Virement international,4338.65,Espagne,FR14 8704 5263 3679 8653 546,52,BLOQUEE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10395,2024-03-16 00:00,CLI-229660,Paiement carte,25599.19,Allemagne,FR36 5654 3959 3757 9335 942,62,EN_INVESTIGATION,Fractionnement detecte (smurfing),,True
+ALT-2024-10396,2024-09-12 00:00,CLI-809790,Virement SEPA,3950.81,Roumanie,FR13 5657 2998 7458 7120 704,51,ALERTE_FAIBLE,Heure de transaction suspecte,M. Dubois,True
+ALT-2023-10397,2023-11-01 00:00,CLI-789969,Virement SEPA,254324.98,Roumanie,FR15 8423 6323 3118 4463 983,48,ALERTE_FAIBLE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2024-10398,2024-07-23 00:00,CLI-193520,Virement SEPA,4783.55,Italie,FR30 7365 7592 5668 3525 223,64,BLOQUEE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10399,2023-07-18 00:00,CLI-599583,Paiement carte,3494.84,Nigeria,FR21 7922 7033 4053 8112 745,72,ALERTE_HAUTE,Montant anormalement eleve,,False
+ALT-2023-10400,2023-09-27 00:00,CLI-760141,Virement instantane,371135.97,Allemagne,FR47 8671 8165 2297 8825 407,54,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10401,2023-09-19 00:00,CLI-545554,Retrait DAB,3058.41,Allemagne,FR69 5151 6823 5175 2339 887,77,ALERTE_HAUTE,Pays de destination inhabituel,N. Traore,False
+ALT-2022-10402,2022-06-10 00:00,CLI-715732,Retrait DAB,7036.64,Chine,FR89 5342 6592 4066 4458 289,50,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2024-10403,2024-08-23 00:00,CLI-825411,Retrait DAB,22772.02,Chine,FR48 6910 7471 5958 2435 228,53,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2024-10404,2024-11-28 00:00,CLI-353524,Retrait DAB,43655.54,Ukraine,FR34 2410 5930 8592 3427 585,72,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10405,2024-10-26 00:00,CLI-354415,Virement international,48374.01,Portugal,FR82 7418 1834 6469 1129 205,85,BLOQUEE,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10406,2022-12-14 00:00,CLI-956360,Retrait DAB,26874.54,Italie,FR17 9655 1311 7914 6174 666,49,ALERTE_FAIBLE,Geolocalisation incoherente,N. Traore,True
+ALT-2023-10407,2023-03-24 00:00,CLI-402001,Virement international,3302.14,Chine,FR54 8178 4802 9317 4599 701,88,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10408,2024-07-03 00:00,CLI-934637,Retrait DAB,48191.15,Espagne,FR89 4394 5627 2412 8911 232,56,ALERTE_MOYENNE,Heure de transaction suspecte,,False
+ALT-2022-10409,2022-10-13 00:00,CLI-149334,Virement SEPA,4070.67,Roumanie,FR43 6849 3598 3862 9248 132,96,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traore,True
+ALT-2024-10410,2024-06-30 00:00,CLI-906747,Virement SEPA,268864.38,Ukraine,FR44 3476 9444 2706 1826 548,96,BLOQUEE,Pays de destination inhabituel,M. Dubois,True
+ALT-2024-10411,2024-07-04 00:00,CLI-264660,Paiement carte,9743.5,Chine,FR74 9165 2626 3527 6959 442,97,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10412,2023-05-27 00:00,CLI-629554,Virement international,3961.49,Allemagne,FR44 7101 7799 6908 5021 255,93,EN_INVESTIGATION,Geolocalisation incoherente,S. Chen,False
+ALT-2023-10413,2023-12-16 00:00,CLI-479347,Virement SEPA,23418.92,Chine,FR28 1162 9476 2140 2389 446,65,BLOQUEE,Heure de transaction suspecte,N. Traore,True
+ALT-2023-10414,2023-01-30 00:00,CLI-762288,Virement instantane,338659.59,Portugal,FR63 7586 5986 6139 6638 108,97,ALERTE_FAIBLE,Modification d'adresse recente,,False
+ALT-2024-10415,2024-11-12 00:00,CLI-783710,Retrait DAB,33974.57,Roumanie,FR93 7627 4232 5940 2380 137,79,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10416,2022-03-23 00:00,CLI-124559,Virement SEPA,29830.36,Ukraine,FR85 5238 4954 5979 7926 617,52,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10417,2022-01-03 00:00,CLI-575159,Paiement carte,714.8,Italie,FR84 9737 4831 6739 5902 391,87,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2022-10418,2022-02-20 00:00,CLI-253672,Retrait DAB,1975.31,Nigeria,FR20 2511 2018 7961 3130 587,58,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2024-10419,2024-11-21 00:00,CLI-543990,Retrait DAB,3015.36,Chine,FR63 3668 3364 9286 3082 596,90,BLOQUEE,Heure de transaction suspecte,,True
+ALT-2024-10420,2024-07-08 00:00,CLI-224535,Virement instantane,385923.34,Nigeria,FR24 2980 7055 5744 1659 635,54,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10421,2023-08-04 00:00,CLI-151014,Paiement carte,6259.0,Portugal,FR37 3999 9008 1034 3004 660,67,ALERTE_HAUTE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10422,2024-11-06 00:00,CLI-239260,Virement international,1893.66,Ukraine,FR91 8551 8371 8357 3440 987,91,ALERTE_FAIBLE,Pays de destination inhabituel,,False
+ALT-2023-10423,2023-08-15 00:00,CLI-871660,Paiement carte,293447.5,Allemagne,FR31 1406 6060 3028 2395 297,84,EN_INVESTIGATION,Montant anormalement eleve,,False
+ALT-2023-10424,2023-01-10 00:00,CLI-388319,Virement international,2761.87,Italie,FR84 8278 2386 9741 6249 511,82,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10425,2023-02-16 00:00,CLI-220213,Virement SEPA,1312.29,Ukraine,FR31 5675 3359 3992 5187 886,50,ALERTE_MOYENNE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10426,2022-07-19 00:00,CLI-203540,Paiement carte,3265.14,Espagne,FR62 6311 5225 7152 2981 153,57,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2022-10427,2022-01-15 00:00,CLI-527288,Virement international,1711.79,France,FR44 2663 5035 3057 5990 681,71,BLOQUEE,Pays de destination inhabituel,,False
+ALT-2022-10428,2022-08-05 00:00,CLI-682119,Retrait DAB,2179.87,France,FR10 8612 5739 3742 1008 161,75,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10429,2024-09-30 00:00,CLI-690433,Virement SEPA,1457.39,Portugal,FR21 7476 3014 3288 5578 999,72,ALERTE_MOYENNE,Modification d'adresse recente,A. Kowalski,False
+ALT-2024-10430,2024-06-13 00:00,CLI-458224,Virement international,1676.12,Chine,FR86 6381 1260 3190 1033 723,75,ALERTE_HAUTE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10431,2024-11-28 00:00,CLI-782902,Virement SEPA,4528.71,Ukraine,FR13 8293 3022 6783 7166 947,83,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,True
+ALT-2022-10432,2022-01-11 00:00,CLI-895262,Paiement carte,2582.12,Roumanie,FR34 2474 5967 4623 4838 605,68,ALERTE_HAUTE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10433,2022-10-19 00:00,CLI-624629,Retrait DAB,41950.56,Espagne,FR80 4174 3875 2070 3101 863,49,ALERTE_MOYENNE,Beneficiaire jamais utilise,,False
+ALT-2024-10434,2024-12-20 00:00,CLI-810656,Virement instantane,3780.04,Portugal,FR97 8437 1032 7997 1849 974,65,BLOQUEE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2024-10435,2024-04-24 00:00,CLI-149246,Paiement carte,2832.33,Nigeria,FR78 8354 6181 1084 7420 299,66,ALERTE_HAUTE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10436,2022-11-17 00:00,CLI-201424,Virement SEPA,4626.48,Chine,FR65 1393 6477 5102 5049 210,75,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2024-10437,2024-02-18 00:00,CLI-755725,Retrait DAB,47459.64,Allemagne,FR20 1994 1546 7183 6132 968,89,ALERTE_HAUTE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10438,2022-10-14 00:00,CLI-154738,Paiement carte,33178.33,Nigeria,FR61 2570 7735 4819 1173 564,69,BLOQUEE,Geolocalisation incoherente,,True
+ALT-2023-10439,2023-10-28 00:00,CLI-301831,Virement SEPA,3429.15,Allemagne,FR11 2106 4172 3064 9337 362,67,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2022-10440,2022-08-12 00:00,CLI-638051,Paiement carte,1594.19,Portugal,FR84 9866 3385 3415 8692 416,83,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,True
+ALT-2024-10441,2024-10-13 00:00,CLI-157259,Retrait DAB,3138.98,Roumanie,FR35 4282 4297 2120 6595 293,87,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2024-10442,2024-02-23 00:00,CLI-576370,Virement SEPA,3047.44,Chine,FR38 1060 4654 4772 8643 738,58,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10443,2022-07-03 00:00,CLI-131475,Virement instantane,2301.41,Allemagne,FR28 5760 8215 4185 6896 144,46,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10444,2022-04-02 00:00,CLI-305507,Virement SEPA,4484.22,Espagne,FR43 2657 1343 3248 7208 770,95,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10445,2023-11-16 00:00,CLI-554786,Virement SEPA,347408.92,Allemagne,FR28 3142 4107 4140 9725 487,89,ALERTE_FAIBLE,Vitesse de transactions anormale,,False
+ALT-2024-10446,2024-10-01 00:00,CLI-408472,Virement international,1600.47,Roumanie,FR41 1872 5588 3071 9327 698,76,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,True
+ALT-2022-10447,2022-09-13 00:00,CLI-644098,Retrait DAB,2788.76,Espagne,FR51 7125 9609 8918 9106 585,62,EN_INVESTIGATION,Geolocalisation incoherente,,True
+ALT-2022-10448,2022-06-06 00:00,CLI-545668,Retrait DAB,1487.87,Espagne,FR57 5170 2388 3200 2376 402,73,EN_INVESTIGATION,Vitesse de transactions anormale,S. Chen,True
+ALT-2023-10449,2023-07-08 00:00,CLI-943584,Retrait DAB,2805.18,Roumanie,FR44 7264 1404 3942 8236 339,61,ALERTE_HAUTE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2024-10450,2024-02-20 00:00,CLI-224348,Virement SEPA,403642.98,Roumanie,FR14 9946 4281 6468 4221 791,66,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10451,2024-10-05 00:00,CLI-373820,Virement SEPA,11203.93,Portugal,FR46 6679 7616 7647 1194 583,86,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,False
+ALT-2022-10452,2022-10-10 00:00,CLI-894423,Retrait DAB,3755.01,Chine,FR53 2406 6129 4077 8025 888,89,BLOQUEE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10453,2024-01-05 00:00,CLI-624078,Paiement carte,635.47,Roumanie,FR38 7867 7974 7608 9808 406,65,EN_INVESTIGATION,Montant anormalement eleve,,True
+ALT-2022-10454,2022-11-05 00:00,CLI-737363,Virement instantane,47868.69,Nigeria,FR58 4345 7400 2043 9757 495,57,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2024-10455,2024-01-17 00:00,CLI-966621,Virement instantane,4526.35,Chine,FR13 4058 4260 2138 7322 390,58,ALERTE_MOYENNE,Beneficiaire jamais utilise,,True
+ALT-2023-10456,2023-07-30 00:00,CLI-510103,Virement international,28333.93,Allemagne,FR26 9789 7855 8835 2126 498,58,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10457,2024-04-13 00:00,CLI-626883,Retrait DAB,3491.57,Portugal,FR35 1121 3337 8302 2048 944,70,EN_INVESTIGATION,Fractionnement detecte (smurfing),,False
+ALT-2024-10458,2024-05-27 00:00,CLI-777693,Retrait DAB,25709.21,Roumanie,FR99 5873 7407 3869 7800 355,56,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2024-10459,2024-05-02 00:00,CLI-265603,Paiement carte,227098.09,Ukraine,FR47 2093 4559 9085 7738 880,80,ALERTE_HAUTE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2024-10460,2024-09-16 00:00,CLI-146803,Retrait DAB,3949.43,France,FR19 8567 7244 6630 7542 976,57,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10461,2022-08-25 00:00,CLI-171551,Virement SEPA,3690.95,Ukraine,FR94 4969 8171 3297 8713 940,62,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,True
+ALT-2022-10462,2022-01-06 00:00,CLI-810287,Paiement carte,1823.65,Espagne,FR66 6866 3915 4549 1564 791,79,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2023-10463,2023-07-13 00:00,CLI-904377,Virement international,3606.56,Italie,FR57 4908 4276 2497 1262 531,46,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,True
+ALT-2022-10464,2022-03-27 00:00,CLI-146150,Retrait DAB,9347.14,Ukraine,FR23 6359 6286 4105 4393 654,70,BLOQUEE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10465,2022-07-19 00:00,CLI-323103,Retrait DAB,2104.59,Italie,FR18 5562 7045 1719 2103 323,71,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10466,2023-12-14 00:00,CLI-908878,Virement international,31994.02,Roumanie,FR32 6209 8899 2106 6490 118,83,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2024-10467,2024-03-04 00:00,CLI-423851,Virement international,49477.14,Nigeria,FR41 2300 1981 3253 7136 610,63,ALERTE_MOYENNE,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10468,2024-06-17 00:00,CLI-240789,Paiement carte,319133.83,Roumanie,FR92 1648 9533 7797 5726 868,46,ALERTE_MOYENNE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10469,2022-12-18 00:00,CLI-830100,Virement international,2926.9,Nigeria,FR76 6269 4007 8247 1099 166,76,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2022-10470,2022-04-15 00:00,CLI-347789,Virement instantane,12815.41,Allemagne,FR64 8652 6103 3689 4236 350,72,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10471,2024-02-10 00:00,CLI-477048,Retrait DAB,33602.17,Nigeria,FR31 8712 8231 7925 9278 724,92,BLOQUEE,Heure de transaction suspecte,N. Traore,True
+ALT-2023-10472,2023-10-03 00:00,CLI-260221,Virement instantane,2423.29,Espagne,FR42 7233 8596 6011 8431 390,69,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2022-10473,2022-09-14 00:00,CLI-865847,Paiement carte,3716.89,Chine,FR61 7812 7465 7113 7292 601,64,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,True
+ALT-2022-10474,2022-05-11 00:00,CLI-908735,Paiement carte,2231.72,Ukraine,FR72 7032 1945 7313 7947 853,60,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10475,2024-11-05 00:00,CLI-577595,Virement international,3679.52,Portugal,FR41 3644 1202 2912 2512 759,90,BLOQUEE,Geolocalisation incoherente,,True
+ALT-2024-10476,2024-12-20 00:00,CLI-416900,Virement instantane,4594.77,Ukraine,FR94 7271 6045 7743 2456 211,85,EN_INVESTIGATION,Vitesse de transactions anormale,S. Chen,False
+ALT-2024-10477,2024-03-27 00:00,CLI-956046,Retrait DAB,1442.86,France,FR22 2144 7845 9600 7829 770,63,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2022-10478,2022-08-19 00:00,CLI-694639,Virement international,131892.95,Espagne,FR35 1966 3993 4143 5249 992,71,BLOQUEE,Pays de destination inhabituel,S. Chen,True
+ALT-2023-10479,2023-05-01 00:00,CLI-601111,Retrait DAB,885.68,Allemagne,FR11 2000 5359 1118 1685 199,58,EN_INVESTIGATION,Montant anormalement eleve,N. Traore,False
+ALT-2023-10480,2023-06-25 00:00,CLI-430536,Virement international,2629.54,Roumanie,FR95 7528 7200 1937 6833 994,66,ALERTE_HAUTE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10481,2024-09-28 00:00,CLI-393042,Virement international,4259.4,Roumanie,FR67 8785 9436 7768 4079 103,85,ALERTE_FAIBLE,Montant anormalement eleve,A. Kowalski,True
+ALT-2024-10482,2024-11-09 00:00,CLI-932527,Virement SEPA,1964.86,Roumanie,FR64 8800 2645 7305 5814 721,57,ALERTE_MOYENNE,Modification d'adresse recente,,True
+ALT-2022-10483,2022-08-28 00:00,CLI-276216,Retrait DAB,424559.35,Allemagne,FR71 9858 4946 4987 4467 274,93,ALERTE_HAUTE,Pays de destination inhabituel,N. Traore,True
+ALT-2022-10484,2022-05-12 00:00,CLI-798281,Retrait DAB,4680.52,Allemagne,FR95 3224 9757 9060 2481 914,89,ALERTE_FAIBLE,Fractionnement detecte (smurfing),,True
+ALT-2024-10485,2024-11-30 00:00,CLI-773292,Virement instantane,45957.52,Nigeria,FR39 4662 5244 2895 5767 189,52,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2024-10486,2024-07-13 00:00,CLI-704941,Virement SEPA,4739.03,Portugal,FR17 9775 4110 7359 7941 427,94,ALERTE_FAIBLE,Heure de transaction suspecte,,False
+ALT-2022-10487,2022-06-01 00:00,CLI-977885,Virement international,2278.91,Chine,FR97 8467 3415 5643 3389 864,87,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2023-10488,2023-09-11 00:00,CLI-405654,Retrait DAB,36793.5,France,FR52 3501 4450 4687 1861 986,94,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2024-10489,2024-08-04 00:00,CLI-810828,Retrait DAB,4605.69,Roumanie,FR60 7407 2176 9648 5637 389,89,ALERTE_MOYENNE,Modification d'adresse recente,N. Traore,True
+ALT-2022-10490,2022-12-30 00:00,CLI-418844,Retrait DAB,1955.38,Espagne,FR83 3253 8239 8904 5769 248,58,ALERTE_MOYENNE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2024-10491,2024-07-11 00:00,CLI-547858,Virement international,9587.65,France,FR22 6825 8763 3943 1859 220,77,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10492,2022-03-30 00:00,CLI-784507,Retrait DAB,15838.49,Allemagne,FR69 7260 5509 8292 7018 111,52,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,False
+ALT-2024-10493,2024-10-20 00:00,CLI-602790,Paiement carte,3509.56,Allemagne,FR85 3967 7290 8932 8105 405,81,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,True
+ALT-2024-10494,2024-01-11 00:00,CLI-512925,Virement instantane,40785.12,Ukraine,FR77 9004 2047 9501 9830 830,97,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2024-10495,2024-01-21 00:00,CLI-235073,Virement instantane,3628.47,Italie,FR93 3641 2438 5206 1573 186,52,EN_INVESTIGATION,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2023-10496,2023-09-23 00:00,CLI-920827,Paiement carte,4896.96,Ukraine,FR66 3291 9035 6127 9563 460,83,EN_INVESTIGATION,Modification d'adresse recente,S. Chen,True
+ALT-2024-10497,2024-04-20 00:00,CLI-240727,Virement instantane,4188.93,Ukraine,FR37 6882 5544 3105 7914 176,80,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2023-10498,2023-03-15 00:00,CLI-661936,Virement international,354436.55,Allemagne,FR90 5413 4156 7097 9379 719,55,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2023-10499,2023-02-26 00:00,CLI-817204,Virement instantane,616.59,Nigeria,FR18 6396 2457 6944 6464 896,62,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2022-10500,2022-03-05 00:00,CLI-284267,Virement instantane,2197.2,Portugal,FR85 9021 2565 9666 6716 817,81,ALERTE_FAIBLE,Modification d'adresse recente,A. Kowalski,True
+ALT-2022-10501,2022-12-14 00:00,CLI-927061,Virement instantane,1268.36,Ukraine,FR86 7597 8812 3090 5244 109,88,EN_INVESTIGATION,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10502,2023-07-09 00:00,CLI-841870,Virement international,17031.65,Nigeria,FR68 3999 8191 6799 8678 614,63,ALERTE_FAIBLE,Geolocalisation incoherente,,False
+ALT-2023-10503,2023-02-16 00:00,CLI-765506,Virement SEPA,8912.4,Allemagne,FR40 2534 3705 1940 2385 861,63,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10504,2024-12-12 00:00,CLI-658271,Virement SEPA,2789.07,Nigeria,FR11 4115 1119 7962 9754 867,67,ALERTE_MOYENNE,Modification d'adresse recente,,True
+ALT-2024-10505,2024-04-25 00:00,CLI-283305,Virement SEPA,12583.96,Roumanie,FR27 9416 6788 1834 7925 607,69,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2024-10506,2024-06-02 00:00,CLI-606592,Paiement carte,1623.94,Portugal,FR37 1036 7449 4562 5994 758,77,ALERTE_HAUTE,Compte beneficiaire recent (<30j),,False
+ALT-2022-10507,2022-01-03 00:00,CLI-466709,Virement international,2100.85,Nigeria,FR55 1145 2660 8058 9061 302,50,EN_INVESTIGATION,Modification d'adresse recente,S. Chen,False
+ALT-2022-10508,2022-08-29 00:00,CLI-514563,Paiement carte,4608.99,Portugal,FR56 8017 3984 9788 5415 211,73,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10509,2024-04-07 00:00,CLI-398739,Virement SEPA,2452.82,Espagne,FR60 7898 6426 1517 3626 782,57,BLOQUEE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10510,2023-07-24 00:00,CLI-626236,Retrait DAB,2975.56,Espagne,FR24 2767 1346 3066 3548 452,77,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2023-10511,2023-09-06 00:00,CLI-186627,Retrait DAB,4893.97,Italie,FR89 3498 9376 4061 5087 387,94,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10512,2022-11-09 00:00,CLI-289989,Virement international,40222.26,Espagne,FR39 2973 3167 7574 1628 380,57,ALERTE_MOYENNE,Geolocalisation incoherente,M. Dubois,False
+ALT-2022-10513,2022-04-29 00:00,CLI-332548,Paiement carte,22115.87,Nigeria,FR71 2005 9353 7997 1846 411,52,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2024-10514,2024-01-27 00:00,CLI-792511,Paiement carte,2381.33,Italie,FR46 8734 5590 2650 8059 289,61,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10515,2022-06-19 00:00,CLI-478083,Paiement carte,5614.77,Ukraine,FR87 7088 4903 5521 4441 698,69,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,True
+ALT-2022-10516,2022-12-27 00:00,CLI-567423,Virement SEPA,3139.53,Allemagne,FR79 6618 5939 8769 4309 646,91,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2023-10517,2023-10-14 00:00,CLI-464211,Paiement carte,16363.65,Chine,FR90 2923 8145 2109 8910 529,78,EN_INVESTIGATION,Montant anormalement eleve,S. Chen,False
+ALT-2024-10518,2024-12-21 00:00,CLI-299429,Retrait DAB,4853.69,Chine,FR97 9723 9412 2228 3711 548,93,EN_INVESTIGATION,Geolocalisation incoherente,,False
+ALT-2023-10519,2023-10-31 00:00,CLI-830565,Virement SEPA,3232.48,Ukraine,FR68 9254 9602 5240 5971 972,59,ALERTE_FAIBLE,Beneficiaire jamais utilise,,True
+ALT-2022-10520,2022-05-23 00:00,CLI-239430,Paiement carte,29010.46,France,FR92 5079 4440 9758 2903 101,86,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2024-10521,2024-05-30 00:00,CLI-440404,Virement SEPA,16881.72,France,FR55 4592 5582 3895 5194 116,79,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10522,2024-05-17 00:00,CLI-313824,Virement instantane,3354.37,Nigeria,FR29 8308 4796 8109 7039 251,75,ALERTE_HAUTE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2022-10523,2022-04-03 00:00,CLI-779020,Paiement carte,306346.09,France,FR49 3669 3911 7458 4077 171,54,ALERTE_HAUTE,Geolocalisation incoherente,S. Chen,False
+ALT-2024-10524,2024-01-07 00:00,CLI-732599,Virement SEPA,9510.52,Nigeria,FR59 1339 2802 1222 1716 235,60,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,True
+ALT-2022-10525,2022-12-29 00:00,CLI-189092,Virement international,4809.28,Espagne,FR71 8279 3672 6036 6435 590,54,ALERTE_MOYENNE,Montant anormalement eleve,,False
+ALT-2024-10526,2024-02-22 00:00,CLI-636391,Retrait DAB,2946.26,Espagne,FR10 4675 1393 4713 7998 494,54,ALERTE_FAIBLE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10527,2024-02-26 00:00,CLI-335428,Virement SEPA,4479.01,Portugal,FR55 2249 6467 2939 6906 186,47,EN_INVESTIGATION,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10528,2024-12-17 00:00,CLI-416212,Virement instantane,13161.45,Portugal,FR54 2702 5441 9179 7047 371,96,ALERTE_HAUTE,Montant anormalement eleve,S. Chen,False
+ALT-2023-10529,2023-02-04 00:00,CLI-218661,Virement instantane,408582.83,Nigeria,FR45 3370 2481 6292 3089 286,94,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10530,2023-03-12 00:00,CLI-941105,Virement international,48778.2,Nigeria,FR63 9144 9826 9745 9070 645,79,ALERTE_MOYENNE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10531,2024-04-30 00:00,CLI-479279,Virement SEPA,36207.45,Italie,FR12 6937 8764 3188 2804 161,67,ALERTE_FAIBLE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10532,2022-04-18 00:00,CLI-968034,Virement international,4258.64,France,FR27 2920 3344 7184 1431 812,72,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,True
+ALT-2023-10533,2023-02-10 00:00,CLI-356949,Virement SEPA,4268.47,France,FR82 7823 3452 3988 8696 861,53,EN_INVESTIGATION,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10534,2024-03-20 00:00,CLI-162915,Virement SEPA,2018.02,Espagne,FR74 3627 1178 7494 7940 796,74,EN_INVESTIGATION,Beneficiaire jamais utilise,,False
+ALT-2024-10535,2024-07-12 00:00,CLI-231211,Virement international,1522.92,Nigeria,FR89 1917 4586 7427 4009 942,92,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10536,2023-07-10 00:00,CLI-778058,Retrait DAB,3437.15,Italie,FR44 2776 2710 2274 6942 717,94,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10537,2022-06-08 00:00,CLI-296863,Virement instantane,7939.36,Italie,FR91 1530 4937 5410 2393 683,81,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2023-10538,2023-07-23 00:00,CLI-624514,Virement international,18887.22,Roumanie,FR60 6830 3122 2595 6428 517,92,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2022-10539,2022-05-29 00:00,CLI-269054,Virement international,22195.03,Chine,FR20 2528 4794 4533 3307 887,90,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2023-10540,2023-08-09 00:00,CLI-141956,Retrait DAB,20255.93,Italie,FR36 2228 3496 9151 2595 924,45,ALERTE_MOYENNE,Beneficiaire jamais utilise,,True
+ALT-2023-10541,2023-05-24 00:00,CLI-704516,Paiement carte,923.51,Roumanie,FR21 2165 3935 8548 5226 584,61,BLOQUEE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10542,2022-12-15 00:00,CLI-235249,Retrait DAB,17898.13,Roumanie,FR75 6138 7122 2367 7769 618,73,ALERTE_FAIBLE,Montant anormalement eleve,,True
+ALT-2024-10543,2024-02-23 00:00,CLI-404779,Retrait DAB,4057.66,Espagne,FR82 7541 2195 4654 7360 995,74,ALERTE_HAUTE,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10544,2024-02-25 00:00,CLI-516226,Retrait DAB,2908.02,Italie,FR61 6385 2056 6198 6610 718,76,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10545,2023-06-13 00:00,CLI-695807,Virement SEPA,12008.35,Nigeria,FR17 6922 8046 8756 4496 155,58,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2024-10546,2024-12-30 00:00,CLI-573349,Retrait DAB,1292.48,Ukraine,FR37 5250 4015 1880 2514 538,66,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10547,2023-08-12 00:00,CLI-471921,Virement instantane,402735.83,Nigeria,FR11 4253 2274 3369 6304 780,97,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10548,2022-05-15 00:00,CLI-645984,Virement SEPA,19238.35,Chine,FR26 8361 2596 1597 4581 863,57,BLOQUEE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10549,2022-01-08 00:00,CLI-488241,Paiement carte,2066.38,France,FR48 6029 9226 3043 9177 764,74,BLOQUEE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2024-10550,2024-08-22 00:00,CLI-549192,Paiement carte,201121.98,Espagne,FR80 3664 9892 8141 7251 391,99,BLOQUEE,Beneficiaire jamais utilise,,True
+ALT-2022-10551,2022-07-30 00:00,CLI-208711,Retrait DAB,9671.54,Ukraine,FR22 8276 9247 1534 5749 972,71,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2022-10552,2022-08-26 00:00,CLI-532993,Retrait DAB,105998.25,France,FR57 4668 9315 5646 5384 774,61,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,True
+ALT-2023-10553,2023-09-23 00:00,CLI-959868,Virement instantane,6181.11,Roumanie,FR52 3792 8045 4962 7412 297,84,BLOQUEE,Montant anormalement eleve,,False
+ALT-2022-10554,2022-06-12 00:00,CLI-642404,Virement international,4727.26,Nigeria,FR39 2631 3069 9261 2939 746,81,BLOQUEE,Beneficiaire jamais utilise,,False
+ALT-2023-10555,2023-10-31 00:00,CLI-260483,Virement SEPA,9196.94,Ukraine,FR20 7265 1414 3138 8433 749,85,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10556,2023-07-13 00:00,CLI-907814,Paiement carte,42820.56,France,FR45 2359 3355 1379 2694 213,74,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10557,2023-04-17 00:00,CLI-509783,Virement SEPA,13128.25,Chine,FR12 7778 2205 8971 2250 315,88,BLOQUEE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10558,2022-11-07 00:00,CLI-996332,Virement SEPA,1309.13,Allemagne,FR53 6681 8928 9953 1082 262,78,ALERTE_FAIBLE,Pays de destination inhabituel,S. Chen,True
+ALT-2024-10559,2024-02-28 00:00,CLI-327496,Virement SEPA,28028.51,Roumanie,FR27 4600 2367 3073 5384 380,75,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2023-10560,2023-04-09 00:00,CLI-362241,Virement international,3853.38,Italie,FR97 5605 7436 2685 6105 269,95,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2023-10561,2023-07-16 00:00,CLI-550167,Virement international,3183.48,Roumanie,FR57 2052 8363 3740 1553 623,61,EN_INVESTIGATION,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10562,2023-07-03 00:00,CLI-357234,Virement SEPA,13095.69,Italie,FR94 7089 7094 3376 6151 225,45,ALERTE_FAIBLE,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10563,2023-05-26 00:00,CLI-731035,Virement international,3053.61,Ukraine,FR37 2686 5555 2225 7909 798,93,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10564,2022-03-03 00:00,CLI-230120,Retrait DAB,723.47,Espagne,FR86 6355 7272 4873 1348 391,46,EN_INVESTIGATION,Montant anormalement eleve,N. Traore,False
+ALT-2022-10565,2022-01-21 00:00,CLI-453778,Virement SEPA,453123.29,Allemagne,FR70 2558 7800 5931 5500 424,93,ALERTE_FAIBLE,Geolocalisation incoherente,M. Dubois,False
+ALT-2023-10566,2023-11-25 00:00,CLI-227310,Paiement carte,3255.44,Allemagne,FR13 4670 1783 1170 3273 207,65,BLOQUEE,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2022-10567,2022-01-03 00:00,CLI-821673,Virement SEPA,3758.49,Portugal,FR15 2815 1786 5985 2229 370,66,EN_INVESTIGATION,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10568,2022-10-27 00:00,CLI-991450,Retrait DAB,3125.54,Chine,FR95 3004 9548 9644 4940 691,75,BLOQUEE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10569,2022-05-05 00:00,CLI-791515,Virement international,913.1,Allemagne,FR19 9103 1987 4481 1215 786,58,BLOQUEE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10570,2022-06-10 00:00,CLI-897429,Paiement carte,2032.03,Chine,FR93 3523 9265 2731 3130 324,68,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2023-10571,2023-10-23 00:00,CLI-779878,Virement SEPA,1345.79,Espagne,FR69 2755 2805 4941 1271 571,56,ALERTE_FAIBLE,Montant anormalement eleve,N. Traore,False
+ALT-2023-10572,2023-03-19 00:00,CLI-516209,Virement instantane,1695.1,Nigeria,FR75 6467 1870 8230 5466 478,51,ALERTE_HAUTE,Geolocalisation incoherente,N. Traore,False
+ALT-2023-10573,2023-09-23 00:00,CLI-554626,Virement SEPA,12949.03,France,FR92 5078 2819 4597 2887 154,47,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,True
+ALT-2024-10574,2024-07-19 00:00,CLI-511970,Virement SEPA,15190.93,Italie,FR98 5395 9112 4370 3802 904,58,ALERTE_FAIBLE,Beneficiaire jamais utilise,,False
+ALT-2024-10575,2024-06-05 00:00,CLI-993978,Virement international,13328.55,Espagne,FR50 2137 3730 4069 6442 566,54,ALERTE_HAUTE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10576,2022-01-05 00:00,CLI-722859,Paiement carte,16872.45,Chine,FR84 1016 9000 5055 8742 212,47,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10577,2022-09-09 00:00,CLI-870509,Paiement carte,3988.65,Ukraine,FR42 8970 5153 6968 8516 113,97,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10578,2022-07-30 00:00,CLI-997859,Virement international,1714.72,Espagne,FR55 9156 1506 5003 8056 468,58,ALERTE_HAUTE,Fractionnement detecte (smurfing),N. Traore,True
+ALT-2023-10579,2023-09-27 00:00,CLI-283450,Paiement carte,4447.15,Roumanie,FR52 7406 7836 5526 6067 295,47,EN_INVESTIGATION,Modification d'adresse recente,A. Kowalski,True
+ALT-2023-10580,2023-02-26 00:00,CLI-108739,Retrait DAB,4079.0,Espagne,FR69 3461 9571 5747 3664 410,76,ALERTE_FAIBLE,Pays de destination inhabituel,A. Kowalski,True
+ALT-2023-10581,2023-06-06 00:00,CLI-105337,Retrait DAB,684.29,Roumanie,FR94 1010 1817 5119 3256 458,63,EN_INVESTIGATION,Modification d'adresse recente,S. Chen,True
+ALT-2024-10582,2024-02-11 00:00,CLI-404928,Virement international,1718.01,France,FR70 6810 5075 7328 7923 508,51,ALERTE_FAIBLE,Beneficiaire jamais utilise,,False
+ALT-2022-10583,2022-12-16 00:00,CLI-904950,Virement international,3037.58,Portugal,FR27 7820 4268 5932 5997 187,64,EN_INVESTIGATION,Compte beneficiaire recent (<30j),,False
+ALT-2023-10584,2023-12-22 00:00,CLI-428477,Virement instantane,4020.83,Roumanie,FR69 6803 8006 8643 7889 520,74,ALERTE_HAUTE,Modification d'adresse recente,M. Dubois,False
+ALT-2022-10585,2022-09-20 00:00,CLI-491235,Virement international,3901.35,Ukraine,FR82 5806 1877 7433 3063 512,87,ALERTE_HAUTE,Compte beneficiaire recent (<30j),,False
+ALT-2022-10586,2022-11-01 00:00,CLI-202130,Paiement carte,880.97,Chine,FR98 6428 1997 2989 9369 857,90,ALERTE_HAUTE,Fractionnement detecte (smurfing),,False
+ALT-2024-10587,2024-03-20 00:00,CLI-415508,Paiement carte,27288.71,France,FR72 4288 2879 2100 1000 256,83,ALERTE_HAUTE,Modification d'adresse recente,M. Dubois,False
+ALT-2022-10588,2022-03-04 00:00,CLI-414492,Retrait DAB,966.23,Chine,FR33 4849 9957 5264 8194 979,87,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10589,2024-09-18 00:00,CLI-877691,Virement instantane,597.46,Italie,FR70 8871 5751 5742 2638 702,76,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10590,2024-05-25 00:00,CLI-579285,Virement SEPA,4099.35,Nigeria,FR11 5960 1558 8282 1698 463,53,BLOQUEE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2022-10591,2022-12-28 00:00,CLI-650560,Retrait DAB,2109.86,Ukraine,FR18 3858 3480 6764 6558 570,90,ALERTE_MOYENNE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10592,2022-12-04 00:00,CLI-289136,Virement instantane,4622.72,Ukraine,FR94 9608 5247 3120 6309 702,82,ALERTE_FAIBLE,Geolocalisation incoherente,M. Dubois,True
+ALT-2022-10593,2022-12-14 00:00,CLI-599555,Paiement carte,4334.14,Italie,FR40 2727 3850 7292 7882 165,48,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2024-10594,2024-03-30 00:00,CLI-436759,Virement SEPA,39350.84,Chine,FR58 3182 4272 4206 5136 602,73,ALERTE_FAIBLE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2023-10595,2023-11-19 00:00,CLI-801138,Virement SEPA,4162.27,Italie,FR14 3302 1085 6891 7685 681,79,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,False
+ALT-2022-10596,2022-11-13 00:00,CLI-685836,Virement international,4245.81,Allemagne,FR66 8004 7162 2161 2280 230,95,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2023-10597,2023-05-29 00:00,CLI-968376,Paiement carte,1537.58,Nigeria,FR55 2113 3586 5719 2225 647,81,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2023-10598,2023-05-15 00:00,CLI-784963,Virement SEPA,3283.9,France,FR53 7904 5274 4285 6481 883,48,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2024-10599,2024-10-15 00:00,CLI-739633,Virement SEPA,7804.78,Roumanie,FR19 7819 2320 8844 3121 377,91,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,False
+ALT-2024-10600,2024-04-26 00:00,CLI-122484,Virement SEPA,20761.6,France,FR35 9752 7215 1296 8899 153,69,BLOQUEE,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10601,2024-07-07 00:00,CLI-468877,Virement international,453716.03,Roumanie,FR65 1949 4902 4801 2507 702,45,ALERTE_MOYENNE,Geolocalisation incoherente,,True
+ALT-2022-10602,2022-08-13 00:00,CLI-289365,Paiement carte,4429.65,France,FR50 6728 5001 5790 3125 720,70,BLOQUEE,Pays de destination inhabituel,M. Dubois,True
+ALT-2023-10603,2023-04-23 00:00,CLI-565087,Paiement carte,14263.74,Roumanie,FR80 5795 5001 9631 5383 426,89,EN_INVESTIGATION,Modification d'adresse recente,M. Dubois,True
+ALT-2023-10604,2023-04-15 00:00,CLI-243792,Virement instantane,4551.91,Italie,FR49 4453 3011 7101 3325 136,60,BLOQUEE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2023-10605,2023-02-13 00:00,CLI-162621,Paiement carte,4263.46,Nigeria,FR73 1308 7268 7302 8274 145,59,ALERTE_MOYENNE,Geolocalisation incoherente,S. Chen,False
+ALT-2024-10606,2024-01-14 00:00,CLI-738309,Paiement carte,735.17,Portugal,FR85 4547 1448 6586 8111 986,72,ALERTE_HAUTE,Pays de destination inhabituel,,False
+ALT-2024-10607,2024-08-05 00:00,CLI-700417,Virement instantane,4696.13,Ukraine,FR43 3663 7247 8656 4903 235,45,ALERTE_FAIBLE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2024-10608,2024-05-17 00:00,CLI-791252,Paiement carte,1831.21,France,FR25 6028 6259 5333 3929 554,74,ALERTE_HAUTE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2022-10609,2022-01-30 00:00,CLI-707723,Virement SEPA,4846.48,Portugal,FR88 6145 2049 8216 3945 364,94,ALERTE_FAIBLE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10610,2022-02-28 00:00,CLI-786398,Virement SEPA,3336.52,Espagne,FR97 9302 8214 6199 1687 666,90,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10611,2022-11-04 00:00,CLI-346097,Paiement carte,43587.06,Allemagne,FR19 9305 8271 2854 9372 179,60,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2024-10612,2024-06-16 00:00,CLI-736450,Paiement carte,2371.86,Roumanie,FR62 7139 8711 5817 1510 264,68,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,True
+ALT-2022-10613,2022-09-18 00:00,CLI-921524,Virement instantane,41361.54,Roumanie,FR37 7206 1534 3458 7243 880,86,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10614,2024-08-29 00:00,CLI-791218,Virement instantane,3798.71,Ukraine,FR66 6192 5410 4195 5801 349,66,ALERTE_MOYENNE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10615,2023-07-29 00:00,CLI-479459,Virement SEPA,10193.76,Roumanie,FR81 9284 2252 6935 8932 719,59,BLOQUEE,Geolocalisation incoherente,S. Chen,False
+ALT-2024-10616,2024-11-06 00:00,CLI-372922,Paiement carte,45916.96,Roumanie,FR50 2932 2335 7692 7898 617,54,EN_INVESTIGATION,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10617,2023-08-29 00:00,CLI-878938,Virement SEPA,569.81,Espagne,FR14 8068 1392 3735 2196 235,77,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10618,2022-06-22 00:00,CLI-720209,Virement instantane,2310.43,Allemagne,FR15 2208 6815 8354 7699 745,73,BLOQUEE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10619,2024-02-12 00:00,CLI-259652,Virement SEPA,462353.83,Roumanie,FR96 8430 7215 6250 8185 280,77,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10620,2023-09-18 00:00,CLI-985066,Retrait DAB,2719.82,Portugal,FR51 7292 6219 3923 3346 142,97,ALERTE_MOYENNE,Geolocalisation incoherente,,False
+ALT-2024-10621,2024-05-27 00:00,CLI-387150,Retrait DAB,4458.13,Chine,FR38 3774 5726 5250 2738 337,87,ALERTE_FAIBLE,Heure de transaction suspecte,M. Dubois,False
+ALT-2024-10622,2024-10-03 00:00,CLI-664045,Virement international,62307.56,France,FR72 1422 7054 4328 5617 684,72,BLOQUEE,Modification d'adresse recente,S. Chen,False
+ALT-2023-10623,2023-08-10 00:00,CLI-617215,Paiement carte,4630.98,Allemagne,FR27 5562 2908 6795 2295 862,95,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2024-10624,2024-02-07 00:00,CLI-841143,Paiement carte,25405.88,France,FR65 2645 9540 6202 4119 961,80,ALERTE_HAUTE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10625,2024-03-18 00:00,CLI-608042,Virement international,2192.94,Chine,FR46 3159 4253 2453 9459 977,91,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,True
+ALT-2023-10626,2023-05-15 00:00,CLI-743173,Retrait DAB,3009.82,Italie,FR91 6713 8933 9691 3950 998,64,ALERTE_MOYENNE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10627,2024-02-27 00:00,CLI-891634,Paiement carte,2264.95,Nigeria,FR67 6331 5053 7960 2897 280,74,ALERTE_FAIBLE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2024-10628,2024-11-03 00:00,CLI-532016,Virement international,44697.72,France,FR47 5389 9314 4524 7701 162,80,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2023-10629,2023-09-06 00:00,CLI-863559,Virement international,4140.64,Roumanie,FR91 1747 6054 8334 7714 326,81,ALERTE_MOYENNE,Modification d'adresse recente,S. Chen,True
+ALT-2024-10630,2024-01-11 00:00,CLI-941390,Retrait DAB,292895.29,Allemagne,FR52 6778 2039 1806 9497 315,68,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2024-10631,2024-04-20 00:00,CLI-679811,Virement international,1532.01,France,FR14 1328 9627 2679 9216 507,95,BLOQUEE,Montant anormalement eleve,S. Chen,False
+ALT-2023-10632,2023-03-05 00:00,CLI-952487,Retrait DAB,609.1,Nigeria,FR26 5423 2391 2253 2210 616,91,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10633,2022-06-09 00:00,CLI-922892,Paiement carte,40667.9,Nigeria,FR75 1383 5950 5490 8518 307,51,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2023-10634,2023-12-26 00:00,CLI-659104,Virement instantane,918.78,Italie,FR58 1282 9143 7449 7106 881,79,ALERTE_HAUTE,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2023-10635,2023-06-09 00:00,CLI-448583,Virement international,3970.43,Allemagne,FR22 3773 4402 9025 5095 185,54,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2022-10636,2022-03-19 00:00,CLI-138283,Paiement carte,3953.34,Nigeria,FR10 5393 4427 9007 9938 611,65,ALERTE_MOYENNE,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10637,2024-08-05 00:00,CLI-833222,Virement SEPA,379881.19,Nigeria,FR26 1223 3655 9518 2990 270,57,BLOQUEE,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10638,2023-10-08 00:00,CLI-538459,Retrait DAB,41141.91,France,FR47 2926 8134 5820 5441 635,65,EN_INVESTIGATION,Vitesse de transactions anormale,,False
+ALT-2022-10639,2022-07-10 00:00,CLI-644609,Virement instantane,411266.18,Portugal,FR70 8583 4450 6409 3217 268,78,BLOQUEE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10640,2022-04-07 00:00,CLI-308947,Virement SEPA,1176.57,Ukraine,FR68 6423 2551 2001 8679 708,55,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2023-10641,2023-08-07 00:00,CLI-712859,Paiement carte,46754.58,Roumanie,FR89 7607 5173 9864 4319 179,82,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10642,2022-07-16 00:00,CLI-446198,Virement instantane,1683.22,Portugal,FR88 8756 4429 3754 1043 902,59,ALERTE_MOYENNE,Pays de destination inhabituel,,False
+ALT-2022-10643,2022-01-27 00:00,CLI-243628,Virement instantane,44357.63,Chine,FR64 8728 6359 5957 9198 878,52,ALERTE_MOYENNE,Modification d'adresse recente,N. Traore,False
+ALT-2023-10644,2023-02-10 00:00,CLI-734787,Virement international,3678.1,Espagne,FR91 5550 3341 8163 8235 601,89,ALERTE_FAIBLE,Pays de destination inhabituel,,False
+ALT-2024-10645,2024-12-09 00:00,CLI-462798,Retrait DAB,2066.81,Italie,FR88 4129 7266 7130 3932 865,45,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10646,2022-09-15 00:00,CLI-113625,Virement instantane,459968.34,Portugal,FR14 5504 8843 7525 1719 812,90,ALERTE_FAIBLE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2024-10647,2024-08-30 00:00,CLI-886364,Virement instantane,4674.09,Allemagne,FR14 7054 1472 3509 3898 991,99,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,True
+ALT-2022-10648,2022-05-23 00:00,CLI-993990,Virement international,36976.59,France,FR52 6185 3772 7000 9459 114,87,BLOQUEE,Geolocalisation incoherente,M. Dubois,True
+ALT-2022-10649,2022-08-16 00:00,CLI-146670,Paiement carte,4212.71,Italie,FR98 9281 7705 3833 1052 418,62,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,False
+ALT-2023-10650,2023-03-01 00:00,CLI-194960,Virement international,3056.78,Allemagne,FR33 6201 1329 3774 1171 322,85,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10651,2023-03-09 00:00,CLI-425569,Virement SEPA,4267.89,Nigeria,FR46 3916 5570 3300 6169 523,59,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10652,2023-07-06 00:00,CLI-465805,Virement instantane,1667.09,Chine,FR90 3793 1601 7318 3551 650,81,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10653,2022-05-18 00:00,CLI-195166,Virement instantane,48582.07,Italie,FR43 4575 8662 5273 1515 218,78,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10654,2024-06-14 00:00,CLI-835354,Virement SEPA,346237.16,Roumanie,FR11 3600 7904 8790 6483 444,86,ALERTE_HAUTE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10655,2022-08-22 00:00,CLI-722408,Virement instantane,13377.23,Nigeria,FR61 8759 4990 5138 7114 715,66,BLOQUEE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10656,2022-05-18 00:00,CLI-705540,Retrait DAB,3934.28,France,FR30 9391 3726 5924 9586 303,81,ALERTE_MOYENNE,Heure de transaction suspecte,A. Kowalski,True
+ALT-2022-10657,2022-03-26 00:00,CLI-582961,Virement SEPA,1891.73,Espagne,FR35 3819 5936 6038 2316 289,60,ALERTE_MOYENNE,Geolocalisation incoherente,M. Dubois,False
+ALT-2022-10658,2022-06-26 00:00,CLI-204766,Retrait DAB,3581.21,Ukraine,FR97 7456 4481 8738 7165 951,74,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10659,2023-12-12 00:00,CLI-865850,Retrait DAB,11008.68,Nigeria,FR78 2174 6683 9000 1440 327,83,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10660,2023-02-09 00:00,CLI-776936,Virement international,2756.55,Espagne,FR73 4079 1724 4460 5946 545,50,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10661,2022-08-04 00:00,CLI-288238,Virement international,1782.34,Nigeria,FR97 9476 2743 8617 2353 454,88,ALERTE_HAUTE,Geolocalisation incoherente,M. Dubois,False
+ALT-2023-10662,2023-12-01 00:00,CLI-802750,Retrait DAB,1079.33,Nigeria,FR16 5963 7962 5237 2899 718,96,BLOQUEE,Modification d'adresse recente,A. Kowalski,False
+ALT-2024-10663,2024-08-05 00:00,CLI-657540,Retrait DAB,29076.09,Allemagne,FR29 1113 6523 5224 4237 627,97,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2023-10664,2023-11-03 00:00,CLI-819729,Paiement carte,1767.71,Portugal,FR64 6528 5852 1385 9892 373,56,ALERTE_FAIBLE,Vitesse de transactions anormale,N. Traore,True
+ALT-2023-10665,2023-01-19 00:00,CLI-657075,Retrait DAB,1960.85,Italie,FR32 2377 9765 2549 3065 844,54,BLOQUEE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10666,2023-09-26 00:00,CLI-696711,Retrait DAB,15984.53,France,FR19 6350 7107 1627 3404 723,91,ALERTE_HAUTE,Geolocalisation incoherente,,True
+ALT-2023-10667,2023-05-12 00:00,CLI-856646,Virement SEPA,4673.48,Nigeria,FR24 4139 5275 5967 9422 652,99,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10668,2022-05-22 00:00,CLI-625927,Virement SEPA,24662.55,Nigeria,FR33 5668 5467 1082 7671 312,46,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2023-10669,2023-01-10 00:00,CLI-843449,Paiement carte,3195.86,Italie,FR18 5715 8547 7893 6386 654,69,BLOQUEE,Modification d'adresse recente,M. Dubois,False
+ALT-2023-10670,2023-09-13 00:00,CLI-320869,Virement instantane,42018.29,Espagne,FR96 7390 5189 7601 1528 776,99,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2022-10671,2022-06-11 00:00,CLI-573431,Retrait DAB,1433.98,France,FR29 3731 6761 8070 7805 883,46,ALERTE_FAIBLE,Modification d'adresse recente,N. Traore,False
+ALT-2023-10672,2023-02-19 00:00,CLI-514973,Virement international,10926.38,Italie,FR24 5740 3926 3606 7571 663,71,ALERTE_FAIBLE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2023-10673,2023-11-21 00:00,CLI-898756,Paiement carte,33362.4,Ukraine,FR78 9724 7425 4688 7618 606,93,BLOQUEE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2022-10674,2022-12-02 00:00,CLI-280638,Virement SEPA,5150.18,Nigeria,FR84 7850 7852 7722 4094 751,46,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2024-10675,2024-03-26 00:00,CLI-696960,Retrait DAB,23394.89,Allemagne,FR57 1372 7378 9377 4162 970,55,BLOQUEE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10676,2023-01-16 00:00,CLI-317062,Virement instantane,4717.13,Chine,FR68 5014 8268 4963 3897 572,77,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10677,2023-07-28 00:00,CLI-645015,Retrait DAB,8142.9,Nigeria,FR19 7833 5260 9803 2982 832,94,EN_INVESTIGATION,Modification d'adresse recente,M. Dubois,False
+ALT-2023-10678,2023-01-21 00:00,CLI-481024,Retrait DAB,7690.38,Ukraine,FR90 8209 8021 3032 2697 249,99,ALERTE_FAIBLE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10679,2023-05-16 00:00,CLI-201843,Paiement carte,3454.42,Allemagne,FR68 9053 5009 5259 6610 402,89,BLOQUEE,Vitesse de transactions anormale,N. Traore,False
+ALT-2024-10680,2024-01-14 00:00,CLI-331757,Paiement carte,1738.85,Roumanie,FR47 6024 3593 5992 8787 830,73,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10681,2024-04-18 00:00,CLI-711561,Paiement carte,1815.5,Espagne,FR84 1197 5250 6966 9332 863,78,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2023-10682,2023-07-13 00:00,CLI-608817,Virement international,3397.33,Ukraine,FR71 3873 8929 7223 1233 784,49,ALERTE_FAIBLE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10683,2022-04-11 00:00,CLI-473818,Retrait DAB,1175.4,Chine,FR82 1199 9587 4741 4318 472,87,ALERTE_HAUTE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10684,2024-02-10 00:00,CLI-936677,Virement SEPA,29897.8,Chine,FR82 9567 5062 5009 5195 916,92,ALERTE_MOYENNE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2022-10685,2022-04-08 00:00,CLI-868959,Virement SEPA,681.05,Espagne,FR76 5960 1997 4403 4728 349,82,EN_INVESTIGATION,Compte beneficiaire recent (<30j),N. Traore,True
+ALT-2024-10686,2024-09-01 00:00,CLI-222060,Retrait DAB,4467.38,Allemagne,FR70 4234 2636 9886 4522 712,76,ALERTE_FAIBLE,Montant anormalement eleve,,False
+ALT-2022-10687,2022-11-22 00:00,CLI-744259,Retrait DAB,3739.92,France,FR42 7671 5435 9070 3892 436,77,BLOQUEE,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10688,2023-06-08 00:00,CLI-756326,Retrait DAB,4402.67,Allemagne,FR33 8988 1106 6229 9348 581,76,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,False
+ALT-2024-10689,2024-10-02 00:00,CLI-962514,Virement international,46638.29,Italie,FR23 4797 4493 6033 9221 412,65,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10690,2024-07-21 00:00,CLI-923982,Virement international,1446.31,Espagne,FR88 3574 6335 9461 8762 769,83,BLOQUEE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10691,2023-07-01 00:00,CLI-969512,Paiement carte,4704.48,Chine,FR49 7968 7447 7834 1092 880,70,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10692,2023-05-12 00:00,CLI-409116,Paiement carte,3951.72,France,FR51 8004 7265 6336 4267 916,58,EN_INVESTIGATION,Modification d'adresse recente,N. Traore,False
+ALT-2022-10693,2022-10-31 00:00,CLI-592696,Virement SEPA,375282.12,Nigeria,FR98 8979 5093 5589 7144 160,51,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10694,2023-06-16 00:00,CLI-912901,Retrait DAB,9996.39,Espagne,FR29 5896 4276 2441 8180 351,65,EN_INVESTIGATION,Modification d'adresse recente,A. Kowalski,False
+ALT-2024-10695,2024-12-30 00:00,CLI-874958,Paiement carte,39744.53,Roumanie,FR67 4519 4016 6263 8673 333,74,ALERTE_FAIBLE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10696,2023-08-07 00:00,CLI-515559,Retrait DAB,46970.66,France,FR77 1987 9392 7119 1265 679,72,ALERTE_HAUTE,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10697,2023-10-13 00:00,CLI-918506,Virement SEPA,3086.67,Ukraine,FR30 9413 2437 8675 4127 869,49,BLOQUEE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10698,2024-08-20 00:00,CLI-653348,Retrait DAB,1184.92,France,FR61 5813 1104 7388 1309 108,59,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10699,2022-04-13 00:00,CLI-907327,Virement instantane,39550.05,Roumanie,FR83 3500 4094 3429 4377 415,56,ALERTE_HAUTE,Montant anormalement eleve,,True
+ALT-2022-10700,2022-04-28 00:00,CLI-790138,Virement international,2930.34,Italie,FR48 3675 7951 5441 4817 322,94,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10701,2022-04-17 00:00,CLI-498895,Virement SEPA,21880.13,Chine,FR66 7540 4254 4369 7234 704,97,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,True
+ALT-2022-10702,2022-06-12 00:00,CLI-535293,Virement international,10416.12,Italie,FR21 9305 6895 8831 5182 620,52,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2023-10703,2023-02-03 00:00,CLI-555238,Paiement carte,209606.49,Italie,FR99 2383 7384 8722 1259 381,91,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10704,2022-01-20 00:00,CLI-164153,Virement instantane,10757.67,Italie,FR94 5801 7089 7797 3580 529,56,ALERTE_MOYENNE,Modification d'adresse recente,S. Chen,False
+ALT-2023-10705,2023-06-06 00:00,CLI-523262,Paiement carte,4455.85,Portugal,FR89 6260 1466 1423 6432 129,75,ALERTE_HAUTE,Heure de transaction suspecte,N. Traore,True
+ALT-2024-10706,2024-01-08 00:00,CLI-465603,Virement international,2196.67,Allemagne,FR63 2086 2841 8793 8609 525,99,EN_INVESTIGATION,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2023-10707,2023-10-04 00:00,CLI-483341,Virement instantane,2643.1,Allemagne,FR71 9074 4215 3061 4593 627,53,ALERTE_MOYENNE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2024-10708,2024-04-04 00:00,CLI-865492,Paiement carte,2317.27,Roumanie,FR69 9518 9468 5370 3157 435,72,ALERTE_FAIBLE,Heure de transaction suspecte,,True
+ALT-2024-10709,2024-04-03 00:00,CLI-115017,Virement international,4577.07,France,FR40 3652 7500 6284 1191 685,75,BLOQUEE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10710,2023-05-24 00:00,CLI-787300,Virement instantane,4967.14,Roumanie,FR53 4052 5182 6586 8984 890,80,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10711,2022-02-18 00:00,CLI-338157,Retrait DAB,4018.79,Allemagne,FR25 5844 3069 6695 6030 563,72,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2023-10712,2023-12-15 00:00,CLI-332634,Virement SEPA,4190.12,Italie,FR55 9611 3486 9692 9602 148,96,EN_INVESTIGATION,Vitesse de transactions anormale,,False
+ALT-2024-10713,2024-03-25 00:00,CLI-765748,Virement instantane,4762.24,Italie,FR29 9860 7947 4312 5561 150,70,ALERTE_FAIBLE,Geolocalisation incoherente,,False
+ALT-2023-10714,2023-05-09 00:00,CLI-842749,Virement instantane,2606.02,Portugal,FR36 2094 1970 7723 3298 247,75,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10715,2024-04-25 00:00,CLI-389635,Virement international,2385.54,Nigeria,FR25 3487 4372 8264 3333 788,62,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10716,2024-06-01 00:00,CLI-962181,Virement SEPA,33284.56,Ukraine,FR88 8444 3517 2153 6593 996,62,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2024-10717,2024-09-06 00:00,CLI-895302,Paiement carte,31324.04,Italie,FR76 2688 2451 6940 4953 990,99,BLOQUEE,Geolocalisation incoherente,N. Traore,True
+ALT-2024-10718,2024-05-08 00:00,CLI-771366,Virement instantane,39647.55,Roumanie,FR63 5116 6843 2361 1211 203,90,BLOQUEE,Fractionnement detecte (smurfing),,False
+ALT-2022-10719,2022-12-29 00:00,CLI-611560,Virement instantane,34953.28,Nigeria,FR87 9502 7268 1689 2766 704,98,ALERTE_HAUTE,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10720,2023-01-21 00:00,CLI-464175,Retrait DAB,36918.74,Chine,FR83 9564 1610 7532 8074 785,46,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10721,2022-05-10 00:00,CLI-476007,Paiement carte,1815.25,Roumanie,FR41 5532 8307 1783 6316 569,89,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10722,2024-02-15 00:00,CLI-449976,Paiement carte,20684.26,Ukraine,FR39 6186 6010 2659 2481 754,70,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2022-10723,2022-07-05 00:00,CLI-891434,Virement international,36832.82,Espagne,FR51 1260 2826 4109 6087 618,89,EN_INVESTIGATION,Beneficiaire jamais utilise,,False
+ALT-2023-10724,2023-12-06 00:00,CLI-524292,Paiement carte,8417.09,Espagne,FR53 9729 6796 7500 3179 494,51,ALERTE_FAIBLE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2023-10725,2023-01-14 00:00,CLI-618513,Virement international,119755.32,Italie,FR41 4700 8214 4538 3381 112,63,ALERTE_MOYENNE,Montant anormalement eleve,,False
+ALT-2023-10726,2023-09-23 00:00,CLI-709113,Retrait DAB,2365.37,Nigeria,FR43 6963 5318 8066 7065 473,60,ALERTE_FAIBLE,Modification d'adresse recente,A. Kowalski,True
+ALT-2024-10727,2024-10-02 00:00,CLI-707081,Virement international,1105.22,Allemagne,FR74 8794 9771 6136 2717 926,97,EN_INVESTIGATION,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10728,2023-10-30 00:00,CLI-557372,Virement SEPA,1711.1,Espagne,FR12 8347 1942 6695 8809 988,90,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,True
+ALT-2024-10729,2024-11-02 00:00,CLI-614651,Retrait DAB,1742.41,Espagne,FR60 4525 8407 6076 9821 813,88,ALERTE_FAIBLE,Vitesse de transactions anormale,S. Chen,False
+ALT-2022-10730,2022-11-09 00:00,CLI-155544,Paiement carte,49108.03,Allemagne,FR19 2042 9679 7778 3641 850,57,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,True
+ALT-2024-10731,2024-07-25 00:00,CLI-701885,Retrait DAB,4679.72,Nigeria,FR58 8772 3269 6624 3998 198,64,ALERTE_FAIBLE,Heure de transaction suspecte,N. Traore,False
+ALT-2023-10732,2023-11-28 00:00,CLI-763756,Virement SEPA,908.31,Roumanie,FR67 2540 9583 5223 1334 720,48,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,True
+ALT-2022-10733,2022-06-06 00:00,CLI-128996,Virement instantane,507.78,Roumanie,FR18 3824 4088 9162 3978 648,58,ALERTE_FAIBLE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10734,2024-09-16 00:00,CLI-256080,Retrait DAB,24831.39,France,FR89 1635 9807 2970 6106 398,51,ALERTE_FAIBLE,Heure de transaction suspecte,,False
+ALT-2022-10735,2022-08-21 00:00,CLI-790474,Virement instantane,498803.86,Nigeria,FR67 2906 2072 6543 5034 474,54,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2022-10736,2022-12-04 00:00,CLI-842011,Virement instantane,46247.47,Allemagne,FR76 2490 6251 9639 9715 634,70,EN_INVESTIGATION,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10737,2022-08-11 00:00,CLI-495383,Virement SEPA,2515.57,Chine,FR13 9048 2709 6267 8931 724,69,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2024-10738,2024-10-19 00:00,CLI-669153,Virement international,13463.55,Roumanie,FR16 9753 1458 1773 5963 494,57,ALERTE_FAIBLE,Modification d'adresse recente,M. Dubois,False
+ALT-2024-10739,2024-01-23 00:00,CLI-324912,Virement SEPA,43214.94,Chine,FR33 4630 6247 2195 4335 607,58,EN_INVESTIGATION,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10740,2022-12-04 00:00,CLI-953161,Paiement carte,180698.75,Espagne,FR59 4741 7091 7585 1733 259,54,EN_INVESTIGATION,Fractionnement detecte (smurfing),,False
+ALT-2023-10741,2023-12-01 00:00,CLI-872416,Paiement carte,3561.78,Nigeria,FR98 1167 7813 7777 7178 384,98,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2024-10742,2024-12-19 00:00,CLI-333805,Virement SEPA,3616.35,Allemagne,FR24 3603 9004 2089 4004 649,65,ALERTE_MOYENNE,Beneficiaire jamais utilise,N. Traore,False
+ALT-2024-10743,2024-07-21 00:00,CLI-962849,Virement international,43497.86,Allemagne,FR81 9158 4289 3082 9490 136,75,BLOQUEE,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10744,2022-05-04 00:00,CLI-557125,Virement instantane,13301.52,Roumanie,FR66 3338 8242 1672 9251 885,57,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2022-10745,2022-04-13 00:00,CLI-775424,Virement SEPA,2036.06,Nigeria,FR58 3508 5780 9283 2042 330,56,ALERTE_MOYENNE,Vitesse de transactions anormale,N. Traore,True
+ALT-2023-10746,2023-03-15 00:00,CLI-673700,Paiement carte,812.22,France,FR24 2067 7716 9487 9753 117,84,ALERTE_MOYENNE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2022-10747,2022-01-30 00:00,CLI-953232,Retrait DAB,4556.84,Allemagne,FR38 1576 9938 2211 1324 764,97,BLOQUEE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10748,2023-11-22 00:00,CLI-577085,Retrait DAB,4596.08,Espagne,FR68 9789 6900 4667 3365 393,85,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10749,2023-07-30 00:00,CLI-845208,Virement instantane,3830.03,Italie,FR61 3048 6782 4409 7648 531,71,BLOQUEE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2023-10750,2023-04-16 00:00,CLI-357957,Virement international,19670.49,Italie,FR82 4188 6954 8591 9981 983,93,BLOQUEE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10751,2023-11-16 00:00,CLI-532136,Virement SEPA,1135.99,Italie,FR37 6532 3567 7296 9478 542,56,BLOQUEE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10752,2024-03-20 00:00,CLI-772386,Retrait DAB,3501.47,Italie,FR29 7738 6185 8677 5025 988,92,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),A. Kowalski,True
+ALT-2024-10753,2024-01-28 00:00,CLI-447611,Virement SEPA,59659.73,Roumanie,FR55 4326 3467 4489 6039 960,49,ALERTE_FAIBLE,Vitesse de transactions anormale,,False
+ALT-2023-10754,2023-03-23 00:00,CLI-259401,Virement international,12884.81,Nigeria,FR25 9721 7712 3593 8693 816,62,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10755,2022-03-29 00:00,CLI-904402,Virement SEPA,3900.53,Roumanie,FR66 3979 8329 1325 9057 787,81,ALERTE_FAIBLE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10756,2022-02-26 00:00,CLI-929389,Virement international,354817.92,Roumanie,FR47 2361 6811 9105 1261 736,82,BLOQUEE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10757,2022-06-13 00:00,CLI-274988,Virement SEPA,2810.4,Italie,FR99 6023 5310 8355 8093 445,47,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2024-10758,2024-10-20 00:00,CLI-120145,Paiement carte,641.18,Nigeria,FR35 8702 7226 7363 1589 811,88,ALERTE_FAIBLE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2024-10759,2024-06-26 00:00,CLI-854048,Paiement carte,4341.32,Ukraine,FR34 9008 5614 5369 2364 560,87,ALERTE_HAUTE,Vitesse de transactions anormale,,True
+ALT-2022-10760,2022-07-11 00:00,CLI-168114,Virement international,4148.4,Italie,FR21 2235 1158 1220 6589 991,84,ALERTE_HAUTE,Heure de transaction suspecte,,False
+ALT-2024-10761,2024-12-26 00:00,CLI-245453,Virement international,4430.31,Allemagne,FR33 2502 2500 1062 8093 910,88,ALERTE_MOYENNE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2023-10762,2023-09-11 00:00,CLI-734868,Virement international,1941.82,Chine,FR46 2003 8250 4029 9316 106,50,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10763,2024-04-06 00:00,CLI-296134,Paiement carte,13520.55,Italie,FR30 7466 5861 7754 9301 755,63,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2024-10764,2024-05-24 00:00,CLI-890937,Virement international,5314.24,Allemagne,FR17 2028 9092 6639 1989 734,93,BLOQUEE,Pays de destination inhabituel,N. Traore,True
+ALT-2024-10765,2024-12-23 00:00,CLI-814164,Virement instantane,397123.75,Allemagne,FR82 5299 6227 8385 6867 860,96,BLOQUEE,Vitesse de transactions anormale,N. Traore,False
+ALT-2023-10766,2023-01-22 00:00,CLI-824424,Paiement carte,1910.64,Nigeria,FR69 8563 6314 7606 8596 989,74,BLOQUEE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10767,2023-11-20 00:00,CLI-256640,Retrait DAB,4773.35,Roumanie,FR11 8116 3830 3474 4013 322,51,ALERTE_HAUTE,Geolocalisation incoherente,N. Traore,False
+ALT-2023-10768,2023-10-09 00:00,CLI-391157,Virement international,2017.92,Italie,FR72 9177 8091 8128 3618 599,87,ALERTE_HAUTE,Vitesse de transactions anormale,M. Dubois,True
+ALT-2023-10769,2023-09-11 00:00,CLI-942658,Virement international,3677.11,Nigeria,FR72 1212 6046 3598 6547 745,64,EN_INVESTIGATION,Geolocalisation incoherente,,True
+ALT-2024-10770,2024-03-06 00:00,CLI-487519,Virement instantane,17685.37,Chine,FR18 1290 8324 7062 7832 352,58,ALERTE_FAIBLE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10771,2023-03-07 00:00,CLI-437466,Virement instantane,2997.48,Italie,FR85 4883 5081 9005 8696 119,65,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10772,2024-05-16 00:00,CLI-170176,Retrait DAB,258210.17,Nigeria,FR34 5525 3344 6960 1967 585,60,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2024-10773,2024-06-09 00:00,CLI-734148,Virement instantane,2671.49,Italie,FR92 4083 2972 5843 1992 853,57,EN_INVESTIGATION,Modification d'adresse recente,A. Kowalski,False
+ALT-2023-10774,2023-03-15 00:00,CLI-410486,Virement SEPA,2403.46,France,FR93 7904 2289 7039 8617 894,54,BLOQUEE,Geolocalisation incoherente,,False
+ALT-2024-10775,2024-04-11 00:00,CLI-840605,Virement instantane,2498.63,Chine,FR46 3668 3105 6288 1277 226,48,ALERTE_FAIBLE,Modification d'adresse recente,N. Traore,False
+ALT-2022-10776,2022-11-27 00:00,CLI-439617,Retrait DAB,37422.56,Espagne,FR51 1565 5635 6308 1645 623,48,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),M. Dubois,True
+ALT-2022-10777,2022-07-04 00:00,CLI-474426,Paiement carte,1182.06,Allemagne,FR62 6629 2139 9068 7562 658,48,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2024-10778,2024-05-13 00:00,CLI-338442,Virement international,4202.81,France,FR92 1396 1859 4694 8842 143,47,ALERTE_MOYENNE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2024-10779,2024-09-18 00:00,CLI-902723,Paiement carte,1937.57,Chine,FR13 7798 2113 1657 4278 703,47,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2022-10780,2022-03-26 00:00,CLI-516474,Virement international,2072.22,Espagne,FR78 1120 5610 5352 7132 623,69,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2023-10781,2023-08-20 00:00,CLI-130217,Retrait DAB,45406.77,Ukraine,FR61 4352 4028 2846 1682 496,96,ALERTE_HAUTE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2024-10782,2024-01-28 00:00,CLI-779299,Virement international,3533.93,Portugal,FR37 9373 1390 6077 1202 321,98,ALERTE_MOYENNE,Vitesse de transactions anormale,S. Chen,False
+ALT-2024-10783,2024-03-25 00:00,CLI-615566,Retrait DAB,19731.15,Ukraine,FR86 5675 5071 2272 2757 100,99,ALERTE_HAUTE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10784,2022-01-28 00:00,CLI-485928,Virement international,1865.51,Italie,FR64 7108 2246 5587 7840 769,46,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10785,2022-04-15 00:00,CLI-226169,Virement SEPA,46855.66,Chine,FR32 1235 2844 2410 4847 566,82,EN_INVESTIGATION,Beneficiaire jamais utilise,A. Kowalski,True
+ALT-2024-10786,2024-07-22 00:00,CLI-810954,Retrait DAB,3034.54,France,FR14 9149 8085 8630 7757 279,45,EN_INVESTIGATION,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10787,2024-05-19 00:00,CLI-297205,Virement international,1767.06,Chine,FR10 1722 8132 9004 4793 832,99,ALERTE_HAUTE,Beneficiaire jamais utilise,A. Kowalski,True
+ALT-2024-10788,2024-07-09 00:00,CLI-861474,Virement instantane,2152.84,Ukraine,FR28 6254 6681 7668 3850 694,70,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10789,2022-07-04 00:00,CLI-552682,Virement SEPA,4164.02,Portugal,FR27 6452 6876 8644 8385 871,79,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2024-10790,2024-10-20 00:00,CLI-246298,Virement international,33471.39,Nigeria,FR20 7864 2833 9214 9912 142,78,ALERTE_HAUTE,Montant anormalement eleve,A. Kowalski,False
+ALT-2024-10791,2024-07-10 00:00,CLI-675092,Retrait DAB,1520.52,Ukraine,FR94 7435 4589 6752 7684 804,93,ALERTE_HAUTE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10792,2024-09-15 00:00,CLI-938792,Virement SEPA,13474.9,Chine,FR28 2183 6022 4962 7653 410,97,ALERTE_MOYENNE,Modification d'adresse recente,M. Dubois,False
+ALT-2022-10793,2022-12-15 00:00,CLI-174801,Virement SEPA,18310.28,Portugal,FR67 2948 7912 6857 7602 110,89,EN_INVESTIGATION,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2023-10794,2023-11-11 00:00,CLI-722158,Virement SEPA,1438.02,Chine,FR14 9191 6236 6758 1508 361,89,BLOQUEE,Geolocalisation incoherente,,True
+ALT-2023-10795,2023-09-09 00:00,CLI-128655,Retrait DAB,207974.71,France,FR72 2422 8780 5131 9908 194,50,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10796,2024-10-09 00:00,CLI-914915,Retrait DAB,2018.22,Italie,FR88 7727 2555 1168 3103 707,88,ALERTE_HAUTE,Modification d'adresse recente,N. Traore,True
+ALT-2024-10797,2024-10-01 00:00,CLI-785456,Virement SEPA,17363.35,Portugal,FR84 2927 9466 9046 3849 562,63,ALERTE_MOYENNE,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10798,2023-09-06 00:00,CLI-361140,Virement SEPA,993.54,Nigeria,FR93 3893 7172 1718 5952 287,59,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2024-10799,2024-11-05 00:00,CLI-690107,Virement SEPA,4766.19,Chine,FR73 7007 8044 1336 9604 810,68,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2022-10800,2022-05-15 00:00,CLI-796990,Paiement carte,1755.06,Chine,FR61 9308 4985 3253 2982 124,55,ALERTE_HAUTE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10801,2024-12-02 00:00,CLI-294521,Virement instantane,4984.34,Nigeria,FR24 1651 4805 4316 3414 407,53,BLOQUEE,Montant anormalement eleve,A. Kowalski,True
+ALT-2024-10802,2024-01-05 00:00,CLI-418079,Virement international,4046.39,Roumanie,FR41 8870 4498 4091 8778 589,75,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2024-10803,2024-03-06 00:00,CLI-999516,Virement instantane,3350.28,Espagne,FR18 8826 9411 2189 3698 352,85,BLOQUEE,Vitesse de transactions anormale,S. Chen,False
+ALT-2023-10804,2023-01-15 00:00,CLI-301961,Paiement carte,24434.2,Nigeria,FR67 4681 3086 8853 9348 516,86,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,False
+ALT-2023-10805,2023-02-13 00:00,CLI-838694,Virement international,3978.95,France,FR57 5544 7443 5601 8610 765,96,ALERTE_FAIBLE,Beneficiaire jamais utilise,,False
+ALT-2023-10806,2023-12-19 00:00,CLI-718199,Virement instantane,26146.03,Espagne,FR70 6522 2490 9022 6610 645,78,EN_INVESTIGATION,Pays de destination inhabituel,A. Kowalski,False
+ALT-2023-10807,2023-06-15 00:00,CLI-351044,Virement instantane,152529.0,Italie,FR54 6019 4143 6488 9481 792,71,ALERTE_FAIBLE,Beneficiaire jamais utilise,,False
+ALT-2024-10808,2024-12-18 00:00,CLI-409345,Virement international,3466.0,Roumanie,FR79 6261 4349 8580 9521 277,52,ALERTE_FAIBLE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2022-10809,2022-05-19 00:00,CLI-695789,Retrait DAB,4492.73,Ukraine,FR53 3397 5173 2180 5137 227,69,EN_INVESTIGATION,Geolocalisation incoherente,M. Dubois,True
+ALT-2022-10810,2022-10-09 00:00,CLI-711931,Paiement carte,272775.02,Ukraine,FR82 7889 4263 5353 1835 537,85,BLOQUEE,Pays de destination inhabituel,N. Traore,False
+ALT-2023-10811,2023-01-28 00:00,CLI-143027,Virement SEPA,11287.73,Portugal,FR23 9986 9769 5397 3087 902,51,BLOQUEE,Fractionnement detecte (smurfing),M. Dubois,True
+ALT-2022-10812,2022-05-04 00:00,CLI-341684,Virement international,1001.44,Portugal,FR80 6792 4872 3485 1376 666,82,ALERTE_FAIBLE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2022-10813,2022-11-11 00:00,CLI-382831,Retrait DAB,2937.7,Allemagne,FR22 5033 7658 4620 4965 570,84,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,False
+ALT-2022-10814,2022-07-17 00:00,CLI-567838,Virement international,35202.27,Italie,FR22 2343 7693 8276 8250 253,92,BLOQUEE,Geolocalisation incoherente,M. Dubois,False
+ALT-2022-10815,2022-06-14 00:00,CLI-121722,Retrait DAB,4468.13,Ukraine,FR88 7355 8244 4366 7110 247,90,ALERTE_HAUTE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10816,2022-04-29 00:00,CLI-497875,Virement instantane,20896.95,Chine,FR13 4998 2059 8409 1358 498,81,ALERTE_FAIBLE,Vitesse de transactions anormale,N. Traore,True
+ALT-2023-10817,2023-06-28 00:00,CLI-339659,Paiement carte,2463.31,Roumanie,FR43 8840 3590 3761 4590 974,82,EN_INVESTIGATION,Modification d'adresse recente,S. Chen,True
+ALT-2023-10818,2023-02-17 00:00,CLI-745346,Virement instantane,90487.63,France,FR42 2298 9605 5180 8423 252,63,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10819,2022-11-14 00:00,CLI-154679,Virement instantane,12498.3,Espagne,FR46 9977 8704 7934 3751 341,46,ALERTE_MOYENNE,Pays de destination inhabituel,M. Dubois,True
+ALT-2023-10820,2023-07-08 00:00,CLI-858339,Virement international,4177.8,Espagne,FR78 4060 5024 1143 6332 975,55,ALERTE_FAIBLE,Modification d'adresse recente,M. Dubois,True
+ALT-2023-10821,2023-11-08 00:00,CLI-974805,Paiement carte,1107.27,Portugal,FR69 5027 8453 3869 2800 830,60,ALERTE_MOYENNE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10822,2022-07-22 00:00,CLI-677047,Virement instantane,25734.77,Nigeria,FR77 8645 9514 6798 7638 869,61,EN_INVESTIGATION,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10823,2022-06-02 00:00,CLI-221148,Virement instantane,4121.77,Nigeria,FR58 7159 5907 7121 1391 422,76,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10824,2024-03-12 00:00,CLI-780600,Paiement carte,25247.32,Nigeria,FR41 3331 1268 4720 8193 358,76,BLOQUEE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10825,2022-11-24 00:00,CLI-206204,Paiement carte,73105.81,Roumanie,FR16 6743 8620 7333 8100 179,83,ALERTE_FAIBLE,Vitesse de transactions anormale,,False
+ALT-2022-10826,2022-04-10 00:00,CLI-425416,Virement instantane,4702.9,Espagne,FR11 2659 3391 5417 1981 125,77,ALERTE_MOYENNE,Modification d'adresse recente,A. Kowalski,True
+ALT-2023-10827,2023-05-26 00:00,CLI-485841,Virement SEPA,40933.0,Ukraine,FR84 3020 8182 8987 8100 881,77,ALERTE_HAUTE,Modification d'adresse recente,,True
+ALT-2022-10828,2022-11-22 00:00,CLI-380080,Virement international,4698.26,Espagne,FR35 2526 7289 5518 7461 325,47,ALERTE_HAUTE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2022-10829,2022-08-07 00:00,CLI-673629,Virement instantane,13714.89,Portugal,FR36 1009 2085 3677 1613 371,91,BLOQUEE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10830,2022-06-25 00:00,CLI-746759,Paiement carte,4661.7,Chine,FR43 9977 6416 6349 9629 259,87,EN_INVESTIGATION,Modification d'adresse recente,A. Kowalski,False
+ALT-2022-10831,2022-06-03 00:00,CLI-623107,Retrait DAB,172484.84,France,FR85 5920 5221 2744 3424 668,59,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2022-10832,2022-10-18 00:00,CLI-447302,Paiement carte,3638.22,Allemagne,FR41 3661 8883 2086 6143 158,72,BLOQUEE,Geolocalisation incoherente,S. Chen,False
+ALT-2023-10833,2023-09-07 00:00,CLI-615753,Retrait DAB,4902.61,Italie,FR61 8046 4852 5693 4985 725,96,ALERTE_MOYENNE,Vitesse de transactions anormale,S. Chen,False
+ALT-2024-10834,2024-01-05 00:00,CLI-257334,Virement instantane,8729.53,Nigeria,FR73 2512 3488 1841 1034 582,56,ALERTE_HAUTE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2024-10835,2024-01-21 00:00,CLI-273247,Paiement carte,3585.48,Roumanie,FR22 1638 2349 1647 1003 941,57,ALERTE_MOYENNE,Geolocalisation incoherente,N. Traore,True
+ALT-2023-10836,2023-05-26 00:00,CLI-245349,Virement SEPA,32694.58,Chine,FR87 5259 3578 9435 2574 608,83,ALERTE_MOYENNE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10837,2023-09-18 00:00,CLI-421282,Paiement carte,3492.54,Nigeria,FR63 4852 6067 6351 4449 346,74,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,True
+ALT-2022-10838,2022-03-18 00:00,CLI-857878,Virement SEPA,3144.57,Portugal,FR52 6242 4919 8890 8132 519,52,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10839,2024-01-17 00:00,CLI-981979,Paiement carte,652.26,Nigeria,FR33 9152 8594 7512 6301 560,53,ALERTE_FAIBLE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2022-10840,2022-06-21 00:00,CLI-255365,Virement SEPA,4411.28,Espagne,FR40 9401 9115 5552 4313 838,56,BLOQUEE,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10841,2024-09-13 00:00,CLI-311511,Virement international,2043.33,Espagne,FR52 9273 5480 9697 7401 641,82,EN_INVESTIGATION,Fractionnement detecte (smurfing),N. Traore,True
+ALT-2023-10842,2023-08-22 00:00,CLI-146675,Paiement carte,180586.98,Roumanie,FR12 7673 2028 8774 7836 574,83,EN_INVESTIGATION,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10843,2023-12-09 00:00,CLI-707716,Paiement carte,45118.09,Nigeria,FR43 1070 9695 4755 1664 327,97,BLOQUEE,Fractionnement detecte (smurfing),N. Traore,True
+ALT-2023-10844,2023-10-07 00:00,CLI-536999,Virement SEPA,714.94,Ukraine,FR91 6016 1838 9136 4496 646,87,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2023-10845,2023-12-17 00:00,CLI-550363,Virement SEPA,3023.4,Roumanie,FR92 5023 8862 1338 2629 232,92,ALERTE_FAIBLE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2023-10846,2023-05-28 00:00,CLI-424526,Virement instantane,1228.38,Ukraine,FR91 2123 2248 3548 2989 973,45,ALERTE_MOYENNE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10847,2022-10-01 00:00,CLI-587899,Virement instantane,20188.84,Allemagne,FR71 5559 2364 6836 2507 461,56,BLOQUEE,Fractionnement detecte (smurfing),,False
+ALT-2024-10848,2024-02-14 00:00,CLI-166514,Virement international,46124.59,Espagne,FR53 3627 9553 9762 4181 590,93,ALERTE_FAIBLE,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10849,2023-04-08 00:00,CLI-751244,Retrait DAB,966.06,Allemagne,FR39 9099 8501 7345 6279 757,68,ALERTE_MOYENNE,Montant anormalement eleve,M. Dubois,False
+ALT-2022-10850,2022-11-29 00:00,CLI-455179,Retrait DAB,494448.08,France,FR50 8593 2396 3196 2572 708,78,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2023-10851,2023-11-16 00:00,CLI-950216,Virement SEPA,2724.55,Roumanie,FR41 6112 9799 7973 5807 139,99,ALERTE_HAUTE,Montant anormalement eleve,A. Kowalski,False
+ALT-2024-10852,2024-07-29 00:00,CLI-178011,Virement instantane,1662.27,Roumanie,FR19 9163 6052 5912 7666 123,46,ALERTE_FAIBLE,Vitesse de transactions anormale,S. Chen,True
+ALT-2022-10853,2022-02-18 00:00,CLI-377033,Paiement carte,4691.35,Roumanie,FR25 3992 4478 2291 4793 150,62,ALERTE_FAIBLE,Modification d'adresse recente,,True
+ALT-2024-10854,2024-10-09 00:00,CLI-789857,Paiement carte,2970.21,Allemagne,FR61 1667 6110 7884 2523 773,66,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,True
+ALT-2022-10855,2022-08-29 00:00,CLI-948822,Paiement carte,4770.43,Nigeria,FR79 2751 5330 3601 5056 183,66,ALERTE_MOYENNE,Heure de transaction suspecte,,True
+ALT-2024-10856,2024-12-15 00:00,CLI-634442,Virement international,4155.12,Nigeria,FR10 9568 5477 4072 9071 660,60,ALERTE_HAUTE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10857,2022-07-30 00:00,CLI-706424,Paiement carte,111294.73,Portugal,FR41 3042 7884 5177 9153 101,52,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10858,2024-03-08 00:00,CLI-845609,Virement SEPA,33836.93,Italie,FR41 1762 2182 7467 3178 323,62,ALERTE_HAUTE,Montant anormalement eleve,S. Chen,True
+ALT-2024-10859,2024-11-27 00:00,CLI-923758,Virement SEPA,561.92,Roumanie,FR51 7735 7205 9501 5506 554,87,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,False
+ALT-2023-10860,2023-09-08 00:00,CLI-387202,Retrait DAB,1346.0,France,FR42 1050 8099 8595 3598 162,95,ALERTE_HAUTE,Compte beneficiaire recent (<30j),,False
+ALT-2022-10861,2022-08-07 00:00,CLI-906411,Virement SEPA,2360.32,Chine,FR77 2069 8445 6699 5967 759,59,BLOQUEE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2023-10862,2023-05-01 00:00,CLI-776562,Retrait DAB,1713.38,Nigeria,FR38 9350 3370 2799 5385 838,68,EN_INVESTIGATION,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2024-10863,2024-02-24 00:00,CLI-352943,Paiement carte,2824.16,Portugal,FR41 9682 3997 9143 9656 103,54,ALERTE_HAUTE,Vitesse de transactions anormale,,False
+ALT-2024-10864,2024-08-05 00:00,CLI-363368,Paiement carte,26645.87,Italie,FR90 7585 6847 2574 7224 583,84,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,True
+ALT-2023-10865,2023-08-09 00:00,CLI-689756,Virement SEPA,2105.96,Allemagne,FR23 3244 4789 7729 1718 309,74,BLOQUEE,Modification d'adresse recente,M. Dubois,True
+ALT-2024-10866,2024-04-19 00:00,CLI-329082,Paiement carte,4953.99,Allemagne,FR14 5201 1191 7703 2970 387,86,EN_INVESTIGATION,Compte beneficiaire recent (<30j),S. Chen,True
+ALT-2023-10867,2023-11-03 00:00,CLI-662971,Virement international,4656.05,France,FR70 5539 9864 3736 1104 962,76,ALERTE_MOYENNE,Geolocalisation incoherente,A. Kowalski,True
+ALT-2022-10868,2022-12-23 00:00,CLI-465909,Paiement carte,2766.65,Chine,FR81 3691 1440 2597 1349 783,62,ALERTE_MOYENNE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10869,2024-05-31 00:00,CLI-583241,Virement SEPA,703.42,Chine,FR38 3203 1515 2931 4345 475,85,ALERTE_FAIBLE,Geolocalisation incoherente,S. Chen,True
+ALT-2022-10870,2022-12-17 00:00,CLI-983852,Retrait DAB,2631.79,Allemagne,FR20 3581 4469 2199 3518 525,51,BLOQUEE,Fractionnement detecte (smurfing),S. Chen,False
+ALT-2024-10871,2024-10-29 00:00,CLI-714067,Paiement carte,354713.79,Chine,FR30 9730 4532 8357 7961 276,84,BLOQUEE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10872,2024-07-26 00:00,CLI-409890,Retrait DAB,1463.66,Ukraine,FR69 2491 2889 3077 1881 335,92,EN_INVESTIGATION,Pays de destination inhabituel,,False
+ALT-2023-10873,2023-09-23 00:00,CLI-288526,Virement instantane,4592.0,Italie,FR26 4940 1831 9329 9907 175,60,EN_INVESTIGATION,Modification d'adresse recente,M. Dubois,False
+ALT-2024-10874,2024-04-01 00:00,CLI-146156,Retrait DAB,2919.05,Chine,FR36 3289 4612 2464 9486 251,84,BLOQUEE,Pays de destination inhabituel,N. Traore,True
+ALT-2024-10875,2024-06-21 00:00,CLI-131415,Virement SEPA,356602.52,France,FR13 1396 1497 2370 6283 268,93,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10876,2023-07-10 00:00,CLI-160028,Virement instantane,4788.9,France,FR29 6789 6125 7210 2886 913,77,ALERTE_FAIBLE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10877,2022-05-28 00:00,CLI-614996,Virement instantane,2955.99,Allemagne,FR29 3879 5734 9215 1695 421,69,BLOQUEE,Montant anormalement eleve,,False
+ALT-2023-10878,2023-05-06 00:00,CLI-496252,Paiement carte,618.13,Roumanie,FR21 6922 9452 5506 9684 253,70,BLOQUEE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10879,2022-01-26 00:00,CLI-483999,Paiement carte,4089.65,Espagne,FR83 7149 1686 1645 8696 154,71,ALERTE_MOYENNE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10880,2024-09-26 00:00,CLI-293741,Virement international,49943.35,Allemagne,FR17 5387 1769 3005 7417 358,98,EN_INVESTIGATION,Pays de destination inhabituel,,True
+ALT-2023-10881,2023-08-31 00:00,CLI-622659,Virement international,3315.1,Ukraine,FR34 7194 4075 9656 2051 509,62,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,False
+ALT-2024-10882,2024-11-26 00:00,CLI-802016,Paiement carte,2300.37,Nigeria,FR48 3598 1339 4976 7877 874,90,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2022-10883,2022-01-21 00:00,CLI-961968,Retrait DAB,968.42,Portugal,FR90 7387 3566 6811 7122 875,63,ALERTE_HAUTE,Heure de transaction suspecte,N. Traore,False
+ALT-2024-10884,2024-01-12 00:00,CLI-801145,Virement SEPA,3540.88,Chine,FR58 6041 7736 5584 5761 625,81,EN_INVESTIGATION,Modification d'adresse recente,M. Dubois,False
+ALT-2024-10885,2024-05-21 00:00,CLI-447656,Virement international,990.34,Chine,FR88 2008 6569 1615 5746 803,85,ALERTE_HAUTE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10886,2022-05-12 00:00,CLI-715641,Paiement carte,39427.09,Allemagne,FR60 4635 3316 2674 2475 196,90,EN_INVESTIGATION,Compte beneficiaire recent (<30j),,False
+ALT-2024-10887,2024-05-03 00:00,CLI-722138,Virement SEPA,71748.65,Italie,FR73 4551 3207 7635 6292 331,47,BLOQUEE,Montant anormalement eleve,M. Dubois,True
+ALT-2024-10888,2024-02-18 00:00,CLI-584141,Virement instantane,482765.44,Nigeria,FR80 9592 1137 1174 4028 313,97,ALERTE_HAUTE,Montant anormalement eleve,,True
+ALT-2023-10889,2023-01-07 00:00,CLI-356257,Retrait DAB,4003.85,Roumanie,FR70 9148 5323 5647 2961 842,71,ALERTE_HAUTE,Fractionnement detecte (smurfing),N. Traore,False
+ALT-2024-10890,2024-02-06 00:00,CLI-947787,Virement SEPA,4064.37,Ukraine,FR91 5699 2783 9834 5788 331,59,BLOQUEE,Modification d'adresse recente,N. Traore,False
+ALT-2022-10891,2022-03-22 00:00,CLI-326057,Virement instantane,3139.51,Ukraine,FR28 2204 4934 8393 5505 443,66,BLOQUEE,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10892,2022-07-28 00:00,CLI-883438,Virement SEPA,3629.38,Roumanie,FR90 1348 6529 4893 9067 504,72,BLOQUEE,Montant anormalement eleve,,True
+ALT-2022-10893,2022-04-09 00:00,CLI-158077,Virement instantane,430941.64,Italie,FR56 7399 7518 2448 1446 495,54,BLOQUEE,Pays de destination inhabituel,A. Kowalski,False
+ALT-2022-10894,2022-01-27 00:00,CLI-957103,Retrait DAB,4787.54,Ukraine,FR80 4004 8147 2782 8952 741,99,BLOQUEE,Geolocalisation incoherente,,False
+ALT-2024-10895,2024-01-21 00:00,CLI-221455,Virement international,28602.15,Portugal,FR80 1081 9647 8330 4179 450,64,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),,False
+ALT-2023-10896,2023-01-28 00:00,CLI-207452,Paiement carte,15518.64,Chine,FR98 1295 1778 9313 7033 678,82,ALERTE_HAUTE,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2022-10897,2022-07-26 00:00,CLI-892952,Virement instantane,25389.86,Nigeria,FR89 7158 5856 8474 2468 634,63,ALERTE_MOYENNE,Modification d'adresse recente,A. Kowalski,False
+ALT-2024-10898,2024-01-11 00:00,CLI-909814,Virement instantane,4783.71,Portugal,FR82 4185 3869 4119 2775 289,98,ALERTE_MOYENNE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2023-10899,2023-01-12 00:00,CLI-685009,Retrait DAB,48228.26,Espagne,FR60 2928 8490 7843 1500 757,73,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2024-10900,2024-11-28 00:00,CLI-355812,Virement instantane,348144.5,Espagne,FR94 1286 5664 1050 6647 517,87,ALERTE_HAUTE,Heure de transaction suspecte,,False
+ALT-2023-10901,2023-07-03 00:00,CLI-670950,Virement international,634.73,Nigeria,FR94 5358 2531 7265 7198 452,71,ALERTE_HAUTE,Fractionnement detecte (smurfing),M. Dubois,False
+ALT-2023-10902,2023-09-28 00:00,CLI-428932,Virement instantane,42377.64,Roumanie,FR25 5127 4146 5375 7531 654,54,ALERTE_MOYENNE,Beneficiaire jamais utilise,,False
+ALT-2024-10903,2024-04-24 00:00,CLI-101025,Virement SEPA,4545.47,Ukraine,FR65 7400 7378 2025 1903 219,98,BLOQUEE,Modification d'adresse recente,S. Chen,True
+ALT-2022-10904,2022-01-14 00:00,CLI-150243,Virement SEPA,200678.44,Nigeria,FR77 1917 5575 2312 5801 744,83,ALERTE_HAUTE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2023-10905,2023-08-15 00:00,CLI-773262,Retrait DAB,43830.43,Espagne,FR16 7035 4612 5584 5425 117,76,BLOQUEE,Compte beneficiaire recent (<30j),,False
+ALT-2023-10906,2023-07-26 00:00,CLI-900028,Retrait DAB,1230.41,Espagne,FR86 3247 6645 1318 2508 863,76,BLOQUEE,Geolocalisation incoherente,M. Dubois,False
+ALT-2024-10907,2024-07-22 00:00,CLI-649434,Virement instantane,3646.76,Portugal,FR18 4199 4251 4320 8436 337,50,ALERTE_MOYENNE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10908,2022-02-10 00:00,CLI-586806,Virement SEPA,2051.34,Italie,FR31 2665 2287 3676 1007 488,52,ALERTE_MOYENNE,Geolocalisation incoherente,S. Chen,False
+ALT-2022-10909,2022-04-08 00:00,CLI-328855,Retrait DAB,2604.77,Allemagne,FR95 9932 5861 6031 5335 706,48,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2023-10910,2023-05-26 00:00,CLI-155469,Virement international,1823.07,Chine,FR36 5098 2664 7526 8707 647,51,ALERTE_MOYENNE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10911,2022-10-29 00:00,CLI-662292,Virement international,42528.1,Allemagne,FR90 4168 5277 9510 7879 275,81,EN_INVESTIGATION,Vitesse de transactions anormale,N. Traore,False
+ALT-2022-10912,2022-05-05 00:00,CLI-220570,Virement instantane,43996.26,Espagne,FR79 6217 7691 1477 6545 334,81,BLOQUEE,Montant anormalement eleve,N. Traore,False
+ALT-2023-10913,2023-07-26 00:00,CLI-620580,Virement international,49751.05,Nigeria,FR76 3400 1253 6981 1036 485,79,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10914,2022-12-14 00:00,CLI-791593,Paiement carte,121647.72,France,FR52 9832 8328 2718 5340 514,81,ALERTE_MOYENNE,Pays de destination inhabituel,,False
+ALT-2022-10915,2022-11-01 00:00,CLI-141350,Virement instantane,305540.17,Ukraine,FR97 5399 4853 8044 9877 395,95,EN_INVESTIGATION,Montant anormalement eleve,S. Chen,False
+ALT-2022-10916,2022-04-28 00:00,CLI-794486,Virement instantane,40927.33,Nigeria,FR86 5108 9312 5781 3129 405,83,ALERTE_FAIBLE,Modification d'adresse recente,,True
+ALT-2024-10917,2024-01-19 00:00,CLI-829054,Retrait DAB,878.06,Allemagne,FR55 3933 4854 9912 7580 558,69,BLOQUEE,Fractionnement detecte (smurfing),,False
+ALT-2022-10918,2022-11-11 00:00,CLI-166564,Retrait DAB,4702.57,Chine,FR88 9719 9068 7299 9879 253,99,EN_INVESTIGATION,Geolocalisation incoherente,,False
+ALT-2024-10919,2024-04-10 00:00,CLI-617899,Virement SEPA,4304.8,Ukraine,FR50 9591 1010 7530 4051 798,85,ALERTE_MOYENNE,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10920,2022-11-14 00:00,CLI-447998,Retrait DAB,3486.07,France,FR13 3045 3751 5580 9876 280,94,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10921,2022-06-30 00:00,CLI-966614,Virement instantane,4704.04,Portugal,FR33 5040 3180 9727 5411 908,70,ALERTE_MOYENNE,Fractionnement detecte (smurfing),,True
+ALT-2023-10922,2023-04-06 00:00,CLI-658933,Paiement carte,358011.17,Chine,FR32 6625 7374 3747 3815 513,82,ALERTE_MOYENNE,Fractionnement detecte (smurfing),A. Kowalski,False
+ALT-2022-10923,2022-07-20 00:00,CLI-487167,Paiement carte,1505.99,France,FR92 9022 9502 5306 7328 970,80,ALERTE_FAIBLE,Montant anormalement eleve,,False
+ALT-2023-10924,2023-06-06 00:00,CLI-758639,Virement instantane,3978.51,Allemagne,FR96 9393 2220 2854 8884 713,75,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2024-10925,2024-07-20 00:00,CLI-422521,Virement SEPA,1562.08,Roumanie,FR47 8433 2761 6353 6370 307,51,ALERTE_MOYENNE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2023-10926,2023-08-07 00:00,CLI-569056,Paiement carte,2641.35,France,FR12 5354 3452 2787 5644 888,95,ALERTE_HAUTE,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10927,2023-09-26 00:00,CLI-595858,Virement instantane,28814.55,France,FR87 3156 8831 1110 5451 469,53,ALERTE_MOYENNE,Modification d'adresse recente,,False
+ALT-2023-10928,2023-08-08 00:00,CLI-536294,Virement SEPA,11158.24,Roumanie,FR84 9297 7807 8369 9829 552,62,ALERTE_FAIBLE,Heure de transaction suspecte,S. Chen,False
+ALT-2024-10929,2024-10-04 00:00,CLI-762880,Paiement carte,20177.84,Nigeria,FR56 6199 5719 3912 9225 231,64,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,False
+ALT-2023-10930,2023-03-21 00:00,CLI-940561,Paiement carte,614.28,Roumanie,FR91 4761 4802 2191 4873 234,86,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,True
+ALT-2022-10931,2022-11-21 00:00,CLI-546360,Virement instantane,525.06,Espagne,FR97 2644 5651 5968 5659 971,78,EN_INVESTIGATION,Geolocalisation incoherente,N. Traore,False
+ALT-2022-10932,2022-08-18 00:00,CLI-768280,Retrait DAB,2748.13,Portugal,FR92 7771 3452 1104 3125 475,99,EN_INVESTIGATION,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10933,2022-12-29 00:00,CLI-669759,Virement SEPA,8131.69,Espagne,FR34 2030 3069 4279 3346 999,98,ALERTE_HAUTE,Beneficiaire jamais utilise,,True
+ALT-2022-10934,2022-05-15 00:00,CLI-613317,Virement international,2197.2,Italie,FR80 8588 6652 1396 9724 269,94,BLOQUEE,Geolocalisation incoherente,,True
+ALT-2024-10935,2024-06-13 00:00,CLI-372986,Paiement carte,2552.12,Ukraine,FR90 5352 8927 3222 7208 258,81,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,True
+ALT-2024-10936,2024-12-02 00:00,CLI-680701,Virement international,4175.01,Allemagne,FR60 1869 3976 8201 2981 760,75,ALERTE_MOYENNE,Pays de destination inhabituel,N. Traore,False
+ALT-2022-10937,2022-10-26 00:00,CLI-295190,Virement SEPA,2493.04,Roumanie,FR33 3826 3542 4507 7749 275,51,BLOQUEE,Vitesse de transactions anormale,,True
+ALT-2024-10938,2024-06-15 00:00,CLI-785055,Paiement carte,29891.14,Italie,FR83 9850 4329 6246 6047 373,71,ALERTE_HAUTE,Compte beneficiaire recent (<30j),N. Traore,False
+ALT-2022-10939,2022-06-20 00:00,CLI-373718,Paiement carte,1227.03,Chine,FR88 2908 3956 8320 8189 102,56,EN_INVESTIGATION,Heure de transaction suspecte,N. Traore,True
+ALT-2022-10940,2022-09-27 00:00,CLI-621877,Virement SEPA,749.47,Italie,FR72 6355 3265 9502 4981 233,54,ALERTE_HAUTE,Pays de destination inhabituel,S. Chen,False
+ALT-2023-10941,2023-01-20 00:00,CLI-146625,Paiement carte,3781.41,Ukraine,FR72 8628 9497 9248 9288 984,81,BLOQUEE,Vitesse de transactions anormale,S. Chen,False
+ALT-2024-10942,2024-02-01 00:00,CLI-937489,Virement SEPA,2814.51,Italie,FR12 5556 5949 4871 7354 760,50,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,False
+ALT-2022-10943,2022-10-20 00:00,CLI-198114,Virement SEPA,44232.14,Espagne,FR92 3743 6705 1393 2515 410,57,BLOQUEE,Beneficiaire jamais utilise,,False
+ALT-2022-10944,2022-08-29 00:00,CLI-186662,Virement international,3254.36,Chine,FR21 2886 3378 7517 1793 748,54,ALERTE_MOYENNE,Pays de destination inhabituel,S. Chen,False
+ALT-2022-10945,2022-12-05 00:00,CLI-246417,Virement SEPA,4400.29,Allemagne,FR87 2462 2899 2846 7268 512,51,ALERTE_MOYENNE,Heure de transaction suspecte,M. Dubois,True
+ALT-2024-10946,2024-09-27 00:00,CLI-896867,Retrait DAB,25092.1,Italie,FR35 4507 1606 5810 4153 541,69,ALERTE_FAIBLE,Fractionnement detecte (smurfing),,True
+ALT-2024-10947,2024-09-23 00:00,CLI-208663,Virement international,1304.77,Portugal,FR32 2645 2476 5660 1372 908,80,BLOQUEE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10948,2022-07-12 00:00,CLI-235064,Virement SEPA,3093.93,Italie,FR99 7008 6733 7234 2081 929,92,ALERTE_HAUTE,Fractionnement detecte (smurfing),,False
+ALT-2022-10949,2022-04-28 00:00,CLI-575774,Virement SEPA,31255.65,Espagne,FR45 4125 7944 6882 6351 652,68,BLOQUEE,Beneficiaire jamais utilise,S. Chen,False
+ALT-2022-10950,2022-03-14 00:00,CLI-605258,Virement SEPA,1667.11,Nigeria,FR25 6928 3653 8853 4781 670,76,ALERTE_FAIBLE,Montant anormalement eleve,S. Chen,True
+ALT-2023-10951,2023-01-12 00:00,CLI-532371,Virement international,48379.73,Espagne,FR26 5610 9700 2753 6609 427,61,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10952,2022-07-27 00:00,CLI-620499,Virement instantane,327261.74,Chine,FR57 7933 6050 2063 7076 553,82,ALERTE_FAIBLE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2022-10953,2022-05-09 00:00,CLI-584175,Retrait DAB,4755.97,France,FR24 1722 1973 2941 9424 225,47,ALERTE_MOYENNE,Montant anormalement eleve,N. Traore,False
+ALT-2022-10954,2022-08-05 00:00,CLI-641358,Virement SEPA,2521.97,Ukraine,FR11 9468 2596 7000 8336 209,54,EN_INVESTIGATION,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10955,2024-02-22 00:00,CLI-358477,Virement SEPA,773.61,Chine,FR39 6441 2305 1783 5714 469,78,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2023-10956,2023-04-04 00:00,CLI-465883,Virement instantane,1287.41,Ukraine,FR96 6821 8320 7978 8036 710,61,BLOQUEE,Montant anormalement eleve,S. Chen,True
+ALT-2024-10957,2024-04-12 00:00,CLI-736446,Retrait DAB,13953.42,Espagne,FR66 5165 8167 7449 8156 942,54,ALERTE_HAUTE,Vitesse de transactions anormale,,True
+ALT-2024-10958,2024-01-30 00:00,CLI-378925,Retrait DAB,1582.47,Nigeria,FR64 2641 6088 6412 1408 873,49,ALERTE_HAUTE,Montant anormalement eleve,N. Traore,False
+ALT-2024-10959,2024-05-14 00:00,CLI-714008,Virement international,46126.82,Ukraine,FR80 2113 5416 1049 6161 355,87,ALERTE_HAUTE,Vitesse de transactions anormale,S. Chen,True
+ALT-2023-10960,2023-11-03 00:00,CLI-961627,Retrait DAB,3247.51,Nigeria,FR87 9670 9074 4664 2066 303,74,EN_INVESTIGATION,Compte beneficiaire recent (<30j),M. Dubois,False
+ALT-2023-10961,2023-02-20 00:00,CLI-255650,Virement international,95924.94,Chine,FR46 1804 8946 8862 5360 354,59,ALERTE_MOYENNE,Vitesse de transactions anormale,N. Traore,False
+ALT-2022-10962,2022-10-26 00:00,CLI-696076,Virement SEPA,3816.36,Chine,FR11 2097 5327 3705 8058 968,87,ALERTE_MOYENNE,Montant anormalement eleve,S. Chen,False
+ALT-2022-10963,2022-02-15 00:00,CLI-530694,Virement SEPA,2820.07,Espagne,FR94 1449 5251 2557 9941 918,50,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2022-10964,2022-10-03 00:00,CLI-628114,Virement instantane,4538.51,Portugal,FR94 9326 1500 2156 9955 508,61,ALERTE_FAIBLE,Modification d'adresse recente,S. Chen,False
+ALT-2022-10965,2022-04-30 00:00,CLI-698828,Retrait DAB,2530.81,Ukraine,FR57 8170 1188 9832 3827 163,96,ALERTE_HAUTE,Beneficiaire jamais utilise,,True
+ALT-2023-10966,2023-04-07 00:00,CLI-498720,Virement instantane,26297.39,Allemagne,FR48 7606 2499 2376 3585 623,76,EN_INVESTIGATION,Beneficiaire jamais utilise,S. Chen,False
+ALT-2024-10967,2024-12-09 00:00,CLI-989121,Retrait DAB,4567.15,France,FR44 1706 6810 4757 2931 364,95,ALERTE_HAUTE,Geolocalisation incoherente,M. Dubois,False
+ALT-2023-10968,2023-05-26 00:00,CLI-806942,Virement instantane,698.1,Ukraine,FR38 6460 7183 6800 2753 897,74,EN_INVESTIGATION,Geolocalisation incoherente,S. Chen,False
+ALT-2024-10969,2024-11-08 00:00,CLI-494594,Retrait DAB,32213.61,Ukraine,FR41 5338 8033 1419 5352 563,77,ALERTE_FAIBLE,Heure de transaction suspecte,M. Dubois,False
+ALT-2022-10970,2022-07-02 00:00,CLI-708171,Virement international,1188.27,Nigeria,FR45 9890 9957 3048 1005 614,81,ALERTE_MOYENNE,Beneficiaire jamais utilise,,False
+ALT-2024-10971,2024-05-12 00:00,CLI-514385,Retrait DAB,3635.1,Espagne,FR77 8293 2116 7961 1361 738,98,ALERTE_HAUTE,Pays de destination inhabituel,A. Kowalski,True
+ALT-2022-10972,2022-05-08 00:00,CLI-475125,Virement instantane,453226.88,Espagne,FR36 7674 2768 4811 4495 586,91,BLOQUEE,Montant anormalement eleve,A. Kowalski,False
+ALT-2022-10973,2022-06-20 00:00,CLI-917636,Virement SEPA,697.06,Espagne,FR56 5561 5949 9119 3369 368,52,EN_INVESTIGATION,Pays de destination inhabituel,N. Traore,False
+ALT-2024-10974,2024-10-17 00:00,CLI-536617,Retrait DAB,642.05,Allemagne,FR70 8933 2070 9450 3077 816,61,EN_INVESTIGATION,Modification d'adresse recente,,True
+ALT-2024-10975,2024-10-09 00:00,CLI-252526,Virement SEPA,2934.69,Portugal,FR20 8255 5437 7778 9470 968,51,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2023-10976,2023-10-03 00:00,CLI-747397,Virement international,47623.32,Nigeria,FR99 8214 6105 9302 7244 680,64,ALERTE_HAUTE,Vitesse de transactions anormale,A. Kowalski,False
+ALT-2023-10977,2023-11-03 00:00,CLI-812531,Virement international,4116.11,France,FR97 8827 6919 5036 7250 811,47,ALERTE_FAIBLE,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10978,2022-10-12 00:00,CLI-946729,Retrait DAB,2401.17,Italie,FR63 6150 5072 7730 3060 202,77,EN_INVESTIGATION,Beneficiaire jamais utilise,A. Kowalski,False
+ALT-2024-10979,2024-11-29 00:00,CLI-700204,Paiement carte,751.15,Espagne,FR48 9689 5099 3931 1769 400,69,BLOQUEE,Beneficiaire jamais utilise,,False
+ALT-2023-10980,2023-01-08 00:00,CLI-960032,Paiement carte,2738.77,Roumanie,FR64 6966 9028 8259 6569 650,46,EN_INVESTIGATION,Compte beneficiaire recent (<30j),A. Kowalski,False
+ALT-2022-10981,2022-05-05 00:00,CLI-998668,Paiement carte,1365.29,Portugal,FR61 7246 3143 4019 7860 444,89,ALERTE_FAIBLE,Montant anormalement eleve,M. Dubois,False
+ALT-2024-10982,2024-12-21 00:00,CLI-808069,Retrait DAB,2003.01,Espagne,FR33 2940 3865 3492 5818 285,93,BLOQUEE,Geolocalisation incoherente,N. Traore,False
+ALT-2023-10983,2023-02-23 00:00,CLI-182905,Virement international,2305.56,Portugal,FR22 2512 7103 9247 5115 646,96,EN_INVESTIGATION,Geolocalisation incoherente,M. Dubois,True
+ALT-2024-10984,2024-12-30 00:00,CLI-618556,Virement instantane,567.56,Espagne,FR35 2296 3832 6871 8275 904,45,ALERTE_FAIBLE,Compte beneficiaire recent (<30j),S. Chen,False
+ALT-2023-10985,2023-02-26 00:00,CLI-272620,Virement SEPA,4337.34,Italie,FR77 5116 4748 8843 6605 333,72,ALERTE_FAIBLE,Geolocalisation incoherente,,True
+ALT-2023-10986,2023-05-16 00:00,CLI-639026,Virement international,2993.48,Portugal,FR26 3021 4810 9248 6313 999,61,ALERTE_FAIBLE,Beneficiaire jamais utilise,M. Dubois,True
+ALT-2024-10987,2024-08-27 00:00,CLI-454984,Virement international,4750.58,Italie,FR19 2825 3292 4171 3525 830,73,ALERTE_FAIBLE,Modification d'adresse recente,,False
+ALT-2024-10988,2024-07-22 00:00,CLI-901276,Virement international,4730.38,Italie,FR95 5808 3725 9016 3780 131,57,EN_INVESTIGATION,Modification d'adresse recente,N. Traore,False
+ALT-2022-10989,2022-02-04 00:00,CLI-736213,Retrait DAB,4539.83,Italie,FR15 5176 6389 4184 1543 495,83,ALERTE_MOYENNE,Vitesse de transactions anormale,,False
+ALT-2023-10990,2023-01-07 00:00,CLI-137501,Virement SEPA,15324.68,Ukraine,FR18 7493 8217 8768 9276 393,77,ALERTE_HAUTE,Geolocalisation incoherente,A. Kowalski,False
+ALT-2023-10991,2023-08-07 00:00,CLI-156085,Virement instantane,1643.46,Italie,FR78 6924 2080 8784 4562 561,90,EN_INVESTIGATION,Pays de destination inhabituel,M. Dubois,False
+ALT-2022-10992,2022-09-20 00:00,CLI-793182,Paiement carte,291483.89,Ukraine,FR59 7972 9645 9429 3539 882,89,EN_INVESTIGATION,Montant anormalement eleve,A. Kowalski,False
+ALT-2023-10993,2023-08-19 00:00,CLI-814105,Virement international,3104.49,Portugal,FR58 4810 1596 2467 9854 865,69,ALERTE_FAIBLE,Heure de transaction suspecte,A. Kowalski,False
+ALT-2022-10994,2022-05-01 00:00,CLI-349841,Virement instantane,4242.39,Allemagne,FR29 2846 9191 1492 7420 936,55,EN_INVESTIGATION,Fractionnement detecte (smurfing),S. Chen,True
+ALT-2024-10995,2024-02-29 00:00,CLI-115626,Virement international,3101.33,Italie,FR32 1034 1266 2032 9552 495,74,BLOQUEE,Geolocalisation incoherente,M. Dubois,True
+ALT-2022-10996,2022-12-13 00:00,CLI-604204,Retrait DAB,2785.65,Allemagne,FR11 9974 2369 5841 4102 481,69,ALERTE_HAUTE,Beneficiaire jamais utilise,M. Dubois,False
+ALT-2024-10997,2024-10-28 00:00,CLI-635124,Virement SEPA,159785.88,Chine,FR45 7899 3265 4194 6158 416,71,EN_INVESTIGATION,Vitesse de transactions anormale,M. Dubois,True
+ALT-2022-10998,2022-07-26 00:00,CLI-291238,Virement SEPA,39789.26,Roumanie,FR45 6397 7212 8168 2221 439,46,ALERTE_HAUTE,Geolocalisation incoherente,N. Traore,False
+ALT-2023-10999,2023-07-09 00:00,CLI-413619,Virement SEPA,1709.03,Allemagne,FR38 5623 1025 8323 9874 431,51,BLOQUEE,Beneficiaire jamais utilise,,False

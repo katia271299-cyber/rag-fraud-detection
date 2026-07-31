@@ -1,0 +1,82 @@
+RAPPORT ANNUEL — DETECTION DE FRAUDE ET GESTION DES RISQUES
+Exercice 2022 — Direction de la Conformite et du Controle Interne
+
+========================================================================
+SYNTHESE EXECUTIVE
+========================================================================
+
+Au cours de l'exercice 2022, le departement de detection de fraude a traite
+un total de 12 340 alertes, dont 980 ont donne lieu a une investigation
+approfondie. Sur ce perimetre, 214 cas de fraude averee ont ete confirmes,
+representant un prejudice total estime a 3,1 millions d'euros.
+
+Le taux de fraude confirmee s'etablit a 0,0024%, stable par rapport a 2021
+(0,0023%) et en deca des moyennes sectorielles europeennes (0,006%).
+
+========================================================================
+CHAPITRE 1 — TYPOLOGIES DE FRAUDE IDENTIFIEES
+========================================================================
+
+1.1 FRAUDE PAR USURPATION D'IDENTITE (41% des cas)
+
+Deja premiere typologie en 2022, avec une part legerement superieure a 2023 :
+
+- Ouverture frauduleuse de comptes avec des pieces d'identite contrefaites (25%)
+- Prise de controle de compte (Account Takeover) via phishing (11%)
+- Fraude documentaire lors des demandes de credit (12%)
+
+Montant moyen par dossier : 7 100 EUR
+Delai moyen de detection : 18 jours
+
+1.2 FRAUDE AUX VIREMENTS (22% des cas)
+
+En nette progression sur l'exercice suivant (+34% en 2023), les fraudes aux
+virements representaient encore une part modeste en 2022.
+
+Montant moyen : 17 800 EUR
+Delai de detection : 9 jours
+
+1.3 FRAUDE INTERNE (21% des cas)
+
+- Detournement de commissions (39% des fraudes internes)
+- Modification non autorisee de donnees clients (35%)
+- Acces illicite a des comptes premium (26%)
+
+1.4 FRAUDE AUX CHEQUES ET FAUX BONS DE CAISSE (16% des cas)
+
+========================================================================
+CHAPITRE 2 — INDICATEURS D'ALERTE (RED FLAGS)
+========================================================================
+
+Version initiale des regles de detection, affinees en 2023 :
+
+SIGNAUX FORTS (score > 80) :
+- Transaction superieure a 3 fois la moyenne historique du compte
+- Connexion depuis un pays non habituellement frequente
+- Plusieurs tentatives echouees suivies d'un succes
+
+SIGNAUX MODERES (score 50-80) :
+- Transaction a une heure inhabituelle
+- Virement fractionne en plusieurs operations similaires
+
+========================================================================
+CHAPITRE 3 — PERFORMANCE DES MODELES DE DETECTION
+========================================================================
+
+MODELE A — XGBoost Transactions (deploye Q1 2022)
+- Precision : 91,8%
+- Rappel : 84,2%
+- F1-score : 87,9%
+- Faux positifs/jour : 203
+
+========================================================================
+CHAPITRE 4 — RECOMMANDATIONS 2023
+========================================================================
+
+1. Deploiement d'un second modele comportemental (LSTM) pour reduire les
+   faux positifs du Modele A
+2. Renforcement de la surveillance des virements internationaux
+3. Lancement d'un pilote de detection de reseaux de fraude organisee
+
+Directeur de la Conformite : Jean-Pierre MARTIN
+Date : 20 janvier 2023

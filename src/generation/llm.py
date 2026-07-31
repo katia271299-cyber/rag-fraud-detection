@@ -67,7 +67,7 @@ class OllamaLLM(BaseLLM):
             "options": {
                 "temperature": self.temperature,
                 "num_predict": self.max_tokens,
-                "stop": ["Question :", "===", "<|"],
+                "stop": ["Question :", "<|"],
             },
         }
 

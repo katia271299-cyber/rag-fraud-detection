@@ -1,0 +1,92 @@
+GLOSSAIRE — TERMES DE LA DETECTION DE FRAUDE ET DE LA CONFORMITE
+Usage interne
+
+TRACFIN
+Traitement du Renseignement et Action contre les Circuits Financiers clandestins. Service de renseignement financier francais charge de la lutte contre le blanchiment d'argent et le financement du terrorisme (LCB-FT). Les etablissements financiers ont l'obligation legale de lui declarer toute transaction suspecte.
+
+GAFI
+Groupe d'Action Financiere (FATF en anglais). Organisme intergouvernemental qui etablit les normes internationales de lutte contre le blanchiment de capitaux et le financement du terrorisme, et publie une liste de pays a risque.
+
+LCB-FT
+Lutte Contre le Blanchiment de capitaux et le Financement du Terrorisme. Cadre reglementaire regroupant l'ensemble des obligations des etablissements financiers en matiere de prevention de la fraude financiere.
+
+KYC
+Know Your Customer. Ensemble des procedures d'identification et de verification de l'identite d'un client avant l'entree en relation d'affaires, incluant la collecte de justificatifs et l'evaluation du profil de risque.
+
+EDD
+Enhanced Due Diligence (due diligence renforcee). Verifications approfondies appliquees aux clients presentant un risque eleve (personnes politiquement exposees, pays a risque, activites sensibles).
+
+PEP
+Personne Politiquement Exposee. Individu occupant ou ayant occupe une fonction publique importante, soumis a une surveillance renforcee du fait d'un risque accru de corruption ou de trafic d'influence.
+
+SMURFING
+Egalement appele structuring ou fractionnement. Technique consistant a diviser une somme importante en plusieurs transactions de montant plus faible pour eviter de declencher les seuils de declaration automatique.
+
+STRUCTURING
+Voir Smurfing.
+
+COMPTE MULE
+Compte bancaire utilise, sciemment ou non par son titulaire, pour transiter des fonds d'origine frauduleuse avant leur transfert vers d'autres comptes, souvent a l'etranger.
+
+ACCOUNT TAKEOVER (ATO)
+Prise de controle d'un compte client legitime par un fraudeur, generalement via phishing, vol d'identifiants ou ingenierie sociale, pour effectuer des operations non autorisees.
+
+PHISHING
+Technique d'ingenierie sociale visant a obtenir des informations confidentielles (identifiants, coordonnees bancaires) en se faisant passer pour un tiers de confiance, generalement par email ou SMS frauduleux.
+
+BLANCHIMENT D'ARGENT
+Processus consistant a dissimuler l'origine illicite de fonds en les faisant transiter par des circuits financiers legaux, generalement en trois etapes : placement, empilage (layering), integration.
+
+LAYERING (EMPILAGE)
+Deuxieme etape du blanchiment d'argent : multiplication des transactions et des intermediaires pour brouiller la tracabilite de l'origine des fonds.
+
+PLACEMENT
+Premiere etape du blanchiment d'argent : introduction des fonds d'origine illicite dans le systeme financier legal.
+
+INTEGRATION
+Derniere etape du blanchiment d'argent : reinjection des fonds blanchis dans l'economie legale sous une apparence legitime (achat immobilier, investissement, etc.).
+
+BENEFICIAIRE EFFECTIF
+Personne physique qui controle in fine une entite juridique ou pour le compte de qui une transaction est realisee, meme si elle n'apparait pas nominalement.
+
+SOCIETE ECRAN
+Entite juridique creee principalement pour dissimuler l'identite du beneficiaire effectif ou l'origine de fonds, sans activite economique reelle.
+
+SAR / DECLARATION DE SOUPCON
+Suspicious Activity Report. Signalement obligatoire adresse a l'autorite competente (TRACFIN en France) lorsqu'une transaction presente des indices de blanchiment ou de financement du terrorisme.
+
+SCORE DE FRAUDE
+Indicateur numerique, generalement de 0 a 100, produit par un modele de machine learning pour estimer la probabilite qu'une transaction ou un compte soit frauduleux.
+
+FAUX POSITIF
+Transaction ou compte signale comme suspect par un systeme de detection alors qu'il ne s'agit pas reellement d'une fraude. Un taux de faux positifs eleve degrade l'efficacite operationnelle des equipes d'investigation.
+
+FAUX NEGATIF
+Fraude reelle non detectee par le systeme de surveillance, generalement decouverte a posteriori ou signalee par le client.
+
+RED FLAG
+Indicateur d'alerte, signal isole ou combine suggerant un risque de fraude et declenchant une investigation ou un blocage preventif.
+
+GEL DES AVOIRS
+Mesure conservatoire empechant tout mouvement sur un compte, generalement appliquee aux personnes ou entites figurant sur une liste de sanctions internationales.
+
+LISTE DE SANCTIONS
+Liste officielle (ONU, Union Europeenne, OFAC aux Etats-Unis) de personnes, entites ou pays soumis a des mesures restrictives, avec lesquels toute relation d'affaires est interdite ou strictement encadree.
+
+DSP2
+Directive europeenne sur les Services de Paiement (2eme version). Impose notamment l'authentification forte du client (SCA) pour les operations de paiement en ligne.
+
+AUTHENTIFICATION FORTE (SCA)
+Strong Customer Authentication. Procedure d'authentification combinant au moins deux facteurs independants (connaissance, possession, inherence) pour securiser les operations de paiement.
+
+DORA
+Digital Operational Resilience Act. Reglement europeen renforcant les exigences de resilience operationnelle numerique des etablissements financiers face aux risques cyber.
+
+TRANSACTION MONITORING
+Surveillance automatisee et continue des transactions d'un client pour detecter des comportements atypiques par rapport a son profil habituel.
+
+PROFIL DE RISQUE CLIENT
+Evaluation synthetique du niveau de risque associe a un client, etablie a partir de criteres tels que son activite, sa localisation, le volume et la nature de ses transactions.
+
+RESEAU DE FRAUDE ORGANISEE
+Ensemble de comptes, entites ou individus lies entre eux et operant de maniere coordonnee pour commettre des fraudes, generalement identifiable par analyse de graphe (Graph Neural Network).

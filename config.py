@@ -24,11 +24,11 @@ EMBEDDING_MODEL = "nomic-embed-text"
 VECTOR_STORE      = "faiss"     # "chroma" | "faiss"
 COLLECTION_NAME   = "finance_fraud_docs"
 TOP_K             = 5           # Nombre de chunks récupérés par requête
-SIMILARITY_THRESHOLD = 0.3      # Score minimum de similarité
+SIMILARITY_THRESHOLD = 0.15     # Score minimum de similarité (repli sur le top-3 brut si rien ne passe ce seuil)
 
 # ── LLM ─────────────────────────────────────────────────────────────────────
 LLM_PROVIDER  = "ollama"        # "ollama" | "huggingface"
-LLM_MODEL     = "tinyllama"       # Modèle Ollama
+LLM_MODEL     = "mistral"       # Modèle Ollama (ollama pull mistral)
 OLLAMA_BASE_URL = "http://localhost:11434"
 
 # HuggingFace (si LLM_PROVIDER == "huggingface")
@@ -36,7 +36,7 @@ HF_MODEL_ID   = "mistralai/Mistral-7B-Instruct-v0.2"
 HF_DEVICE     = "cpu"           # "cuda" si GPU disponible
 
 # ── Génération ───────────────────────────────────────────────────────────────
-MAX_NEW_TOKENS  = 512
+MAX_NEW_TOKENS  = 768
 TEMPERATURE     = 0.1           # Bas pour des réponses factuelles
 
 # ── API ──────────────────────────────────────────────────────────────────────

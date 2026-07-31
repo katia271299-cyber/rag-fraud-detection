@@ -1,0 +1,31 @@
+CAS-2029 — Fraude par smurfing / fractionnement de virements
+Segment client : PME
+Detection : signalement manuel par un conseiller
+Date de detection : 2024-07-23 00:00
+Montant concerne : 3,576.11 EUR
+Pays de destination des fonds : Portugal
+
+CONTEXTE
+Le client (CLI-314056) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par signalement manuel par un conseiller dans un delai de 4 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+- Utilisation d'un nouveau dispositif d'authentification
+
+ISSUE
+Fraude non averee apres investigation approfondie, dossier classe.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via signalement manuel par un conseiller aurait permis de reduire l'exposition financiere sur ce
+type de typologie (smurfing / fractionnement de virements).

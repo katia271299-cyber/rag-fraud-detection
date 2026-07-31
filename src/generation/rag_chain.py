@@ -53,7 +53,7 @@ class RAGChain:
         vector_store,
         llm: BaseLLM,
         top_k: int = 5,
-        similarity_threshold: float = 0.3,
+        similarity_threshold: float = 0.15,
         system_prompt: Optional[str] = None,
     ):
         self.vector_store         = vector_store
@@ -80,7 +80,17 @@ class RAGChain:
         
         # Filtrer par score de similarité minimum
         results = [r for r in all_results if r.score >= self.similarity_threshold]
-        
+
+        # Si le filtre est trop strict pour cette question, on retombe sur les
+        # meilleurs résultats bruts plutôt que de renvoyer une réponse vide :
+        # mieux vaut un contexte imparfait qu'aucun contexte.
+        if not results and all_results:
+            logger.warning(
+                f"Aucun résultat au-dessus du seuil ({self.similarity_threshold}) — "
+                f"repli sur les {min(3, len(all_results))} meilleurs résultats bruts."
+            )
+            results = all_results[:3]
+
         if not results:
             logger.warning("Aucun document pertinent trouvé pour cette question.")
             return RAGResponse(

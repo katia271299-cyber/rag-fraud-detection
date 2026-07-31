@@ -1,0 +1,33 @@
+CAS-2022 — Fraude par fraude documentaire au credit
+Segment client : Particulier
+Detection : alerte automatique du modele XGBoost Transactions
+Date de detection : 2024-01-24 00:00
+Montant concerne : 2,498.51 EUR
+Pays de destination des fonds : Espagne
+
+CONTEXTE
+Le client (CLI-983374) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par alerte automatique du modele XGBoost Transactions dans un delai de 8 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Transaction superieure a 3 fois la moyenne historique du compte
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+- Plusieurs tentatives echouees suivies d'un succes
+- Modification d'adresse suivie d'un virement dans les 24h
+
+ISSUE
+Fraude non averee apres investigation approfondie, dossier classe.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via alerte automatique du modele XGBoost Transactions aurait permis de reduire l'exposition financiere sur ce
+type de typologie (fraude documentaire au credit).

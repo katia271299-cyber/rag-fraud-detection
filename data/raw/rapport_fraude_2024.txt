@@ -1,0 +1,97 @@
+RAPPORT ANNUEL — DETECTION DE FRAUDE ET GESTION DES RISQUES
+Exercice 2024 — Direction de la Conformite et du Controle Interne
+
+========================================================================
+SYNTHESE EXECUTIVE
+========================================================================
+
+Au cours de l'exercice 2024, le departement de detection de fraude a traite
+un total de 17 605 alertes, dont 1 489 ont donne lieu a une investigation
+approfondie. Sur ce perimetre, 331 cas de fraude averee ont ete confirmes,
+representant un prejudice total estime a 5,9 millions d'euros.
+
+Le taux de fraude confirmee s'etablit a 0,0033%, en hausse mesuree par
+rapport a 2023 (0,003%), portee par le deploiement complet du Modele B et
+l'integration du GNN qui ameliorent la detection sans faire croitre le
+volume de fraude reelle au meme rythme.
+
+========================================================================
+CHAPITRE 1 — TYPOLOGIES DE FRAUDE IDENTIFIEES
+========================================================================
+
+1.1 FRAUDE PAR USURPATION D'IDENTITE (34% des cas)
+
+Part en recul relatif grace au renforcement de l'authentification forte
+recommande fin 2023 :
+
+- Ouverture frauduleuse de comptes avec des pieces d'identite contrefaites (18%)
+- Prise de controle de compte (Account Takeover) via phishing (10%)
+- Fraude documentaire lors des demandes de credit (6%)
+
+Montant moyen par dossier : 9 200 EUR
+Delai moyen de detection : 8 jours (amelioration continue)
+
+1.2 FRAUDE AUX VIREMENTS (33% des cas)
+
+Devient la premiere typologie en volume, portee par la sophistication
+croissante des arnaques au faux conseiller et l'usage de deepfakes vocaux
+dans 4% des cas detectes.
+
+Montant moyen : 27 100 EUR
+Delai de detection : 4 jours
+
+1.3 FRAUDE INTERNE (16% des cas)
+
+1.4 FRAUDE AUX CHEQUES ET FAUX BONS DE CAISSE (12% des cas)
+
+Poursuite du recul structurel.
+
+1.5 FRAUDE PAR RESEAUX ORGANISES (5% des cas, nouvelle categorie)
+
+Premiere annee de suivi distinct grace au Modele C (GNN), desormais en
+production complete.
+
+========================================================================
+CHAPITRE 2 — INDICATEURS D'ALERTE (RED FLAGS)
+========================================================================
+
+SIGNAUX FORTS (score > 80) :
+- Transaction superieure a 3 fois la moyenne historique du compte
+- Connexion depuis un pays non habituellement frequente
+- Plusieurs tentatives echouees suivies d'un succes
+- Modification d'adresse + virement dans les 24h
+- Virement vers compte cree il y a moins de 30 jours
+- Correspondance avec un noeud identifie par le GNN comme reseau de fraude
+
+SIGNAUX MODERES (score 50-80) :
+- Transaction a une heure inhabituelle (entre 01h et 05h)
+- Virement fractionne en plusieurs operations similaires
+- Utilisation d'un nouveau dispositif d'authentification
+
+========================================================================
+CHAPITRE 3 — PERFORMANCE DES MODELES DE DETECTION
+========================================================================
+
+MODELE B — LSTM Comportemental (100% du flux depuis mars 2024)
+- Precision : 96,8%
+- Rappel : 92,7%
+- F1-score : 94,7%
+- Faux positifs/jour : 71
+
+MODELE C — Graph Neural Network Relations (production complete depuis juin 2024)
+- Precision : 89,4%
+- Rappel : 78,3%
+- Reseaux de fraude organisee identifies : 23 (vs 4 en phase pilote 2023)
+
+========================================================================
+CHAPITRE 4 — RECOMMANDATIONS 2025
+========================================================================
+
+1. Etude de faisabilite d'un quatrieme modele dedie a la detection de
+   deepfakes vocaux dans les appels au service client
+2. Extension du partage de listes noires a 6 etablissements partenaires
+3. Revision du seuil de declaration TRACFIN automatique pour les virements
+   internationaux vers pays a risque GAFI
+
+Directeur de la Conformite : Jean-Pierre MARTIN
+Date : 17 janvier 2025

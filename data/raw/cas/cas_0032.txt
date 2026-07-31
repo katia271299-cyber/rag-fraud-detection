@@ -1,0 +1,31 @@
+CAS-2032 — Fraude par prise de controle de compte (account takeover)
+Segment client : PME
+Detection : signalement du GNN Relations (reseau de fraude)
+Date de detection : 2023-12-18 00:00
+Montant concerne : 4,012.60 EUR
+Pays de destination des fonds : Portugal
+
+CONTEXTE
+Le client (CLI-988122) presentait un profil de risque standard sans
+antecedent de fraude connu avant cet incident. L'operation a ete initiee
+sur un canal habituel du client, ce qui a d'abord limite la detection
+immediate par les controles de premier niveau.
+
+CHRONOLOGIE
+1. Operation initiale traitee sans blocage automatique (score de fraude
+   sous le seuil de blocage immediat au moment de la transaction).
+2. Signaux d'alerte remontes par signalement du GNN Relations (reseau de fraude) dans un delai de 17 jour(s).
+3. Qualification de l'alerte par l'equipe d'investigation conformement a la
+   procedure standard (voir guide_detection_fraude.txt, etape 1).
+4. Decision d'investigation approfondie compte tenu du cumul de signaux.
+
+SIGNAUX DETECTES
+- Augmentation soudaine de la frequence de transactions
+- Geolocalisation incoherente avec l'adresse de facturation
+
+ISSUE
+Compte cloture a titre conservatoire, plainte deposee par la banque.
+
+Ce cas illustre l'importance du delai de detection : un signalement plus
+rapide via signalement du GNN Relations (reseau de fraude) aurait permis de reduire l'exposition financiere sur ce
+type de typologie (prise de controle de compte (account takeover)).

@@ -9,7 +9,6 @@ __pycache__/
 # Données vectorielles (ChromaDB / FAISS index)
 data/chroma_db/
 data/processed/
-{data/
 
 # Logs et erreurs
 *.log

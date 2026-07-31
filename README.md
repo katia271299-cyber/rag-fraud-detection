@@ -12,11 +12,28 @@ Question → Embedding → Recherche vectorielle → Contexte → LLM → Répon
 
 1. **Ingestion** : charge des PDF, CSV et textes financiers
 2. **Chunking** : découpe intelligente en segments de 512 tokens
-3. **Vectorisation** : embedding avec `sentence-transformers`
+3. **Vectorisation** : embedding avec `nomic-embed-text` via Ollama
 4. **Stockage** : ChromaDB (persistant) ou FAISS (rapide)
 5. **Retrieval** : top-K chunks par similarité cosinus à la question
 6. **Génération** : Mistral 7B via Ollama répond en citant ses sources
 7. **Exposition** : API FastAPI + interface Streamlit
+
+---
+
+## Jeu de données
+
+Corpus 100% synthétique généré par `scripts/generate_samples.py` (aucune donnée
+réelle), pensé pour donner une vraie profondeur de contenu au RAG :
+
+| Source | Volume |
+|---|---|
+| Rapports annuels narratifs (2022-2024) | 3 documents |
+| Cas de fraude anonymisés (`data/raw/cas/`) | 40 fichiers individuels |
+| Transactions suspectes (CSV, une ligne = un document indexé) | 1 000 lignes |
+| Alertes de conformité (JSON, un item = un document indexé) | 200 alertes |
+| Glossaire des termes métier (TRACFIN, KYC, smurfing, etc.) | 30 termes |
+| Guide opérationnel de détection | 1 document |
+| **Total après ingestion** | **~1 250 documents indexables** |
 
 ---
 
@@ -25,7 +42,8 @@ Question → Embedding → Recherche vectorielle → Contexte → LLM → Répon
 ```
 rag-finance/
 ├── data/
-│   ├── raw/              # Documents bruts (PDF, CSV, TXT)
+│   ├── raw/              # Documents bruts (rapports, CSV, JSON, glossaire...)
+│   │   └── cas/          # 40 recits de cas de fraude anonymises
 │   └── processed/        # Chunks préprocessés (JSON)
 ├── src/
 │   ├── ingestion/
@@ -79,12 +97,16 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Télécharger le modèle LLM
+### 3. Télécharger les modèles Ollama
 
 ```bash
 # Installer Ollama : https://ollama.com
-ollama pull mistral
+ollama pull mistral            # LLM de generation
+ollama pull nomic-embed-text   # Modele d'embedding
 ```
+
+Les deux modèles sont nécessaires : `mistral` pour générer les réponses,
+`nomic-embed-text` pour vectoriser les documents et les questions.
 
 ### 4. Générer des données de test
 
@@ -179,9 +201,9 @@ Ce projet démontre :
 
 | Composant | Technologie |
 |-----------|-------------|
-| Orchestration | LangChain |
-| LLM | Mistral 7B (Ollama) |
-| Embeddings | sentence-transformers (`all-MiniLM-L6-v2`) |
+| Orchestration | Pipeline RAG fait main (pas de framework type LangChain) |
+| LLM | Mistral 7B via Ollama (alternative : HuggingFace Transformers) |
+| Embeddings | `nomic-embed-text` via Ollama |
 | Vector store | ChromaDB (FAISS en option) |
 | API | FastAPI + Uvicorn |
 | Interface | Streamlit |
