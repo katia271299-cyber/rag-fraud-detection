@@ -16,9 +16,9 @@ CHUNK_OVERLAP = 64     # Chevauchement entre chunks (contexte préservé)
 SUPPORTED_EXTENSIONS = [".pdf", ".txt", ".csv", ".json"]
 
 # ── Embeddings ───────────────────────────────────────────────────────────────
+# L'embedder (src/retrieval/embedder.py) appelle Ollama : ne mettre ici que des
+# modeles d'embedding disponibles sur Ollama (ex: "nomic-embed-text", "mxbai-embed-large").
 EMBEDDING_MODEL = "nomic-embed-text"
-# Alternatives : "all-mpnet-base-v2" (meilleur, plus lent)
-#                "paraphrase-multilingual-MiniLM-L12-v2" (multilingue FR/EN)
 
 # ── Vector Store ─────────────────────────────────────────────────────────────
 VECTOR_STORE      = "faiss"     # "chroma" | "faiss"
@@ -28,7 +28,9 @@ SIMILARITY_THRESHOLD = 0.15     # Score minimum de similarité (repli sur le top
 
 # ── LLM ─────────────────────────────────────────────────────────────────────
 LLM_PROVIDER  = "ollama"        # "ollama" | "huggingface"
-LLM_MODEL     = "mistral"       # Modèle Ollama (ollama pull mistral)
+LLM_MODEL     = "phi3"          # Modele Ollama (ollama pull phi3) -- 2.2 Go,
+                                 # bon compromis qualite/poids. "mistral" (4.1 Go)
+                                 # est un cran au-dessus si l'espace disque le permet.
 OLLAMA_BASE_URL = "http://localhost:11434"
 
 # HuggingFace (si LLM_PROVIDER == "huggingface")

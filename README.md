@@ -15,7 +15,7 @@ Question → Embedding → Recherche vectorielle → Contexte → LLM → Répon
 3. **Vectorisation** : embedding avec `nomic-embed-text` via Ollama
 4. **Stockage** : ChromaDB (persistant) ou FAISS (rapide)
 5. **Retrieval** : top-K chunks par similarité cosinus à la question
-6. **Génération** : Mistral 7B via Ollama répond en citant ses sources
+6. **Génération** : Phi-3 via Ollama répond en citant ses sources
 7. **Exposition** : API FastAPI + interface Streamlit
 
 ---
@@ -101,12 +101,14 @@ pip install -r requirements.txt
 
 ```bash
 # Installer Ollama : https://ollama.com
-ollama pull mistral            # LLM de generation
-ollama pull nomic-embed-text   # Modele d'embedding
+ollama pull phi3                # LLM de generation (2.2 Go)
+ollama pull nomic-embed-text    # Modele d'embedding (274 Mo)
 ```
 
-Les deux modèles sont nécessaires : `mistral` pour générer les réponses,
+Les deux modèles sont nécessaires : `phi3` pour générer les réponses,
 `nomic-embed-text` pour vectoriser les documents et les questions.
+Alternative plus capable mais plus lourde (4,1 Go) : `ollama pull mistral`,
+puis changer `LLM_MODEL` dans `config.py`.
 
 ### 4. Générer des données de test
 
@@ -202,7 +204,7 @@ Ce projet démontre :
 | Composant | Technologie |
 |-----------|-------------|
 | Orchestration | Pipeline RAG fait main (pas de framework type LangChain) |
-| LLM | Mistral 7B via Ollama (alternative : HuggingFace Transformers) |
+| LLM | Phi-3 via Ollama (alternative locale plus capable : Mistral 7B ; ou HuggingFace Transformers) |
 | Embeddings | `nomic-embed-text` via Ollama |
 | Vector store | ChromaDB (FAISS en option) |
 | API | FastAPI + Uvicorn |

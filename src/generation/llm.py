@@ -21,13 +21,13 @@ class OllamaLLM(BaseLLM):
     
     Prérequis :
         1. Installer Ollama : https://ollama.com
-        2. Télécharger le modèle : ollama pull mistral
+        2. Télécharger le modèle : ollama pull phi3 (ou mistral, plus lourd)
         3. Ollama doit tourner en arrière-plan
     """
 
     def __init__(
         self,
-        model: str = "mistral",
+        model: str = "phi3",
         base_url: str = "http://localhost:11434",
         temperature: float = 0.1,
         max_tokens: int = 512,
@@ -149,7 +149,7 @@ class HuggingFaceLLM(BaseLLM):
 
 def create_llm(
     provider: str = "ollama",
-    model: str = "mistral",
+    model: str = "phi3",
     temperature: float = 0.1,
     max_tokens: int = 512,
     **kwargs,
