@@ -10,10 +10,10 @@ Un système de Retrieval-Augmented Generation (RAG) permettant d'interroger en *
 Question → Embedding → Recherche vectorielle → Contexte → LLM → Réponse + Sources
 ```
 
-1. **Ingestion** : charge des PDF, CSV et textes financiers
+1. **Ingestion** : charge des PDF, CSV, JSON et textes financiers
 2. **Chunking** : découpe intelligente en segments de 512 tokens
 3. **Vectorisation** : embedding avec `nomic-embed-text` via Ollama
-4. **Stockage** : ChromaDB (persistant) ou FAISS (rapide)
+4. **Stockage** : FAISS par défaut (rapide), ChromaDB en option (persistant)
 5. **Retrieval** : top-K chunks par similarité cosinus à la question
 6. **Génération** : Phi-3 via Ollama répond en citant ses sources
 7. **Exposition** : API FastAPI + interface Streamlit
@@ -40,7 +40,7 @@ réelle), pensé pour donner une vraie profondeur de contenu au RAG :
 ## Structure du projet
 
 ```
-rag-finance/
+rag-fraud-detection/
 ├── data/
 │   ├── raw/              # Documents bruts (rapports, CSV, JSON, glossaire...)
 │   │   └── cas/          # 40 recits de cas de fraude anonymises
@@ -67,8 +67,6 @@ rag-finance/
 │   └── generate_samples.py  # Génération de données fictives
 ├── tests/
 │   └── test_pipeline.py
-├── notebooks/
-│   └── exploration.ipynb
 ├── config.py             # Configuration centrale
 ├── requirements.txt
 └── README.md
@@ -89,7 +87,7 @@ ollama (pour le LLM local)
 
 ```bash
 git clone https://github.com/katia271299-cyber/rag-fraud-detection
-cd rag-finance
+cd rag-fraud-detection
 
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -158,8 +156,8 @@ curl -X POST http://localhost:8000/ask \
 {
   "answer": "Les patterns de fraude les plus fréquents incluent...",
   "sources": [
-    {"doc_id": "rapport_q3_2023.pdf", "chunk": "...", "score": 0.92},
-    {"doc_id": "analyse_transactions.csv", "chunk": "...", "score": 0.87}
+    {"doc_id": "rapport_fraude_2023.txt", "chunk": "...", "score": 0.81},
+    {"doc_id": "cas_0033.txt", "chunk": "...", "score": 0.77}
   ],
   "latency_ms": 1240
 }
@@ -170,11 +168,12 @@ curl -X POST http://localhost:8000/ask \
 ## Configuration
 
 Voir `config.py` pour ajuster :
-- Le modèle d'embedding (`EMBEDDING_MODEL`)
+- Le modèle d'embedding (`EMBEDDING_MODEL`, doit être disponible sur Ollama)
+- Le modèle de génération (`LLM_MODEL`, par défaut `"phi3"`)
 - La taille des chunks (`CHUNK_SIZE`)
-- Le nombre de résultats récupérés (`TOP_K`)
-- Le backend vectoriel (`VECTOR_STORE`: `"chroma"` ou `"faiss"`)
-- Le LLM utilisé (`LLM_PROVIDER`: `"ollama"` ou `"huggingface"`)
+- Le nombre de résultats récupérés (`TOP_K`) et le seuil de similarité (`SIMILARITY_THRESHOLD`)
+- Le backend vectoriel (`VECTOR_STORE`: `"faiss"` par défaut, ou `"chroma"`)
+- Le provider LLM (`LLM_PROVIDER`: `"ollama"` ou `"huggingface"`)
 
 ---
 
@@ -191,7 +190,7 @@ pytest tests/ -v
 Ce projet démontre :
 - **Ingestion** multi-format (PDF, CSV, JSON, TXT)
 - **Chunking** avec recouvrement (overlap) pour préserver le contexte
-- **Recherche sémantique** avec embeddings et ChromaDB
+- **Recherche sémantique** avec embeddings et FAISS (ChromaDB en option)
 - **Prompt engineering** avec contexte injecté dynamiquement
 - **API production-ready** avec FastAPI + Pydantic
 - **Traçabilité** : chaque réponse cite ses sources avec score de confiance
@@ -206,7 +205,7 @@ Ce projet démontre :
 | Orchestration | Pipeline RAG fait main (pas de framework type LangChain) |
 | LLM | Phi-3 via Ollama (alternative locale plus capable : Mistral 7B ; ou HuggingFace Transformers) |
 | Embeddings | `nomic-embed-text` via Ollama |
-| Vector store | ChromaDB (FAISS en option) |
+| Vector store | FAISS par défaut (ChromaDB en option) |
 | API | FastAPI + Uvicorn |
 | Interface | Streamlit |
 | PDF parsing | PyMuPDF |
